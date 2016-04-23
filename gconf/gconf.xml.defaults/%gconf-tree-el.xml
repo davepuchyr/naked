@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Αν θα εμφανίζεται επιλογή για το Midnight Commander στο μενού">
+						<longdesc>Αν είναι αληθές, και είναι εγκατεστημένος ο διαχειριστής αρχείων  &quot;Midnight Commander&quot;, θα εμφανίζεται στο μενού περιεχομένων η επιλογή &quot;Άνοιγμα στο Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Αν θα ανοίγει τερματικό στον αρχικό κατάλογο όποτε ανοίγετε τερματικό στην επιφάνεια εργασίας">
+						<longdesc>Αν είναι αληθές, όποτε ανοίγετε τερματικό στην επιφάνεια εργασίας, θα ανοίγει τερματικό στον αρχικό κατάλογο. Διαφορετικά, το τερματικό θα ανοίγει στον κατάλογο της επιφάνειας εργασίας. Σημειώστε ότι αυτή η επιλογή έχει νόημα μόνο αν ο κατάλογος της επιφάνειας εργασίας δεν είναι ο αρχικός κατάλογος.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

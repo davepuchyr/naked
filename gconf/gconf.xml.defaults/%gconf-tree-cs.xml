@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Zda má být položka Midnight Commanderu zobrazena v nabídce">
+						<longdesc>Pokud je povoleno a pokud je terminálový správce souborů &quot;Midnight Commander&quot; nainstalován, pak bude položka &quot;Otevřít v Midnight Commander&quot; zobrazena v kontextové nabídce.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Zda otevření terminálu na ploše otvírá terminál v domovském adresáři">
+						<longdesc>Pokud aktivní, tak otevření terminálu na ploše otevře terminál v domovském adresáři. V opačném případě jej otevře v adresáři plochy. Vězte, že tento klíč nemá žádný vliv, pokud adresář plochy je shodný s domovským adresářem.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="ਕੀ ਮਿਡਨਾਈਟ ਕਮਾਂਡਰ ਮੇਨੂ ਆਈਟਮ ਵੇਖਾਈ ਜਾਵੇ">
+						<longdesc>ਜੇ ਸਹੀਂ ਸੈੱਟ ਕੀਤਾ ਅਤੇ ਟਰਮੀਨਲ ਫਾਇਲ ਮੈਨੇਜਰ &quot;Midnight Commander&quot; ਇੰਸਟਾਲ ਹੋਵੇ ਤਾਂ ਪਰਸੰਗ ਮੇਨੂ ਵਿੱਚ &quot;ਮਿਡਨਾਈਟ ਕਮਾਂਡਰ ਵਿੱਚ ਖੋਲ੍ਹੋ (Open in Midnight Commander)&quot; ਮੇਨੂ ਆਈਟਮ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="ਕੀ ਡੈਸਕਟਾਪ ਉੱਤੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹਣ ਨਾਲ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਟਰਮੀਨਲ ਖੁੱਲ੍ਹੇ">
+						<longdesc>ਜੇ ਸਹੀਂ ਕੀਤਾ ਤਾਂ ਡੈਸਕਟਾਪ ਉੱਤੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹਣ ਨਾਲ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਟਰਮੀਨਲ ਖੁੱਲ੍ਹੇਗਾ। ਨਹੀਂ ਤਾਂ, ਇਹ ਡੈਸਕਟਾਪ ਡਾਇਰੈਕਟਰੀ ਖੋਲ੍ਹੋਗਾ। ਯਾਦ ਰੱਖੋ ਕਿ ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰਦੀ ਹੈ, ਜੇ ਡੈਸਕਟਾਪ ਡਾਇਰੈਕਟਰੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਦੇ ਅਨੁਰੂਪ ਹੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Indique si un élément de menu Midnight Commander doit être affiché">
+						<longdesc>Si vrai et si le gestionnaire de fichiers en mode terminal « Midnight Commander » est installé, un élément de menu « Ouvrir dans Midnight Commander » apparaîtra dans le menu contextuel.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Indique si l&apos;ouverture d&apos;un terminal sur le bureau ouvre un terminal dans le dossier personnel">
+						<longdesc>Si vrai, l&apos;ouverture d&apos;un terminal sur le bureau ouvrira un terminal dans le dossier personnel. Dans le cas contraire, il sera ouvert dans le dossier bureau. Notez que cette option est inutile dans le cas où le dossier bureau est identique au dossier personnel.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

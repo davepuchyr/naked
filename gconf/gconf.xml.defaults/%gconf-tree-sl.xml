@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ali naj se pokaže povezava do programa Midnight Commander med predmeti menija">
+						<longdesc>Izbrana možnost omogoča, da se nameščeni program &quot;Midnight Commander&quot; pojavi v vsebinskem meniju kot &quot;Odpri s programom Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ali odpiranje terminala na namizju, odpre terminal v domači mapi uporabnika.">
+						<longdesc>Izbrana možnost omogoča, da se pri odpiranju terminala na namizju, ta odpre v domači mapi uporabnika. Druga možnost je, da se terminal odpre v mapi namizja. Nastavitev je mogoče izpustiti, kadar je mapa namizja enaka domači mapi.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

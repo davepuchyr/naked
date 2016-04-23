@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Kas Midnight Commanderi menüükirjet näidatakse">
+						<longdesc>Kui märgitud ja kui terminali failihaldur &quot;Midnight Commander&quot; on paigaldatud, näidatakse hüpikmenüüs kirjet &quot;Ava Midnight Commanderis&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Kui terminal avada töölaual, avab see kodukataloogis">
+						<longdesc>Kui tõene, siis töölaual terminali avamine avab selle kodukataloogis. Muul juhul avatakse see töölaua kataloogis. See valik on tähendusetu, kui töölaud ja kodukataloogi kattuvad.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

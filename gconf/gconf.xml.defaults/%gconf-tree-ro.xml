@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Dacă să fie afișat un element Midnight Commander în meniu">
+						<longdesc>La activare, dacă administratorul de fișiere în mod text „Midnight Commander” este instalat, se va afișa un element „Deschide în Midnight Commander” în meniul contextual.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Dacă deschiderea unui terminal pe desktop va deschide terminalul în dosarul personal">
+						<longdesc>La activare, deschiderea unui terminal pe desktop va deschide terminalul în dosarul personal. Altfel, va fi deschis în dosarul Desktop. Această cheie este irelevantă în cazul în care dosarul personal este același cu dosarul Desktop.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

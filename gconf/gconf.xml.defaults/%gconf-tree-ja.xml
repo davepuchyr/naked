@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander のメニュー項目を表示するかどうか">
+						<longdesc>TRUE にした場合、端末型ファイル・マネージャーの &quot;Midnight Commander&quot; がシステムにインストールされているならば、&quot;Midnight Commander で開く&quot; というメニュー項目をコンテキスト・メニューに表示します</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="デスクトップではなくホーム・フォルダーで端末を開くかどうか">
+						<longdesc>TRUE にした場合、たとえデスクトップ上で端末を開いても実際にはホーム・フォルダーから端末を開きます。それ以外は、デスクトップのフォルダーから開きます。デスクトップ・フォルダーがホーム・フォルダーの場合、このキーによる効果はありません。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

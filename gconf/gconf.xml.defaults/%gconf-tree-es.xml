@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Indica si se debería mostrar un elemento del menú para Midnight Commander">
+						<longdesc>Si está a «true», y el gestor de archivos de la terminal «Midnight Commander&quot; está instalado, entonces se mostrará un icono de menú «Abrir en Midnight Commander» en el menú contextual.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Indica si al abrir un terminal en el escritorio se abre el terminal en la carpeta personal">
+						<longdesc>Si está a «true» al abrir un terminal en el escritorio se abrirá en la carpeta personal. De otra manera se abrirá en la carpeta del escritorio. Note que esta clave es irrelevante si la carpeta del escritorio es idéntico a la carpeta personal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

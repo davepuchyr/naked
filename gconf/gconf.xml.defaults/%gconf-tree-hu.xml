@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Megjelenjen-e a Midnight Commander menüelem">
+						<longdesc>Ha ez igazra van állítva és a „Midnight Commander” karakteres fájlkezelő telepítve van, akkor a helyi menübe bekerül egy „Megnyitás a Midnight Commanderben” menüpont.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="A terminál megnyitása az asztalon a saját mappában nyitja-e a terminált">
+						<longdesc>Ha ez igaz, akkor egy terminál megnyitása az asztalon a saját könyvtárában nyit meg egy terminált. Ellenkező esetben az asztal mappájában nyílik meg. A kulcsnak nincs jelentősége, ha az asztal könyvtára a saját könyvtár.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

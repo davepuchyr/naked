@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="ஒரு நடுஇரவு கமெண்டர் மெனு உருப்படி காட்டப்பட வேண்டுமா">
+						<longdesc>If set to true, and if the terminal file manager &quot;Midnight Commander&quot; is installed, then an &quot;Open in Midnight Commander&quot; menu item will be displayed in the context menu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc=" திரையில் இருந்து முனையத்தை திறந்தால் முனையம் இல்ல அடைவில் இருந்து திறக்குமா">
+						<longdesc>நிபந்தனை சரி என்றால், திரையில் இருந்து முனையத்தை திறந்தால் முனையம், இல்ல அடைவில் இருந்து திறக்கும்,  தவறு என்றால் முனையம் திரையில் உள்ள அடைவில் இருந்து திறக்கும்குறிப்பு செய்க, சாவி தொடர்பு சரியில்லை என்றால், இல்ல அடைவும் திரை அடைவும் ஒன்றே </longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

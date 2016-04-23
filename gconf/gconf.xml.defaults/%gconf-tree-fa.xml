@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="چناچه یک مورد Midnight Commander در منو نمایش داده شود">
+						<longdesc>اگر روی مقدار «درست» تنظیم شود، و چناچه سیستم پایانه‌ای مدیریت پرونده‌های «Midnight Commander» نصب باشد، یک گزینه‌ی «بازکردن در Midnight Commander» در منوی محاوره‌ای نمایش داده می‌شود.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="چناچه بازکردن یک پایانه بر روی رومیزی باعث بازشدن یک پایانه بر روی شاخه خانگی شود">
+						<longdesc>اگر روی مقدار «درست» تنظیم شود، بازکردن یک پایانه بر روی رومیزی یک پایانه را بر روی شاخه خانگی باز میکند. در غیر این صورت پایانه در شاخه رومیزی باز می‌شود. توجه کنید که این کلید چناچه شاخه رومیزی و خانگی یکسان باشند، بی‌تاثیر است.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

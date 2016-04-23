@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Si s&apos;hauria de mostrar l&apos;element de menú Midnight Commander">
+						<longdesc>Si s&apos;estableix a «True» (cert), i el gestor de fitxers basat en terminal «Midnight Commander» està instal·lat, llavors la icona de menú «Obre amb Midnight Commander» es mostrarà al menú contextual.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Si en obrir un terminal a l&apos;escriptori s&apos;obrirà un terminal al directori personal">
+						<longdesc>Si s&apos;estableix a «True» (cert), llavors en obrir un terminal a l&apos;escriptori s&apos;obrirà al directori personal. En cas contrari, s&apos;obrirà al directori de l&apos;escriptori. Fixeu-vos que la clau és irrellevant si el directori de l&apos;escriptori és idèntic al directori personal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

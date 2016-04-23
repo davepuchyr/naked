@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander 메뉴 항목 표시 여부">
+						<longdesc>참으로 설정하고 &quot;Midnight Commander&quot; 터미널 파일 관리자가 설치되어 있다면 문맥 메뉴에 &quot;Midnight Commander로 열기&quot; 항목이 표시됩니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="바탕화면에서 터미널을 열 때 홈 디렉터리에서 열 것인지 여부">
+						<longdesc>참으로 설정하면, 바탕화면에서 터미널을 열면 터미널에서 홈 디렉터리가 열립니다. 참으로 설정하지 않으면, 바탕화면 디렉터리가 열립니다. 홈 디렉터리를 바탕화면 디렉터리로 사용한다면 이 키는 반영되지 않습니다.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

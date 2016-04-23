@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander-ৰ বাবে তালিকাত নিবেশ প্ৰদৰ্শিত হ&apos;ব নে নহয়">
+						<longdesc>মান true হ&apos;লে, আৰু &quot;Midnight Commander&quot; নামক টাৰ্মিনেল নথিপত্ৰ পৰিচালন ব্যবস্থা ইনস্টল কৰা থাকলে, প্ৰাসঙ্গিক তালিকাত &quot;Midnight Commander-ত খোলক&quot; শীৰ্ষক এটা তালিকাৰ নিবেশ প্ৰদৰ্শিত হ&apos;ব ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="ডেস্কট&apos;পত টাৰ্মিনেল খোলাৰ ফলত ব্যক্তিগত পঞ্জিকা প্ৰদৰ্শন কৰি টাৰ্মিনেল আৰম্ভ কৰা হ&apos;ব নে নহয়">
+						<longdesc>মান true হ&apos;লে, ডেস্কটপেত টাৰ্মিনেল খোলা হ&apos;লে, ব্যক্তিগত পঞ্জিকা প্ৰদৰ্শন কৰি টাৰ্মিনেল আৰম্ভ কৰা হ&apos;ব । অন্যথা, টাৰ্মিনেল ডেস্কটপ প্ৰদৰ্শন কৰি খোলা হ&apos;ব । উল্লেখ্য, ডেস্কটপ আৰু ব্যক্তিগত পঞ্জিকা একেই হ&apos;লে এই চাবিৰ ব্যবহাৰ অমূলক ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

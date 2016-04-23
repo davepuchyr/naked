@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="डेस्कटपमा टर्मिनल खोल्नाले गृह डाइरेक्टरीमा टर्मिनल खुल्छ या खुल्दैन">
+						<longdesc>यदि सही सेट भएको छ भने, डेस्कटपमा टर्मिनल खोल्नाले गृह डाइरेक्टरीमा टर्मिनल खुल्नेछ । अन्यथा, यो डेस्कटप डाइरेक्टरीमा खुल्नेछ । याद गर्नुहोस् कि यदि डेस्कटप डाइरेक्टरी गृह डाइरेक्टरीमा पहिचानयोग्य छ भने यो कुञ्जी सान्दर्भिक हुन्छ ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

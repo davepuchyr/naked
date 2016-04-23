@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Of er een menu-item voor Midnight Commander getoond moet worden">
+						<longdesc>Indien ingeschakeld, en indien ‘Midnight Commander’ geïnstalleerd is, wordt een menu-item ‘Openen in Midnight Commander’ getoond in het contextmenu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Of een terminalvenster dat geopend wordt vanaf het bureaublad opent in de persoonlijke map">
+						<longdesc>Indien ingeschakeld opent een terminalvenster dat vanaf het bureaublad wordt geopend in de persoonlijke map. Indien uitgeschakeld wordt de bureaubladmap geopend in het terminalvenster. Deze instelling is niet van belang als de persoonlijke map dezelfde map is als het bureaublad.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

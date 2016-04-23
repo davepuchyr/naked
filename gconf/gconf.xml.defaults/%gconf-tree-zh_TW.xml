@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="是否顯示 Midnight Commander 選單項目">
+						<longdesc>如果該值設為真，且已經安裝終端機檔案管理員「Midnight Commander」，右鍵選單內將會出現「使用 Midnight Commander 開啟」這個項目。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="在桌面開啟終端機時，終端機是否開啟使用者目錄">
+						<longdesc>如果該值設為真，當在桌面開啟終端機時，終端機將會開啟使用者目錄，設為否的話則開啟桌面目錄。注意，如果使用者目錄和桌面目錄是一致的，該鍵就無法發揮效用。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Indica se una voce di Midnight Commander deve visualizzata nel menù">
+						<longdesc>Se impostata a vero, e il terminale del file manager &quot;Midnight Commander&quot; è installato, apparirà una voce nel menù contestuale &quot;Apri con Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Indica se aprendo un terminale sulla scrivania si apre un terminale nella directory home">
+						<longdesc>Se impostata a vero, aprendo un terminale sulla scrivania si aprirà la directory home. In caso contrario, si aprirà la directory della scrivania. Nota che questa voce è irrilevante se la directory della scrivania è equivalente a quella della home.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

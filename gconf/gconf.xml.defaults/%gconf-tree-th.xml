@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="แสดงเมนู Midnight Commander หรือไม่">
+						<longdesc>หากกำหนดเป็นจริง และโปรแกรมจัดการแฟ้มสำหรับเทอร์มินัล &quot;Midnight Commander&quot; ถูกติดตั้งอยู่ ก็จะแสดงรายการ &quot;เปิดใน Midnight Commander&quot; ในเมนูคลิกขวา</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="การเปิดเทอร์มินัลบนพื้นโต๊ะจะเปิดในไดเรกทอรีบ้านหรือไม่">
+						<longdesc>หากกำหนดเป็นจริง การเปิดเทอร์มินัลบนพื้นโต๊ะจะเป็นการเปิดเทอร์มินัลในไดเรกทอรีบ้าน มิฉะนั้น ก็จะเปิดในไดเรกทอรีพื้นโต๊ะ สังเกตว่า ค่านี้จะไม่มีผลหากไดเรกทอรีพื้นโต๊ะกับไดเรกทอรีบ้านเป็นที่เดียวกัน</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

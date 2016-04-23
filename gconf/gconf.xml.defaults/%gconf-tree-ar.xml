@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="وما إذا كان ينبغي عرض قائمة البند  Midnight Commander">
+						<longdesc>إذا عيّن إلى true، وإذا كانت إدارة ملفات الطرفية &quot;Midnight Commander &quot; مثبتة، بعد ذلك &quot;فتح في Midnight Commander &quot; سيتم عرض عنصر القائمة في قائمة السياق.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="سواء تم فتح الطرفية على سطح المكتب إفتح الطرفية في الدليل الرئيسي">
+						<longdesc>إذا عيّن إلى true، ثم تم فتح الطرفية على سطح المكتب سيفتح الطرفية في الدليل الرئيسي. خلاف ذلك، سيتم فتحها في دليل سطح المكتب. لاحظ أن هذا المفتاح لا يهم إذا كان دليل سطح المكتب مماثل إلى الدليل الرئيسي.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

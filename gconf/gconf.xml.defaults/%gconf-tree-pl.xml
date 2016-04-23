@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Określa, czy wyświetlać pozycję menu Midnight Commander">
+						<longdesc>Gdy ustawione na &quot;true&quot; i terminalowy menedżer plików &quot;Midnight Commander&quot; jest zainstalowany, pozycja menu &quot;Otwórz za pomocą Midnight Commander&quot; będzie wyświetlona w menu podręcznym.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Określa, czy otwieranie terminalu na pulpicie otwiera terminal w katalogu domowym">
+						<longdesc>Gdy ustawione na &quot;true&quot;, otwieranie terminalu na pulpicie spowoduje otwarcie terminalu w katalogu domowym. W przeciwnym razie zostanie otwarty katalog pulpitu. Uwaga - ten klucz jest bezużyteczny, gdy katalog pulpitu jest identyczny jak katalog domowy.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Huruvida ett menyobjekt för Midnight Commander ska visas">
+						<longdesc>Om inställd till sant, och om terminalfilhanteraren &quot;Midnight Commander&quot; är installerad, kommer ett menyobjekt för &quot;Öppna i Midnight Commander&quot; att visas i sammanhangsmenyn.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Huruvida öppnandet av en terminal på skrivbordet öppnar en terminal i hemkatalogen">
+						<longdesc>Om inställd till sant kommer öppnandet av en terminal på skrivbordet att öppna en terminal i hemkatalogen. Om inte kommer det att öppnas i skrivbordskatalogen. Observera att den här nyckeln är irrelevant om skrivbordskatalogen är identisk med hemkatalogen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

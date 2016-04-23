@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Да ли да прикаже ставку менија Поноћног командера">
+						<longdesc>Уколико је изабрана ова опција и присутан „Поноћни командер“, у приложеном менију ће се појавити опција „Отвори у Поноћном командеру“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Да ли покретање терминала са радне површи отвара личну фасциклу">
+						<longdesc>Уколико је изабрано, отварање терминала са радне површи ће отворити лични директоријум. У супротном, терминал ће бити покренут са радном путањом до радне површи. Уколико је радна површ уједно и лична фасцикла, ова опција је небитна.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

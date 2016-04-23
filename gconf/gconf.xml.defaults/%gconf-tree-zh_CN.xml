@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander 项目菜单是否被显示">
+						<longdesc>若设为真，并且如果终端文件管理器“Midnight Commander”已安装，在目录菜单中会显示“在 Midnight Commander 中打开”菜单项。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="在桌面上打开终端时是否设置为打开在主目录">
+						<longdesc>如果设为真，在桌面上打开终端将会设为打开在主目录。否则，它将会被打开在 桌面目录。注意此键跟桌面目录是否同于主目录不相关。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

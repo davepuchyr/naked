@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="&quot;სამუშაო მაგიდაზე&quot; გაშვებული ტერმინალი &quot;სახლის დასტას&quot; აჩვენებს">
+						<longdesc>თუ მონიშნულია, &quot;სამუშაო მაგიდაზე&quot; გაშვებისას ტერმინალში გაიხსნება &quot;სახლის დასტა&quot;, სხვაგვარად გაიხსნება სამუშაო მაგიდის დასტა. ამ გასაღებს არ აქვს მნიშვნელობა თუ &quot;სამუშაო მაგიდის&quot; დასტა შეესაბამება &quot;სახლის დასტას&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

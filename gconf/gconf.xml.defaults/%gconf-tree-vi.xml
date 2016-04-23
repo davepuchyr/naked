@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Hiện một trình đơn Midnight Commander">
+						<longdesc>Nếu đặt là đúng, và nếu trình quản lí tập tin giao diện dòng lệnh &quot;Midnight Commander&quot; đã được cài đặt, thì trình đơn &quot;Mở trong Midnight Commander&quot; sẽ xuất hiện trong trình đơn ngữ cảnh.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Khi mở cửa sổ dòng lệnh ở màn hình nền sẽ mở một cửa sổ dòng lệnh tại thư mục chính">
+						<longdesc>Nếu đặt là đúng, lệnh mở cửa sổ dòng lệnh ở màn hình nền sẽ mở cửa sổ dòng lệnh trong thư mục chính. Nếu không, nó sẽ mở trong thư mục của màn hình nền. Chú ý rằng khóa này không thích hợp nếu thư mục màn hình nền cũng là thư mục chính.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

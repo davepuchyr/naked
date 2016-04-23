@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander menuko elementua bistaratu behar den edo ez">
+						<longdesc>True (egia) gisa ezartzen bada eta terminaleko Midnight Commander fitxategi-kudeatzailea instalatuta badago, orduan &quot;Ireki Midnight Commander-en&quot; menuko elementua bistaratuko da testuinguruko menuan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Mahaigainean terminal bat irekitzean erabiltzailearen direktorio nagusian terminala irekiko den ala ez adierazten du.">
+						<longdesc>TRUE (Egia) gisa ezartzen bada, mahaigainean terminal bat irekitzean erabiltzailearen direktorio nagusian irekiko da terminala. Bestela, erabiltzailearen mahaigaineko direktorioan irekiko da terminala. Jakin ezazu gako honek ez duela garrantzirik baldin eta mahaigaineko direktorioa erabiltzailearen direktorio nagusiaren berdina bada.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

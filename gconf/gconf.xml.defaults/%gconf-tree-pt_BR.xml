@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Mostrar um item de menu do Midnight Commander">
+						<longdesc>Se o gerenciador de arquivos por terminal &quot;Midnight Commander&quot; estiver instalado, então um item de menu &quot;Abrir no Midnight Commander&quot; será exibido no menu de contexto.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Abrir um terminal na área de trabalho abre-o na pasta pessoal">
+						<longdesc>Abrir um terminal na área de trabalho o abrirá na pasta pessoal. Caso contrário, será aberto no diretório da área de trabalho. Observe que esta chave é irrelevante se o diretório da área de trabalho for idêntico ao diretório da pasta pessoal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

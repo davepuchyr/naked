@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Näytetäänkö valikon kohta Midnight Commanderille">
+						<longdesc>Jos tosi ja jos ohjelma &quot;Midnight Commander&quot; on asennettu, lisätään ponnahdusvalikkoon kohta &quot;Avaa Midnight Commanderissa&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Käynnistetään työpöydältä avattu pääte kotikansioon">
+						<longdesc>Jos tosi, päätteen avaaminen työpöydältä avaa päätteen kotikansiossa. Muussa tapauksessa pääte avataan työpöytäkansiosta. Huomaa, että tämä avain on merkityksetön, jos kotikansio ja työpöytä ovat sama kansio.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

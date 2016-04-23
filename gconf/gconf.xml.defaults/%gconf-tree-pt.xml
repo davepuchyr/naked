@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Se um item de menu para o Midnight Commander deve ser apresentado">
+						<longdesc>Se definido como verdadeiro, e se o gestor de ficheiros da consola &quot;Midnight Commander&quot; se encontrar instalado, um menu &quot;Abrir no Midnight Commander&quot; será apresentado no menu de contexto.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Se abrir uma consola no ambiente de trabalho abre uma consola na pasta pessoal do utilizador">
+						<longdesc>Se definido como verdadeiro, abrir uma consola no ambiente de trabalho irá abrir uma consola na pasta pessoal do utilizador. Caso contrário, a consola será aberta no directório do ambiente de trabalho. Note que esta chave é irrelevante caso o directório do ambiente de trabalho seja o mesmo que a pasta pessoal do utilizador.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

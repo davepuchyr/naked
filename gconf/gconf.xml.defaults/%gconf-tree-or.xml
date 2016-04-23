@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="ମଧ୍ଯରାତ୍ର କମାଣ୍ଡର ତାଲିକା ବସ୍ତୁକୁ ଦର୍ଶାଯିବା ଉଚିତ କି ନୁହଁ">
+						<longdesc>ଯଦି true ସେଟକରାଯାଏ, ଏବଂ ଯଦି ଟର୍ମିନାଲ ଫାଇଲ ପରିଚାଳକ &quot;Midnight Commander&quot; ସ୍ଥାପିତ ହୋଇଥାଏ, ତେବେ ଗୋଟିଏ &quot;Open in Midnight Commander&quot; ତାଲିକା ବସ୍ତୁକୁ ପ୍ରସଙ୍ଗ ତାଲିକାରେ ଦର୍ଶାଯିବ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="ଡେସ୍କଟପରେ ଗୋଟିଏ ଟର୍ମିନାଲ ଖୋଲିବା ଦ୍ୱାରା ମୂଳ ସ୍ଥାନ ପଞ୍ଜିକାରେ ଟର୍ମିନାଲ ଖୋଲିଥାଏ କି ନାହିଁ">
+						<longdesc>ଯଦି true ସେଟ କରାଯାଇଥାଏ, ତେବେ ଡେସ୍କଟପରେ ଗୋଟିଏ ଟର୍ମିନାଲ ଖୋଲିବା ଦ୍ୱାରା ମୂଳ ସ୍ଥାନ ପଞ୍ଜିକାରେ ଟର୍ମିନାଲ ଖୋଲିଥାଏ। ଅନ୍ୟଥା, ଏହାକୁ ଡେସ୍କଟପ ଡିରେକ୍ଟୋରୀରେ ଖୋଲାଯାଇଥାଏ। ମନେରଖନ୍ତୁ ଯେ ଏହି କିଟି ଅସଙ୍ଗତ ଯଦି ଡେସ୍କଟପ ଡିରେକ୍ଟୋରୀ ମୂଳସ୍ଥାନ ପଞ୍ଜିକା ସହିତ ସମାନ ହୋଇଥାଏ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

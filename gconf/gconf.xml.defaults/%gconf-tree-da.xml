@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Hvorvidt et menupunkt fra Midnight Commander skal vises">
+						<longdesc>Hvis angivet som sand, og hvis terminalfilhåndteringen &quot;Midnight Commander&quot; er installeret, så vil menupunktet &quot;Åbn i Midnight Commander&quot; blive vist i kontekstmenuen.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Hvorvidt åbning af en terminal på skrivebordet åbner en terminal i hjemmemappen">
+						<longdesc>Hvis angivet som sand, så vil åbning af en terminal på skrivebordet åbne en terminal i hjemmemappen. Ellers vil den blive åbnet i skrivebordsmappen. Bemærk at denne indstilling er irrelevant hvis skrivebordsmappen er identisk med hjemmemappen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

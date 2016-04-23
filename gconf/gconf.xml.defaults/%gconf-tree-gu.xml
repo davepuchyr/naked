@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="ક્યાંતો Midnight Commander મેનુ વસ્તુને દર્શાવવી જોઇએ કે નહિં">
+						<longdesc>જો true તરીકે સુયોજિત હોય તો, અને જો ટર્મિનલ ફાઇલ વ્યવસ્થાપક &quot;Midnight Commander&quot; એ સ્થાપિત થયેલ હોય તો, પછી &quot;Midnight Commander માં ખોલો&quot; મેનુ વસ્તુ એ સંદર્ભ મેનુમાં દર્શાવેલ હશે.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="ક્યાંતો ઘર પાનાંમાં ડેસ્કટોપ ટર્મિનલને ખોલે છે તે પર ટર્મિનલને ખોલી રહ્યા છે">
+						<longdesc>જો true તરીકે સુયોજિત હોયતો, પછી ડેસ્કટોપર પર ટર્મિનલને ખોલવા દરમ્યાન ઘર ડિરેક્ટરીમાં ટર્મિનલને ખોલશો. નહિં તો, તે ડેસ્કટોપ ડિરેક્ટરીમાં ખોલેલ હશે. નોંધો કે જે આ કી એ અસુસંગત છે જો ડેસ્કટોપ ડિરેક્ટરી એ ઘર ડિરેક્ટરીમાં સરખી હોય તો.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

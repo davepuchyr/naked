@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Чи показувати пункт меню Midnight Commander">
+						<longdesc>Якщо встановлено, і якщо встановлено менеджер файлів &quot;Midnight Commander&quot;, тоді у контекстному меню буде виводитись пункт &quot;Відкрити у Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Чи відкривання терміналу на робочому столі призводить до відкривання терміналу у домашньому каталозі">
+						<longdesc>Якщо встановлено, при відкриванні терміналу на робочому столі відкривається термінал із домашнім каталогом. У іншому разі, він відкривається у каталозі із робочим столом. цей ключ не чутливий до того чи є ідентичним каталог робочого столу домашньому каталогу.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ar Midnight Commander meniu punktas turėtų būti rodomas">
+						<longdesc>Jei pasirinkta ir terminalinė failų tvarkyklė &quot;Midnight Commander&quot; yra įdiegta, meniu punktas &quot;Atverti Midnight Commanderyje&quot; bus rodomas kontekstiniame meniu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ar atveriant terminalą darbastalyje atverti terminalą namų aplanke">
+						<longdesc>Jei pasirinkta, terminalo atvėrimas darbastalyje atvers terminalą namų aplanke. Kitaip terminalas bus atvertas darbastalio aplanke. Šis raktas nereikšmingas, jei darbastalio aplankas identiškas namų aplankui.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

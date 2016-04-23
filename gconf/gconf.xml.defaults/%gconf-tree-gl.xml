@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Indica se o elemento de menú Midnight Commander mostrarase">
+						<longdesc>Se está definido a verdadeiro, e o xestor de ficheiros de terminal &quot;Midnight Commander&quot; está instalado mostrarase un elemento do menú &quot;Abrir en Midnight Commander&quot; no menú contextual.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Indica se ao abrir unha terminal no escritorio abre unha terminal no cartafol persoal">
+						<longdesc>Se é verdadeiro, ao abrir unha terminal no escritorio abrirase no directorio persoal. Doutra maneira abrirase no directorio do escritorio. Note que esta clave é irrelevante se o directorio do escritorio é o mesmo que o cartafol persoal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

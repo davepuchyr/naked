@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Legt fest, 0b ein Midnight Commander-Menüeintrag angezeigt werden soll">
+						<longdesc>Falls dieser Schlüssel wahr ist, und falls der Terminal-Dateimanager »Midnight Commander« installiert ist, wird ein »Im Midnight Commander öffnen«-Menüeintrag im Kontextmenü angezeigt.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Legt fest, ob das Öffnen eines Terminals auf der Arbeitsfläche ein Terminal im persönlichen Ordner öffnet">
+						<longdesc>Falls dieser Schlüssel wahr ist, führt das Öffnen eines Terminals auf der Arbeitsfläche dazu, dass ein Terminal im persönlichen Ordner geöffnet wird. Andernfalls wird es im Arbeitsflächen-Ordner öffnet. Hinweis: Dieser Schlüssel wird ignoriert, falls der Arbeitsflächenordner mit dem persönlichen Ordner übereinstimmt.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

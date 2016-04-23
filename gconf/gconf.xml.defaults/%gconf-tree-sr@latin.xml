@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Da li da prikaže stavku menija Ponoćnog komandera">
+						<longdesc>Ukoliko je izabrana ova opcija i prisutan „Ponoćni komander“, u priloženom meniju će se pojaviti opcija „Otvori u Ponoćnom komanderu“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Da li pokretanje terminala sa radne površi otvara ličnu fasciklu">
+						<longdesc>Ukoliko je izabrano, otvaranje terminala sa radne površi će otvoriti lični direktorijum. U suprotnom, terminal će biti pokrenut sa radnom putanjom do radne površi. Ukoliko je radna površ ujedno i lična fascikla, ova opcija je nebitna.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

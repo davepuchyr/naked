@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Показывать ли меню &quot;Открыть в Midnight Commander&quot;">
+						<longdesc>Если этот ключ выбран и установлен терминальный файловый менеджер &quot;Midnight Commander&quot;, то &quot;Открыть в _Midnight Commander&quot; будет отображаться в контекстном меню</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Открывать ли терминал в домашнем каталоге при выборе меню &quot;Открыть в Терминале&quot; на Рабочем столе">
+						<longdesc>Если выбран этот ключ,то открытие терминала на Рабочем столе откроет терминал в домашнем каталоге. Иначе, он будет открыт к каталоге Рабочего стола. Обратите внимание на то, что если домашний каталог является каталогом Рабочего стола, то этот ключ является бессмысленным.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

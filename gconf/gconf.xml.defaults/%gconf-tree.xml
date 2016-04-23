@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="desktop">
+		<dir name="ibus">
+			<dir name="engine">
+				<dir name="Chewing">
+					<entry name="spaceAsSelection" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/spaceAsSelection"/>
+					<entry name="phraseChoiceRearward" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/phraseChoiceRearward"/>
+					<entry name="candPerPage" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/candPerPage"/>
+					<entry name="plainZhuyin" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/plainZhuyin"/>
+					<entry name="numpadAlwaysNumber" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/numpadAlwaysNumber"/>
+					<entry name="syncCapsLock" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/syncCapsLock"/>
+					<entry name="forceLowercaseEnglish" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/forceLowercaseEnglish"/>
+					<entry name="maxChiSymbolLen" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/maxChiSymbolLen"/>
+					<entry name="escCleanAllBuf" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/escCleanAllBuf"/>
+					<entry name="easySymbolInput" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/easySymbolInput"/>
+					<entry name="addPhraseDirection" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/addPhraseDirection"/>
+					<entry name="autoShiftCur" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/autoShiftCur"/>
+					<entry name="hsuSelKeyType" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/hsuSelKeyType"/>
+					<entry name="selKeys" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/selKeys"/>
+					<entry name="KBType" mtime="1461418636" schema="/schemas/desktop/ibus/engine/Chewing/KBType"/>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="nautilus-open-terminal">
+			<entry name="display_mc_item" mtime="1461418586" schema="/schemas/apps/nautilus-open-terminal/display_mc_item"/>
+			<entry name="desktop_opens_home_dir" mtime="1461418586" schema="/schemas/apps/nautilus-open-terminal/desktop_opens_home_dir"/>
+		</dir>
+	</dir>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="ibus">
+				<dir name="engine">
+					<dir name="Chewing">
+						<entry name="spaceAsSelection" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Space to select">
+								<default type="bool" value="false"/>
+								<longdesc>
+                    Press Space to select the candidate.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="phraseChoiceRearward" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Choose phrases from backward">
+								<default type="bool" value="true"/>
+								<longdesc>
+                    Choose phrases from the back, without moving cursor.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="candPerPage" mtime="1461418636" type="schema" stype="int" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Candidate per page">
+								<default type="int" value="10"/>
+								<longdesc>
+                    Number of candidate per page.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="plainZhuyin" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Plain Zhuyin mode">
+								<default type="bool" value="false"/>
+								<longdesc>
+                    In plain Zhuyin mode, automatic candidate selection and related options are disabled or ignored.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="numpadAlwaysNumber" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Number pad always input number">
+								<default type="bool" value="true"/>
+								<longdesc>
+                    Always input numbers when number keys from key pad is inputted.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="syncCapsLock" mtime="1461418636" type="schema" stype="string" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Sync between CapsLock and IM">
+								<default type="string">
+									<stringvalue>disable</stringvalue>
+								</default>
+								<longdesc>
+                    Occasionally, the CapsLock status does not match the IM, this option determines how these status be synchronized. Valid values:
+                    &quot;disable&quot;: Do nothing.
+                    &quot;keyboard&quot;: IM status follows keyboard status.
+                    &quot;IM&quot;: Keyboard status follows IM status.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="forceLowercaseEnglish" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Force lowercase in En mode">
+								<default type="bool" value="false"/>
+								<longdesc>
+                    Ignore CapsLock status and input lowercase by default.
+                    It is handy if you wish to enter lowercase by default. Uppercase can still be inputted with Shift.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="maxChiSymbolLen" mtime="1461418636" type="schema" stype="int" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Maximum Chinese characters">
+								<default type="int" value="20"/>
+								<longdesc>
+                    Maximum Chinese characters in pre-edit buffer, including inputing Zhuyin symbols
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="escCleanAllBuf" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Esc clean all buffer">
+								<default type="bool" value="false"/>
+								<longdesc>
+                    Escape key cleans the text in pre-edit-buffer.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="easySymbolInput" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Easy symbol input">
+								<default type="bool" value="true"/>
+								<longdesc>
+                    Easy symbol input.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="addPhraseDirection" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Add phrases in front">
+								<default type="bool" value="true"/>
+								<longdesc>
+                    Add phrases in the front.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="autoShiftCur" mtime="1461418636" type="schema" stype="bool" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Auto move cursor">
+								<default type="bool" value="true"/>
+								<longdesc>
+                    Automatically move cursor to next character.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="hsuSelKeyType" mtime="1461418636" type="schema" stype="int" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Hsu&apos;s selection key">
+								<default type="int" value="1"/>
+								<longdesc>
+                    Hsu&apos;s keyboard selection keys, 1 for asdfjkl789, 2 for asdfzxcv89 .
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="selKeys" mtime="1461418636" type="schema" stype="string" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Selection keys">
+								<default type="string">
+									<stringvalue>1234567890</stringvalue>
+								</default>
+								<longdesc>
+                    Keys used to select candidate. For example &quot;asdfghjkl;&quot;, press &apos;a&apos; to select the 1st candidate, &apos;s&apos; for 2nd, and so on.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="KBType" mtime="1461418636" type="schema" stype="string" owner="ibus-chewing">
+							<local_schema locale="C" short_desc="Keyboard Type">
+								<default type="string">
+									<stringvalue>default</stringvalue>
+								</default>
+								<longdesc>
+                    Select Zhuyin keyboard layout.
+                </longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item" mtime="1461418586" type="schema" stype="bool" owner="nautilus-open-terminal">
+					<local_schema locale="C" short_desc="Whether a Midnight Commander menu item should be displayed">
+						<default type="bool" value="true"/>
+						<longdesc>
+          If set to true, and if the terminal file manager &quot;Midnight Commander&quot; is installed,
+	  then an &quot;Open in Midnight Commander&quot; menu item will be displayed in the context menu.
+         </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir" mtime="1461418586" type="schema" stype="bool" owner="nautilus-open-terminal">
+					<local_schema locale="C" short_desc="Whether opening a terminal on the desktop opens a terminal in the home directory">
+						<default type="bool" value="false"/>
+						<longdesc>
+          If set to true, then opening a terminal on the desktop will open a terminal in
+	  the home directory. Otherwise, it will be opened in the desktop directory.
+	  Note that this key is irrelevant if the desktop directory is identical to the home directory.
+         </longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="gstreamer">
+				<dir name="0.10">
+					<dir name="default">
+						<entry name="visualization" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="default GStreamer visualization plugin">
+								<default type="string">
+									<stringvalue>autoaudiosink</stringvalue>
+								</default>
+								<longdesc>GStreamer can put visualization plugins in a pipeline to transform audio stream in video frames. Default is goom but more visualization plugins will be ported soon. The visualization plugin can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="videosrc" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="default GStreamer video source">
+								<default type="string">
+									<stringvalue>v4l2src</stringvalue>
+								</default>
+								<longdesc>GStreamer can record video from any number of input elements.  Some possible choices are v4lsrc and videotestsrc. The video source can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="audiosrc_description" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="description for default GStreamer audiosrc">
+								<default type="string">
+									<stringvalue>Default</stringvalue>
+								</default>
+								<longdesc>Describes the selected input element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="audiosrc" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="default GStreamer audio source">
+								<default type="string">
+									<stringvalue>alsasrc</stringvalue>
+								</default>
+								<longdesc>GStreamer can record audio using any number of input elements.  Some possible choices are osssrc, esdsrc and alsasrc.  The audio source can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="videosink" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="default GStreamer videosink">
+								<default type="string">
+									<stringvalue>autovideosink</stringvalue>
+								</default>
+								<longdesc>GStreamer can play video using any number of output elements.  Some possible choices are xvimagesink, ximagesink, sdlvideosink and aasink.  The videosink can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="chataudiosink_description" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="description for GStreamer audiosink for Audio/Video Conferencing">
+								<default type="string">
+									<stringvalue>Default</stringvalue>
+								</default>
+								<longdesc>Describes the selected output element for Audio/Video Conferencing.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="chataudiosink" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="GStreamer audiosink for Audio/Video Conferencing">
+								<default type="string">
+									<stringvalue>autoaudiosink</stringvalue>
+								</default>
+								<longdesc>GStreamer can play audio using any number of output elements.  Some possible choices are osssink, esdsink and alsasink.  The audiosink can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="musicaudiosink_description" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="description for GStreamer audiosink for Music and Movies">
+								<default type="string">
+									<stringvalue>Default</stringvalue>
+								</default>
+								<longdesc>Describes the selected output element for Music and Movies.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="musicaudiosink" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="GStreamer audiosink for Music and Movies">
+								<default type="string">
+									<stringvalue>autoaudiosink</stringvalue>
+								</default>
+								<longdesc>GStreamer can play audio using any number of output elements.  Some possible choices are osssink, esdsink and alsasink.  The audiosink can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="audiosink_description" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="description for default GStreamer audiosink">
+								<default type="string">
+									<stringvalue>Default</stringvalue>
+								</default>
+								<longdesc>Describes the selected output element.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="audiosink" mtime="1461418434" type="schema" stype="string" owner="gstreamer">
+							<local_schema locale="C" short_desc="default GStreamer audiosink">
+								<default type="string">
+									<stringvalue>autoaudiosink</stringvalue>
+								</default>
+								<longdesc>GStreamer can play audio using any number of output elements.  Some possible choices are osssink, esdsink and alsasink.  The audiosink can be a partial pipeline instead of just one element.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="system">
+		<dir name="gstreamer">
+			<dir name="0.10">
+				<dir name="default">
+					<entry name="visualization" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/visualization"/>
+					<entry name="videosrc" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/videosrc"/>
+					<entry name="audiosrc_description" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/audiosrc_description"/>
+					<entry name="audiosrc" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/audiosrc"/>
+					<entry name="videosink" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/videosink"/>
+					<entry name="chataudiosink_description" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/chataudiosink_description"/>
+					<entry name="chataudiosink" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/chataudiosink"/>
+					<entry name="musicaudiosink_description" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/musicaudiosink_description"/>
+					<entry name="musicaudiosink" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/musicaudiosink"/>
+					<entry name="audiosink_description" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/audiosink_description"/>
+					<entry name="audiosink" mtime="1461418434" schema="/schemas/system/gstreamer/0.10/default/audiosink"/>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

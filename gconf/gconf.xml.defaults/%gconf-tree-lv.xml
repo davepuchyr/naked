@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Vai izvēlnē rādīt Midnight Commander komandu ">
+						<longdesc>Ja ir iestatīts “patiess”, un, ja termināļa datņu pārvaldnieks “Midnight Commander” ir uzinstalēts, tad konteksta izvēlnē tiks attēlota komanda “Atvērt ar Midnight Commander”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Vai termināļa atvēršana uz darbvirsmas atver termināli mājas mapē">
+						<longdesc>Ja ir iestatīts “patiess”, tad, atverot termināli uz darbvirsmas, tiks atvērts terminālis mājas mapē. Citādi, tas tiks atvērts darbvirsmas mapē. Ņemiet vērā, ka šī atslēga ir nesvarīga, ja darbvirsmas mape ir identiska mājas mapei.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

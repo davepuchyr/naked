@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander मेन्यू घटक दर्शवायला हवे का">
+						<longdesc>true निश्चित केल्यास, व टर्मिनल फाइल व्यवस्थापक &quot;Midnight Commander&quot; प्रतिष्ठापीत असल्यास, &quot;Open in Midnight Commander&quot; मेन्यू घटक संदर्भ मेन्यू अंतर्गत दर्शविले जाईल.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="डेस्कटॉपवर टर्मिनल उघडल्यास मुख्य डिरेक्ट्री अंतर्गत टर्मिनल उघडले जाते का">
+						<longdesc>true निश्चित केल्यास, व डेस्कटॉपवर टर्मिनल उघडल्यावर मुख्य डिरेक्ट्री अंतर्गत टर्मिनल उघडेल. नाहीतर, डेस्कटॉप डिरेक्ट्री अंतर्गत उघडले जाईल. लक्षात ठेवा डेस्कटॉप डिरेक्ट्री मुख्य डिरेक्ट्री नुरूप असल्यास ही कि अनुपयोगी ठरते.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

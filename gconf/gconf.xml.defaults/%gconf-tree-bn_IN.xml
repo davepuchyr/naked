@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="nautilus-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander-র জন্য মেনুর মধ্যে এনট্রি প্রদর্শিত হবে কি না">
+						<longdesc>মান true (সত্য) হলে, ও &quot;Midnight Commander&quot; নামক টার্মিন্যাল ফাইল পরিচালন ব্যবস্থা ইনস্টল করা থাকলে, প্রাসঙ্গিক মেনুর মধ্যে &quot;Midnight Commander-র মধ্যে খুলুন&quot; শীর্ষক একটি মেনুর এনট্রি প্রদর্শিত হবে।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="ডেস্কটপের মধ্যে টার্মিন্যাল খোলার ফলে ব্যক্তিগত ডিরেক্টরি প্রদর্শন করে টার্মিন্যাল আরম্ভ করা হবে কি না">
+						<longdesc>মান true (সত্য) হলে, ডেস্কটপের মধ্যে টার্মিন্যাল খোলা হলে, ব্যক্তিগত ডিরেক্টরি প্রদর্শন করে টার্মিন্যাল আরম্ভ করা হবে। অন্যথা, টার্মিন্যালটি ডেস্কটপ প্রদর্শন করে খোলা হবে। উল্লেখ্য, ডেস্কটপ ও ব্যক্তিগত ডিরেক্টরিটি একই হলে এই কি-র ব্যবহার অমূলক।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

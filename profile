@@ -83,11 +83,11 @@ export BROWSER=google-chrome
 #export PATH=$PATH:/opt/crosstool-ng/bin:/opt/gradle/bin:/opt/android-sdks/platform-tools:/opt/android-sdks/tools:/opt/activator
 
 # dmjp: http://www.r-tutor.com/gpu-computing/cuda-installation/cuda7.5-fc21
-#export CUDA_HOME=/usr/local/cuda-7.5
-#export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+export CUDA_HOME=/usr/local/cuda-7.5
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
 
-#PATH=${CUDA_HOME}/bin:${PATH}
-#export PATH
+PATH=${CUDA_HOME}/bin:${PATH}
+export PATH
 
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\[$(tput bold)\]\[$(tput setaf 4)\][\[$(tput setaf 5)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 5)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 4)\]]\\$ \[$(tput sgr0)\]"

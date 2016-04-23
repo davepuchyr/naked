@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone target="ACCEPT">
+  <short>Trusted</short>
+  <description>All network connections are accepted.</description>
+  <source address="192.168.0.0/24"/>
+  <service name="samba"/>
+  <service name="http"/>
+  <service name="vnc-server"/>
+  <service name="telnet"/>
+  <service name="nfs"/>
+  <service name="https"/>
+  <service name="mysql"/>
+  <service name="imaps"/>
+  <service name="samba-client"/>
+  <port protocol="tcp" port="5901"/>
+</zone>

@@ -1,0 +1,13 @@
+*.pem
+*cert
+*crt
+*key
+*shadow*
+ld.so.cache
+named.conf.pre*
+pki
+**/*.save
+mail/sendmail.cf.bak
+mail/client-info*
+ntp.conf
+

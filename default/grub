@@ -6,3 +6,4 @@ GRUB_TERMINAL_OUTPUT="console"
 # dmjp GRUB_CMDLINE_LINUX="crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet"
 GRUB_CMDLINE_LINUX="crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap"
 GRUB_DISABLE_RECOVERY="true"
+GRUB_GFXPAYLOAD_LINUX=text

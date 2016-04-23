@@ -70,3 +70,4 @@ stapsys:x:157:
 stapdev:x:158:
 admin:x:1000:admin
 dave:x:500:
+mysql:x:27:

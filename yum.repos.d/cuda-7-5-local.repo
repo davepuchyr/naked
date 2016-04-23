@@ -1,0 +1,6 @@
+[cuda-7-5-local]
+name=cuda-7-5-local
+baseurl=file:///var/cuda-repo-7-5-local
+enabled=1
+gpgcheck=1
+gpgkey=file:///var/cuda-repo-7-5-local/GPGKEY

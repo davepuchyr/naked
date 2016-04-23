@@ -1437,3 +1437,4 @@
 1461443348 redhat-lsb 4.1 27.el7.centos.1 x86_64
 1461443348 redhat-lsb-desktop 4.1 27.el7.centos.1 x86_64
 1461443355 google-chrome-stable 50.0.2661.86 1 x86_64
+1461443983 cuda-repo-rhel7-7-5-local 7.5 18 x86_64

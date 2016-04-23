@@ -8,7 +8,7 @@ disk:x:6:
 lp:x:7:
 mem:x:8:
 kmem:x:9:
-wheel:x:10:admin
+wheel:x:10:admin,dave
 cdrom:x:11:
 mail:x:12:postfix
 man:x:15:
@@ -69,3 +69,4 @@ stapusr:x:156:
 stapsys:x:157:
 stapdev:x:158:
 admin:x:1000:admin
+dave:x:500:

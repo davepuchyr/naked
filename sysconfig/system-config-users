@@ -1,7 +1,7 @@
 # Configuration file for system-config-users
 
 # Filter out system users
-FILTER=true
+FILTER=false
 # Automatically assign highest UID for new users
 ASSIGN_HIGHEST_UID=true
 # Automatically assign highest GID for new groups

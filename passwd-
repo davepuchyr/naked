@@ -42,3 +42,4 @@ avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
 postfix:x:89:89::/var/spool/postfix:/sbin/nologin
 tcpdump:x:72:72::/:/sbin/nologin
 admin:x:1000:1000:admin:/home/admin:/bin/bash
+dave:x:500:500:Dave Puchyr:/home/dave:/bin/bash

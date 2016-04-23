@@ -38,7 +38,7 @@ Type=forking
 # Clean any existing files in /tmp/.X11-unix environment
 ExecStartPre=/bin/sh -c '/usr/bin/vncserver -kill %i > /dev/null 2>&1 || :'
 # dmjp http://www.linuxtechi.com/install-configure-vnc-server-centos-7-rhel-7/
-ExecStart=/usr/sbin/runuser -l dave -c "/usr/bin/vncserver %i -geometry 1790x990"
+ExecStart=/usr/sbin/runuser -l dave -c "/usr/bin/vncserver %i -geometry 1844x1055"
 PIDFile=/home/dave/.vnc/%H%i.pid
 ExecStop=/bin/sh -c '/usr/bin/vncserver -kill %i > /dev/null 2>&1 || :'
 

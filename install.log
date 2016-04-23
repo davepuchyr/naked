@@ -1308,3 +1308,10 @@
 1461438927 boost-devel 1.60.0 4.el7.centos x86_64
 1461438929 boost-static 1.60.0 4.el7.centos x86_64
 1461438945 boost-debuginfo 1.60.0 4.el7.centos x86_64
+1461439027 percona-release 0.1 3 noarch
+1461439079 gpg-pubkey cd2efd2a 4b26dda1 (none)
+1461439093 Percona-Server-shared-57 5.7.11 4.1.el7 x86_64
+1461439093 Percona-Server-shared-compat-57 5.7.11 4.1.el7 x86_64
+1461439095 Percona-Server-client-57 5.7.11 4.1.el7 x86_64
+1461439101 Percona-Server-server-57 5.7.11 4.1.el7 x86_64
+1461439102 Percona-Server-devel-57 5.7.11 4.1.el7 x86_64

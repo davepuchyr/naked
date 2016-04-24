@@ -12,5 +12,6 @@
   <service name="mysql"/>
   <service name="imaps"/>
   <service name="samba-client"/>
+  <port protocol="tcp" port="19150"/>
   <port protocol="tcp" port="5901"/>
 </zone>

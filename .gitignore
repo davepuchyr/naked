@@ -8,6 +8,7 @@ ld.so.cache
 named.conf.pre*
 pki
 **/*.save
+cups/subscriptions.conf*
 mail/sendmail.cf.bak
 mail/client-info*
 ntp.conf

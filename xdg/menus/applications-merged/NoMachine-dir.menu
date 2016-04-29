@@ -1,0 +1,19 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+    "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<!-- Do not edit manually - generated and managed by xdg-desktop-menu -->
+<Menu>
+    <Name>Applications</Name>
+<Menu>
+      <Name>Internet</Name>
+      <Menu>
+      <Name>NoMachine-dir</Name>
+    <Directory>NoMachine-dir.directory</Directory>
+    <Include>
+        <Filename>NoMachine-base.desktop</Filename>
+        <Filename>NoMachine-base-unity.desktop</Filename>
+        <Filename>NoMachine-status.desktop</Filename>
+        <Filename>NoMachine-status-unity.desktop</Filename>
+    </Include>
+</Menu>
+</Menu>
+</Menu>

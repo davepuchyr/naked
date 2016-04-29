@@ -1,0 +1,108 @@
+#!/bin/bash
+######################################################################
+#                                                                    #
+#  Copyright (c) 2001, 2016 NoMachine, http://www.nomachine.com.     #
+#                                                                    #
+#  All rights reserved.                                              #
+#                                                                    #
+######################################################################
+
+RunDir=${0%nxnode}
+EtcDir=$(cd "$RunDir" && pwd)
+
+if [ -x  /usr/bin/nawk ]
+then
+  COMMAND_AWK="/usr/bin/nawk"
+elif [ -x /usr/xpg4/bin/awk ]
+then
+  COMMAND_AWK="/usr/xpg4/bin/awk"
+elif [ -x /usr/bin/awk ]
+then
+  COMMAND_AWK="/usr/bin/awk"
+else
+  COMMAND_AWK="awk"
+fi
+
+if [ -e "/usr/xpg4/bin/id" ];
+then
+  COMMAND_ID="/usr/xpg4/bin/id"
+elif [ -e "/bin/id" ];
+then
+  COMMAND_ID="/bin/id"
+elif [ -e "/usr/bin/id" ];
+then
+  COMMAND_ID="/usr/bin/id"
+else
+  echo "ERROR: id command not found"
+  exit 1
+fi
+
+if [ -x "/bin/head" ];
+then
+  COMMAND_HEAD="/bin/head"
+elif [ -x "/usr/bin/head" ];
+then
+  COMMAND_HEAD="/usr/bin/head"
+else
+  COMMAND_HEAD="head"
+fi
+
+ROOTDIR=`$COMMAND_AWK -F'"' '/^NodeRoot/ {print $2}' ${EtcDir}/server/localhost/node.cfg`
+
+if [ "x$ROOTDIR" = "x" ];
+then
+  echo "Cannot find NodeRoot in ${EtcDir}/server/localhost/node.cfg configuration file"
+  exit 
+fi
+
+USERID=`$COMMAND_ID -ru`
+if test $? != 0;
+then
+  echo "Error: Cannot check user id."
+  exit 1;
+fi
+
+if test "x$USERID" = "x";
+then
+  echo "Error: Cannot check user id."
+  exit 1;
+fi
+
+USERNAME=`$COMMAND_ID -run`
+if test -f "${ROOTDIR}/etc/${USERNAME}.node.cfg";
+then
+  CONFIG_FILE="${ROOTDIR}/etc/${USERNAME}.node.cfg"
+else
+  CONFIG_FILE="${ROOTDIR}/etc/node.cfg"
+fi
+
+ENABLED_DEBUG=`$COMMAND_AWK -F "EnableDebug " '/^ *EnableDebug/ {gsub (/\"/,"",$2); gsub (/^ */,"",$2); print $2}' "${CONFIG_FILE}" | $COMMAND_HEAD -n 1`
+
+if test -z $ENABLED_DEBUG;
+then
+  ENABLED_DEBUG=0
+elif test $ENABLED_DEBUG != 0;
+then
+  ENABLED_DEBUG=1
+
+  COMMAND_DEBUG=`$COMMAND_AWK -F "CommandDebug " '/^ *CommandDebug/ {gsub (/\"/,"",$2); gsub (/^ */,"",$2); print $2}' "${CONFIG_FILE}" | $COMMAND_HEAD -n 1`
+  if test -z $COMMAND_DEBUG;
+  then
+    ENABLED_DEBUG=0
+  else
+    PARAMS_DEBUG=`$COMMAND_AWK -F "DebugOptions " '/^ *DebugOptions/ {gsub (/\"/,"",$2); print $2}' "${CONFIG_FILE}" | $COMMAND_HEAD -n 1`
+  fi
+fi
+
+export LD_LIBRARY_PATH="$ROOTDIR/lib:$ROOTDIR/lib/perl:$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxnode:$ROOTDIR/lib/perl/libperl"
+export PATH="$ROOTDIR/lib:$ROOTDIR/lib/perl:$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxnode:$PATH"
+export PERL5LIB="$ROOTDIR/lib:$ROOTDIR/lib/perl:$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxnode:$ROOTDIR/lib/perl/libperl"
+export PERL5INCLUDE="$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxnode:$ROOTDIR/lib/perl/libperl"
+export NX_SYSTEM="$ROOTDIR"
+
+if test $ENABLED_DEBUG = 0;
+then
+  exec "$ROOTDIR/bin/nxnode.bin" "$@"
+else
+  exec $COMMAND_DEBUG ${PARAMS_DEBUG} "$ROOTDIR/bin/nxnode.bin" "$@"
+fi

@@ -71,3 +71,4 @@ stapdev:x:158:
 admin:x:1000:admin
 dave:x:500:
 mysql:x:27:
+gkrellmd:x:499:

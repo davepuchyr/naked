@@ -1,0 +1,4 @@
+# This is a default PAM configuration for NoMachine.
+# Used to obtain nx user and nxhtd user limits.
+
+session   optional pam_limits.so

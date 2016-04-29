@@ -1,0 +1,123 @@
+#!/bin/bash
+######################################################################
+#                                                                    #
+#  Copyright (c) 2001, 2016 NoMachine, http://www.nomachine.com.     #
+#                                                                    #
+#  All rights reserved.                                              #
+#                                                                    #
+######################################################################
+
+RunDir=${0%nxserver}
+EtcDir=$(cd "$RunDir" && pwd)
+
+if [ -x  /usr/bin/nawk ]
+then
+  COMMAND_AWK="/usr/bin/nawk"
+elif [ -x /usr/xpg4/bin/awk ]
+then
+  COMMAND_AWK="/usr/xpg4/bin/awk"
+elif [ -x /usr/bin/awk ]
+then
+  COMMAND_AWK="/usr/bin/awk"
+elif [ -x /bin/awk ]
+then
+  COMMAND_AWK="/bin/awk"
+else
+  COMMAND_AWK="awk"
+fi
+
+if [ -e "/usr/xpg4/bin/id" ];
+then
+  COMMAND_ID="/usr/xpg4/bin/id"
+elif [ -e "/bin/id" ];
+then
+  COMMAND_ID="/bin/id"
+elif [ -e "/usr/bin/id" ];
+then
+  COMMAND_ID="/usr/bin/id"
+else
+  echo "ERROR: id command not found"
+  exit 1
+fi
+
+ROOTDIR=`$COMMAND_AWK -F'"' '/^ServerRoot/ {print $2}' ${EtcDir}/server/localhost/server.cfg`
+
+
+if [ "x$ROOTDIR" = "x" ];
+then
+  echo "Cannot found ServerRoot in ${EtcDir}/server/localhost/server.cfg configuration file";
+  exit
+fi
+
+USERID=`$COMMAND_ID -ru`
+if test $? != 0;
+then
+  echo "Error: Cannot check user id."
+  exit 1;
+fi
+
+if test "x$USERID" = "x";
+then
+  echo "Error: Cannot check user id."
+  exit 1;
+fi
+
+if test "$1" = "--login" || test "$2" = "/etc/NX/nxserver --login"; then
+
+  if test "x$SSH_CONNECTION" != "x"; then
+
+    NX_SSH_STATUS_FILE="$ROOTDIR/etc/sshstatus"
+
+    if test -f "$NX_SSH_STATUS_FILE"; then
+
+      cat "$NX_SSH_STATUS_FILE"
+
+      exit 1
+    fi
+  fi
+fi
+
+if test $USERID != 0;
+then
+  id_nx=`$COMMAND_ID -u nx 2>/dev/null`
+
+  if test "x$id_nx" = "x";
+  then
+    echo "Error: User nx not found."
+    exit 1;
+  fi
+
+  if test $id_nx -ne $USERID; then
+    if test "$1" = "noloop"; then
+      echo "Error: Exit for avoid infinity loop."
+      exit 1;
+    elif test "$1" = "--login"; then
+      exec "$ROOTDIR/bin/nxexec" /etc/NX/nxserver noloop
+    elif test "$1" = "--status"; then
+      exec "$ROOTDIR/bin/nxexec" /etc/NX/nxserver noloop status
+    elif test "$1" = "--upnpstatus"; then
+      exec "$ROOTDIR/bin/nxexec" /etc/NX/nxserver noloop upnpstatus
+    elif test "$1" = "--startsession"; then
+      exec "$ROOTDIR/bin/nxexec" /etc/NX/nxserver noloop --startsession --display=${DISPLAY} $@
+    fi
+
+  fi
+
+elif test "$1" = "--login"; then
+  exec "$ROOTDIR/bin/nxexec" /etc/NX/nxserver noloop
+fi
+
+if test "x$PATH" = "x";
+then
+  export PATH="/bin:/usr/bin"
+fi
+
+export LD_LIBRARY_PATH="$ROOTDIR/lib:$ROOTDIR/lib/perl:$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxserver:$ROOTDIR/lib/perl/libperl"
+export PATH="$ROOTDIR/lib:$ROOTDIR/lib/perl:$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxserver:$PATH"
+export PERL5LIB="$ROOTDIR/lib:$ROOTDIR/lib/perl:$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxserver:$ROOTDIR/lib/perl/libperl"
+export PERL5INCLUDE="$ROOTDIR/lib/perl/include:$ROOTDIR/lib/perl/nxserver:$ROOTDIR/lib/perl/libperl"
+export NX_SYSTEM="$ROOTDIR"
+
+exec "$ROOTDIR/bin/nxserver.bin" "$@"
+
+

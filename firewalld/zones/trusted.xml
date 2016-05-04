@@ -16,4 +16,5 @@
   <port protocol="tcp" port="4001"/>
   <port protocol="tcp" port="7496"/>
   <port protocol="tcp" port="5901"/>
+  <port protocol="tcp" port="3129"/>
 </zone>

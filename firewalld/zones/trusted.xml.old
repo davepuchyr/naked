@@ -13,5 +13,7 @@
   <service name="imaps"/>
   <service name="samba-client"/>
   <port protocol="tcp" port="19150"/>
+  <port protocol="tcp" port="4001"/>
+  <port protocol="tcp" port="7496"/>
   <port protocol="tcp" port="5901"/>
 </zone>

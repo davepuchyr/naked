@@ -3,6 +3,7 @@
   <short>Trusted</short>
   <description>All network connections are accepted.</description>
   <source address="192.168.0.0/24"/>
+  <source address="192.188.183.71"/>
   <service name="samba"/>
   <service name="http"/>
   <service name="vnc-server"/>
@@ -16,4 +17,5 @@
   <port protocol="tcp" port="4001"/>
   <port protocol="tcp" port="7496"/>
   <port protocol="tcp" port="5901"/>
+  <port protocol="tcp" port="3129"/>
 </zone>

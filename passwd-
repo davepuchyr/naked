@@ -47,5 +47,5 @@ mysql:x:27:27:Percona Server:/var/lib/mysql:/bin/false
 gkrellmd:x:499:499:GNU Krell daemon:/:/sbin/nologin
 nx:x:498:1001::/var/NX/nx:/etc/NX/nxserver
 polipo:x:497:498:Polipo Web Proxy:/var/cache/polipo:/sbin/nologin
-saco:x:1002:1002:Saco:/home/saco:/bin/bash
+saco:x:1002:1002:Meatball:/home/saco:/bin/bash
 apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin

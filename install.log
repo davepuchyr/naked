@@ -1630,3 +1630,6 @@
 1463762787 libgpod 0.8.3 7.el7 x86_64
 1463762796 firefox 45.1.1 1el7.centos x86_64
 1463762800 libndp 1.2 6.el7_2 x86_64
+1463762860 perl-Cache-Memcached 1.30 8.el7 noarch
+1463762860 perl-String-CRC32 1.4 19.el7 x86_64
+1463762861 memcached 1.4.15 9.el7 x86_64

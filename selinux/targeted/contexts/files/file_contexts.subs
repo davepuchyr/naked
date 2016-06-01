@@ -1,2 +1,3 @@
-/var/lib/mysql-keyring /var/lib/mysql
 /var/lib/mysql-files /var/lib/mysql
+/opt/rh/devtoolset-3/root /
+/var/lib/mysql-keyring /var/lib/mysql

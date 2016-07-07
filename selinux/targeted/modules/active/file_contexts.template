@@ -174,8 +174,6 @@
 /dev/xvd[^/]*	-b	system_u:object_r:fixed_disk_device_t:s0
 /dev/ip2[^/]*	-c	system_u:object_r:tty_device_t:s0
 /dev/i2c[^/]*	-c	system_u:object_r:tty_device_t:s0
-/var/NX/[^/]*	-d	unconfined_u:object_r:user_home_dir_t:s0
-/var/NX/[^/]*	-l	unconfined_u:object_r:user_home_dir_t:s0
 /var/lib(/.*)?	system_u:object_r:var_lib_t:s0
 /usr/etc(/.*)?	system_u:object_r:etc_t:s0
 /sandbox(/.*)?	system_u:object_r:tmp_t:s0
@@ -302,7 +300,6 @@ HOME_DIR/.+	system_u:object_r:user_home_t:s0
 /var/run/*.xl2tpd.*	--	system_u:object_r:l2tpd_var_run_t:s0
 /usr/bin/(f)?crontab	--	system_u:object_r:crontab_exec_t:s0
 /var/run/.*l2tpd\.pid	--	system_u:object_r:l2tpd_var_run_t:s0
-/etc/init.d/nxserver	--	system_u:object_r:nx_exec_t:s0
 /etc/cron.daily(/.*)?	system_u:object_r:bin_t:s0
 /usr/bin/.*_lsmplugin	--	system_u:object_r:lsmd_plugin_exec_t:s0
 /etc/cron.weekly(/.*)?	system_u:object_r:bin_t:s0
@@ -454,7 +451,6 @@ HOME_DIR/a?quota\.(user|group)	--	system_u:object_r:quota_db_t:s0
 /etc/cron\.((daily)|(weekly)|(monthly))/freeradius	--	system_u:object_r:radiusd_exec_t:s0
 /etc/drupal.*	system_u:object_r:httpd_sys_rw_content_t:s0
 /etc/bacula.*	system_u:object_r:bacula_etc_t:s0
-/var/NX/nx/.*	unconfined_u:object_r:user_home_t:s0
 /dev/mpu401.*	-c	system_u:object_r:sound_device_t:s0
 /dev/hidraw.*	-c	system_u:object_r:usb_device_t:s0
 /dev/hiddev.*	-c	system_u:object_r:usb_device_t:s0
@@ -513,6 +509,7 @@ HOME_DIR/a?quota\.(user|group)	--	system_u:object_r:quota_db_t:s0
 /dev/\.mount(/.*)?	system_u:object_r:mount_var_run_t:s0
 /etc/nagios(/.*)?	system_u:object_r:nagios_etc_t:s0
 /etc/icinga(/.*)?	system_u:object_r:nagios_etc_t:s0
+/opt/NX/var(/.*)?	system_u:object_r:nx_server_var_run_t:s0
 /etc/pki-ra(/.*)?	system_u:object_r:pki_ra_etc_rw_t:s0
 /etc/pki-ca(/.*)?	system_u:object_r:pki_tomcat_etc_rw_t:s0
 /etc/polipo(/.*)?	system_u:object_r:polipo_etc_t:s0
@@ -555,7 +552,6 @@ HOME_ROOT/a?quota\.(user|group)	--	system_u:object_r:quota_db_t:s0
 /usr/matlab.*/sys/os/glnx86/libtermcap\.so	--	system_u:object_r:textrel_shlib_t:s0
 /usr/share/.*/gems/.*/helper-scripts/prespawn	--	system_u:object_r:passenger_exec_t:s0
 /usr/matlab.*/bin/glnx86/(libmw(lapack|mathutil|services)|lapack|libmkl)\.so	--	system_u:object_r:textrel_shlib_t:s0
-/usr/NX/lib/*	--	unconfined_u:object_r:textrel_shlib_t:s0
 /lost\+found/.*	<<none>>
 /var/log/bip.*	system_u:object_r:bitlbee_log_t:s0
 /root/\.local.*	system_u:object_r:gconf_home_t:s0
@@ -650,6 +646,8 @@ HOME_DIR/\.nv(/.*)?	system_u:object_r:cache_home_t:s0
 /var/lib/nsd(/.*)?	system_u:object_r:nsd_zone_t:s0
 /var/lib/ntp(/.*)?	system_u:object_r:ntp_drift_t:s0
 /var/run/nut(/.*)?	system_u:object_r:nut_var_run_t:s0
+/opt/NX/home(/.*)?	system_u:object_r:nx_server_var_lib_t:s0
+/usr/NX/home(/.*)?	system_u:object_r:nx_server_var_lib_t:s0
 /etc/openvpn(/.*)?	system_u:object_r:openvpn_etc_t:s0
 /var/lib/pcp(/.*)?	system_u:object_r:pcp_var_lib_t:s0
 /var/log/pcp(/.*)?	system_u:object_r:pcp_log_t:s0
@@ -949,7 +947,6 @@ HOME_DIR/\.pki(/.*)?	system_u:object_r:home_cert_t:s0
 /var/log/mongo.*	system_u:object_r:mongod_log_t:s0
 /var/run/mongo.*	system_u:object_r:mongod_var_run_t:s0
 /var/log/munin.*	system_u:object_r:munin_log_t:s0
-/var/NX/nxhtd/.*	unconfined_u:object_r:user_home_t:s0
 /var/run/fence.*	system_u:object_r:fenced_var_run_t:s0
 /var/log/rsync.*	system_u:object_r:rsync_log_t:s0
 /var/run/squid.*	system_u:object_r:squid_var_run_t:s0
@@ -1390,7 +1387,6 @@ HOME_DIR/\.gconf(d)?(/.*)?	system_u:object_r:gconf_home_t:s0
 /var/run/dmevent.*	system_u:object_r:lvm_var_run_t:s0
 /var/log/mailman.*	system_u:object_r:mailman_log_t:s0
 /var/run/mailman.*	system_u:object_r:mailman_var_run_t:s0
-/usr/NX/var/log/.*	system_u:object_r:var_log_t:s0
 /var/log/openvpn.*	system_u:object_r:openvpn_var_log_t:s0
 /var/lib/postfix.*	system_u:object_r:postfix_data_t:s0
 /var/log/prelude.*	system_u:object_r:prelude_log_t:s0
@@ -1415,6 +1411,7 @@ HOME_DIR/\.gconf(d)?(/.*)?	system_u:object_r:gconf_home_t:s0
 /etc/cups/certs/.*	--	system_u:object_r:cupsd_rw_etc_t:s0
 /usr/sbin/swapon.*	--	system_u:object_r:fsadm_exec_t:s0
 /var/log/xferlog.*	--	system_u:object_r:xferlog_t:s0
+/var/run/ganesha.*	--	system_u:object_r:glusterd_var_run_t:s0
 /var/run/xtables.*	--	system_u:object_r:iptables_var_run_t:s0
 /usr/lib/lvm-10/.*	--	system_u:object_r:lvm_exec_t:s0
 /usr/sbin/depmod.*	--	system_u:object_r:depmod_exec_t:s0
@@ -1433,10 +1430,12 @@ HOME_DIR/\.gconf(d)?(/.*)?	system_u:object_r:gconf_home_t:s0
 /var/run/pki-tks.pid	system_u:object_r:pki_tomcat_var_run_t:s0
 /usr/sbin/apache(2)?	--	system_u:object_r:httpd_exec_t:s0
 /usr/sbin/resize.*fs	--	system_u:object_r:fsadm_exec_t:s0
+/var/log/ganesha.log	--	system_u:object_r:glusterd_log_t:s0
 /usr/sbin/tomcat(6)?	--	system_u:object_r:tomcat_exec_t:s0
 /var/log/maillog[^/]*	system_u:object_r:var_log_t:s0
 /var/log/spooler[^/]*	system_u:object_r:var_log_t:s0
 /var/spool/cron/[^/]*	--	<<none>>
+/usr/bin/ganesha.nfsd	--	system_u:object_r:glusterd_exec_t:s0
 /var/run/tomcat6?\.pid	--	system_u:object_r:tomcat_var_run_t:s0
 /usr/lib/xen/bin(/.*)?	system_u:object_r:bin_t:s0
 /usr/lib/upstart(/.*)?	system_u:object_r:bin_t:s0
@@ -1754,6 +1753,7 @@ HOME_DIR/\.mplayer(/.*)?	system_u:object_r:mplayer_home_t:s0
 /var/spool/icinga(/.*)?	system_u:object_r:nagios_spool_t:s0
 /var/lib/sntp-kod(/.*)?	system_u:object_r:ntp_drift_t:s0
 /var/log/ntpstats(/.*)?	system_u:object_r:ntpd_log_t:s0
+/var/lib/nxserver(/.*)?	system_u:object_r:nx_server_var_lib_t:s0
 /var/cache/opensm(/.*)?	system_u:object_r:opensm_cache_t:s0
 /var/lib/luci/etc(/.*)?	system_u:object_r:piranha_web_conf_t:s0
 /var/lib/pki-ocsp(/.*)?	system_u:object_r:pki_tomcat_var_lib_t:s0
@@ -2164,7 +2164,6 @@ HOME_DIR/\.gstreamer-.*	system_u:object_r:gstreamer_home_t:s0
 HOME_DIR/\.serverauth.*	--	system_u:object_r:xauth_home_t:s0
 HOME_DIR/\.Xauthority.*	--	system_u:object_r:xauth_home_t:s0
 /usr/sbin/apache-ssl(2)?	--	system_u:object_r:httpd_exec_t:s0
-/usr/NX/bin/nxserver.bin	--	unconfined_u:object_r:nx_exec_t:s0
 /usr/bin/dbus-daemon(-1)?	--	system_u:object_r:dbusd_exec_t:s0
 /usr/libexec/news/rc.news	--	system_u:object_r:innd_exec_t:s0
 /usr/lib/valgrind/vg.*\.so	--	system_u:object_r:textrel_shlib_t:s0
@@ -2199,6 +2198,8 @@ HOME_DIR/\.nv/GLCache(/.*)?	system_u:object_r:gstreamer_home_t:s0
 /usr/share/X11/fonts(/.*)?	system_u:object_r:fonts_t:s0
 HOME_DIR/\.macromedia(/.*)?	system_u:object_r:mozilla_home_t:s0
 /var/spool/mqueue\.in(/.*)?	system_u:object_r:mqueue_spool_t:s0
+/opt/NX/home/nx/\.ssh(/.*)?	system_u:object_r:nx_server_home_ssh_t:s0
+/usr/NX/home/nx/\.ssh(/.*)?	system_u:object_r:nx_server_home_ssh_t:s0
 /etc/openvpn/scripts(/.*)?	system_u:object_r:openvpn_unconfined_script_exec_t:s0
 /var/lib/openvswitch(/.*)?	system_u:object_r:openvswitch_var_lib_t:s0
 /var/log/openvswitch(/.*)?	system_u:object_r:openvswitch_log_t:s0
@@ -2523,6 +2524,7 @@ HOME_DIR/\.cache/libvirt(/.*)?	system_u:object_r:virt_home_t:s0
 /usr/share/apr-0/build/[^/]+\.sh	--	system_u:object_r:bin_t:s0
 /usr/lib/helix/plugins/[^/]*\.so	--	system_u:object_r:textrel_shlib_t:s0
 /usr/lib/libatiadlxx\.so(\.[^/]*)*	--	system_u:object_r:textrel_shlib_t:s0
+/var/lib/nxserver/home/.ssh(/.*)?	system_u:object_r:nx_server_home_ssh_t:s0
 /var/lib/misc/syslog-ng.persist-?	--	system_u:object_r:syslogd_var_lib_t:s0
 /usr/lib/dracut/modules.d/.*\.service	system_u:object_r:systemd_unit_file_t:s0
 /opt/VBoxGuestAdditions.*/lib/VBox.*\.so	--	system_u:object_r:textrel_shlib_t:s0
@@ -2788,7 +2790,6 @@ HOME_DIR/\.cache/libvirt/qemu(/.*)?	system_u:object_r:svirt_home_t:s0
 /opt/real/RealPlayer/plugins(/.*)?	--	system_u:object_r:textrel_shlib_t:s0
 /usr/lib/pgsql/test/regress/.*\.so.*	--	system_u:object_r:lib_t:s0
 /usr/lib/systemd/system/gear.service	--	system_u:object_r:gear_unit_file_t:s0
-/lib/systemd/system/nxserver.service	--	system_u:object_r:nx_unit_file_t:s0
 /usr/lib/systemd/system/lvm2.*\.service	system_u:object_r:lvm_unit_file_t:s0
 /usr/lib/systemd/system/virt.*\.service	--	system_u:object_r:virtd_unit_file_t:s0
 /usr/lib/mediawiki/math/texvc.*	system_u:object_r:bin_t:s0
@@ -2963,7 +2964,6 @@ HOME_DIR/\.cache/telepathy/logger(/.*)?	system_u:object_r:telepathy_logger_cache
 HOME_DIR/\.cache/telepathy/gabble(/.*)?	system_u:object_r:telepathy_gabble_cache_home_t:s0
 /var/run/systemd/multi-session-x(/.*)?	system_u:object_r:xdm_var_run_t:s0
 /usr/lib/systemd/system/gssproxy.service	--	system_u:object_r:gssproxy_unit_file_t:s0
-/usr/lib/systemd/system/nxserver.service	--	system_u:object_r:nx_unit_file_t:s0
 /usr/lib/nero/plug-ins/libMP3\.so(\.[^/]*)*	--	system_u:object_r:textrel_shlib_t:s0
 /usr/share/system-config-network(/netconfig)?/[^/]+\.py	--	system_u:object_r:bin_t:s0
 /var/kerberos/krb5kdc/from_master.*	system_u:object_r:krb5kdc_lock_t:s0
@@ -3590,7 +3590,6 @@ HOME_DIR/\.tmp	-d	system_u:object_r:user_tmp_t:s0
 /usr/sbin/sntp	--	system_u:object_r:ntpdate_exec_t:s0
 /usr/bin/numad	--	system_u:object_r:numad_exec_t:s0
 /usr/sbin/upsd	--	system_u:object_r:nut_upsd_exec_t:s0
-/etc/NX/nxnode	--	unconfined_u:object_r:nx_exec_t:s0
 /usr/sbin/osad	--	system_u:object_r:osad_exec_t:s0
 /etc/pads\.conf	--	system_u:object_r:pads_config_t:s0
 /usr/bin/pmmgr	--	system_u:object_r:pcp_pmmgr_exec_t:s0
@@ -3750,7 +3749,6 @@ HOME_DIR/\.tmp	-d	system_u:object_r:user_tmp_t:s0
 /usr/sbin/zonec	--	system_u:object_r:nsd_exec_t:s0
 /usr/sbin/nslcd	--	system_u:object_r:nslcd_exec_t:s0
 /sbin/upsdrvctl	--	system_u:object_r:nut_upsdrvctl_exec_t:s0
-/usr/NX/bin/nxd	--	unconfined_u:object_r:nx_exec_t:s0
 /usr/bin/pmwebd	--	system_u:object_r:pcp_pmwebd_exec_t:s0
 /usr/sbin/pcscd	--	system_u:object_r:pcscd_exec_t:s0
 /usr/bin/pesign	--	system_u:object_r:pesign_exec_t:s0
@@ -3915,7 +3913,6 @@ HOME_DIR/\.my\.cnf	--	system_u:object_r:mysqld_home_t:s0
 /usr/sbin/ypserv	--	system_u:object_r:ypserv_exec_t:s0
 /var/run/nsd\.pid	--	system_u:object_r:nsd_var_run_t:s0
 /usr/sbin/upsmon	--	system_u:object_r:nut_upsmon_exec_t:s0
-/etc/NX/nxserver	--	unconfined_u:object_r:nx_exec_t:s0
 /usr/bin/pmproxy	--	system_u:object_r:pcp_pmproxy_exec_t:s0
 /var/run/fos\.pid	--	system_u:object_r:piranha_fos_var_run_t:s0
 /var/run/lvs\.pid	--	system_u:object_r:piranha_lvs_var_run_t:s0
@@ -4270,7 +4267,6 @@ HOME_DIR/\.asoundrc	--	system_u:object_r:alsa_home_t:s0
 /usr/sbin/send_arp	--	system_u:object_r:ping_exec_t:s0
 /usr/bin/nova-cert	--	system_u:object_r:nova_exec_t:s0
 /var/run/numad\.pid	--	system_u:object_r:numad_var_run_t:s0
-/usr/NX/bin/nxexec	--	unconfined_u:object_r:nx_exec_t:s0
 /usr/sbin/openhpid	--	system_u:object_r:openhpid_exec_t:s0
 /usr/bin/ovs-vsctl	--	system_u:object_r:openvswitch_exec_t:s0
 /var/run/pcscd\.pid	--	system_u:object_r:pcscd_var_run_t:s0
@@ -4574,8 +4570,8 @@ HOME_DIR/dead\.letter	--	system_u:object_r:mail_home_t:s0
 /usr/bin/nova-volume	--	system_u:object_r:nova_exec_t:s0
 /usr/sbin/nsd-notify	--	system_u:object_r:nsd_exec_t:s0
 /usr/sbin/blazer_usb	--	system_u:object_r:nut_upsdrvctl_exec_t:s0
-/usr/NX/bin/nxserver	--	unconfined_u:object_r:nx_exec_t:s0
-/usr/NX/share/htdocs	-d	unconfined_u:object_r:user_home_dir_t:s0
+/opt/NX/bin/nxserver	--	system_u:object_r:nx_server_exec_t:s0
+/usr/NX/bin/nxserver	--	system_u:object_r:nx_server_exec_t:s0
 /usr/sbin/ifdhandler	--	system_u:object_r:openct_exec_t:s0
 /etc/openvpn/ipp\.txt	--	system_u:object_r:openvpn_etc_rw_t:s0
 /usr/sbin/openwsmand	--	system_u:object_r:openwsman_exec_t:s0
@@ -5124,7 +5120,7 @@ HOME_DIR/\.gnashpluginrc	system_u:object_r:mozilla_home_t:s0
 /usr/sbin/wpa_supplicant	--	system_u:object_r:NetworkManager_exec_t:s0
 /usr/bin/nova-direct-api	--	system_u:object_r:nova_exec_t:s0
 /usr/bin/nova-novncproxy	--	system_u:object_r:nova_exec_t:s0
-/usr/NX/var/run/printers	-d	unconfined_u:object_r:cupsd_tmp_t:s0
+/usr/libexec/nx/nxserver	--	system_u:object_r:nx_server_exec_t:s0
 /usr/sbin/openct-control	--	system_u:object_r:openct_exec_t:s0
 /etc/rc\.d/init\.d/openvpn	--	system_u:object_r:openvpn_initrc_exec_t:s0
 /etc/pads-signature-list	--	system_u:object_r:pads_config_t:s0
@@ -5575,7 +5571,6 @@ HOME_DIR/\.grl-metadata-store	system_u:object_r:gstreamer_home_t:s0
 /usr/share/munin/plugins/swap	--	system_u:object_r:system_munin_plugin_exec_t:s0
 /etc/rc\.d/init\.d/mysqlmanager	--	system_u:object_r:mysqlmanagerd_initrc_exec_t:s0
 /usr/share/mythweb/mythweb\.pl	--	system_u:object_r:mythtv_script_exec_t:s0
-/usr/lib/cups/backend/nxprint	--	unconfined_u:object_r:bin_t:s0
 /usr/libexec/oddjob/mkhomedir	--	system_u:object_r:oddjob_mkhomedir_exec_t:s0
 /usr/libexec/pcp/bin/pmlogger	--	system_u:object_r:pcp_pmlogger_exec_t:s0
 /etc/rc\.d/init\.d/puppetmaster	--	system_u:object_r:puppetmaster_initrc_exec_t:s0

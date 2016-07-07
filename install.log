@@ -1648,3 +1648,7 @@
 1467932116 percona-release 0.1 4 noarch
 1467932118 python-perf 3.10.0 327.22.2.el7 x86_64
 1467932122 tzdata 2016f 1.el7 noarch
+1467933206 perl-Email-Date-Format 1.002 15.el7 noarch
+1467933206 perl-MIME-Lite 3.030 1.el7 noarch
+1467933206 perl-MIME-Types 1.38 2.el7 noarch
+1467933207 perl-Text-Template 1.45 12.el7 noarch

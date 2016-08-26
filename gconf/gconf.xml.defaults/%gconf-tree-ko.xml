@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="기본 컴포넌트 보기 프로그램">
+								<longdesc>볼려면 컴포넌트가 필요한 파일을 볼 때 사용할 프로그램. 인자 %s은(는) 파일의 URI이고, 인자 %c은(는) 컴포넌트 IID입니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="기본 터미널을 실행할 때 줄 인자">
+								<longdesc>기본 터미널 프로그램을 실행할 때 사용할 인자.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="기본 터미널 프로그램">
+								<longdesc>터미널이 필요한 프로그램에 사용할 기본 터미널 프로그램.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL에 대한 핸들러">
+								<longdesc>&quot;h323&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;h323&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;h323&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL에 대한 핸들러">
+								<longdesc>&quot;callto&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;callto&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;callto&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL에 대한 핸들러">
+								<longdesc>&quot;aim&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;aim&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;aim&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL에 대한 핸들러">
+								<longdesc>&quot;mailto&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;mailto&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;mailto&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL에 대한 핸들러">
+								<longdesc>&quot;https&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;https&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;https&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL에 대한 핸들러">
+								<longdesc>&quot;http&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;http&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;http&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL에 대한 핸들러">
+								<longdesc>&quot;man&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;man&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;man&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL에 대한 핸들러">
+								<longdesc>&quot;info&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;info&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;info&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL에 대한 핸들러">
+								<longdesc>&quot;ghelp&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;ghelp&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;ghelp&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="터미널에서 명령을 실행합니다">
+								<longdesc>참이면 이런 종류의 URL을 처리하는 프로그램을 터미널에서 실행합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URL에 대한 핸들러">
+								<longdesc>&quot;trash&quot; URL을 처리할 경우 사용할 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="지정한 명령어로 &quot;trash&quot; URL을 처리할 지 여부">
+								<longdesc>참이면 &quot;command&quot; 키에 지정한 명령어로 &quot;trash&quot; URL을 처리합니다.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="바탕화면에서 터미널을 열 때 홈 디렉터리에서 열 것인지 여부">
 						<longdesc>참으로 설정하면, 바탕화면에서 터미널을 열면 터미널에서 홈 디렉터리가 열립니다. 참으로 설정하지 않으면, 바탕화면 디렉터리가 열립니다. 홈 디렉터리를 바탕화면 디렉터리로 사용한다면 이 키는 반영되지 않습니다.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB 작업 그룹">
+						<longdesc>사용자가 속해 있는 윈도우 네트워크 워크그룹 혹은 도메인. 새 워크그룹이 완전히 동작하려면 사용자가 로그아웃했다가 다시 로그인해야 할 수도 있습니다.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD 서비스를 찾아볼 추가 도메인">
+						<longdesc>&quot;network:///&quot; 위치에서 보여야 하는 DNS-SD 도메인들의 쉼표로 구분한 목록.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="로컬 DNS-SD 서비스를 표시하는 법">
+						<longdesc>쓸 수 있는 값은 &quot;merged&quot;, &quot;separated&quot; 및 &quot;disabled&quot;입니다.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="자동 프록시 설정 URL">
+						<longdesc>프록시 설정 값을 제공해 주는 URL.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS 프록시 포트">
+						<longdesc>프록시에 사용할 포트 (&quot;/system/proxy/socks_host&quot;에서 지정한 기계에서).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS 프록시 호스트 이름">
+						<longdesc>SOCKS 프록시로 쓸 기계의 이름.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP 프록시 포트">
+						<longdesc>프록시에 사용할 포트 (&quot;/system/proxy/ftp_host&quot;에서 지정한 기계에서).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP 프록시 호스트 이름">
+						<longdesc>FTP 프록시로 쓸 기계의 이름.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="보안 HTTP 프록시 포트">
+						<longdesc>프록시에 사용할 포트 (&quot;/system/proxy/secure_host&quot;에서 지정한 기계에서).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="보안 HTTP 프록시 호스트 이름">
+						<longdesc>보안 HTTP 프록시로 쓸 기계의 이름.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="프록시 설정 모드">
+						<longdesc>프록시 설정 모드를 선택합니다. 지원하는 값은 &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;입니다.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="프록시 쓰지 않을 호스트">
+						<longdesc>이 키에는 (프록시가 사용 가능할 경우에도) 프록시를 통하지 않고 직접 연결할 호스트의 목록이 들어갑니다. 각 값들은 호스트 이름, 도메인 이름(*.foo.com과 같은 와일드 카드 사용), IP 호스트 주소(IPv4와 IPv6 모두 가능), 네트마스크를 사용한 네트워크 주소(192.168.0.0/24와 같이)를 쓸 수 있습니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP 프록시 암호">
+						<longdesc>HTTP 프록시를 쓸 때 인증하면서 넘기는 암호.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP 프록시 사용자 이름">
+						<longdesc>HTTP 프록시를 쓸 때 인증하면서 넘기는 사용자 이름.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="프록시 서버 연결에 인증">
+						<longdesc>참이면, 프록시 서버에 연결하는 데 인증이 필요합니다. 사용자 이름과 암호는 &quot;/system/http_proxy/authentication_user&quot; 및 &quot;/system/http_proxy/authentication_password&quot;에서 지정합니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP 프록시 포트">
+						<longdesc>프록시에 사용할 포트 (&quot;/system/http_proxy/host&quot;에서 지정한 기계에서).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP 프록시 호스트 이름">
+						<longdesc>HTTP 프록시로 쓸 기계의 이름.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP 프록시 사용">
+						<longdesc>인터넷을 HTTP로 접근할 때 프록시를 사용합니다.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplicație implicită de vizualizare înglobată">
+								<longdesc>Aplicație de utilizat pentru vizualizarea fișierelor ce necesită o componentă de vizualizare. Parametrul %s va fi înlocuit cu URI-ul fișierului, iar parametrul %c va fi înlocuit cu componenta IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argument „exec” pentru terminalul implicit">
+								<longdesc>Argumentul „exec” de utilizat pentru aplicația terminal implicită.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicație terminal implicită">
+								<longdesc>Aplicația terminal implicită de utilizat pentru programele ce necesită un terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „h323”">
+								<longdesc>Comanda asociată adreselor „h323” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „h323”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „h323”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „callto”">
+								<longdesc>Comanda asociată adreselor „callto” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „callto”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „callto”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „aim”">
+								<longdesc>Comanda asociată adreselor „aim” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „aim”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „aim”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „mailto”">
+								<longdesc>Comanda asociată adreselor „mailto” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „mailto”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „mailto”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „https”">
+								<longdesc>Comanda asociată adreselor „https” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „https”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „https”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „http”">
+								<longdesc>Comanda asociată adreselor „http” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „http”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „http”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „man”">
+								<longdesc>Comanda asociată adreselor „man” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „man”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „man”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „info”">
+								<longdesc>Comanda asociată adreselor „info” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „info”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „info”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „ghelp”">
+								<longdesc>Comanda asociată adreselor „ghelp” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „ghelp”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „ghelp”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pornește programul într-un terminal">
+								<longdesc>La activare, comanda asociată acestui tip de URL va fi pornită în terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programul asociat adreselor „trash”">
+								<longdesc>Comanda asociată adreselor „trash” la activare.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Specifică dacă programul ales va fi asociat adreselor „trash”">
+								<longdesc>La activare, comanda specificată în cheia „command” va fi asociată adreselor „trash”.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Dacă deschiderea unui terminal pe desktop va deschide terminalul în dosarul personal">
 						<longdesc>La activare, deschiderea unui terminal pe desktop va deschide terminalul în dosarul personal. Altfel, va fi deschis în dosarul Desktop. Această cheie este irelevantă în cazul în care dosarul personal este același cu dosarul Desktop.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grup SMB">
+						<longdesc>Grupul sau domeniul Windows din care face parte utilizatorul. Pentru a intra în vigoare opțiunile unui nou workgroup, utilizatorul s-ar putea să trebuiască să iasă din sesiune și apoi să se autentifice din nou.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domenii în plus de verificat pentru servicii DNS-SD">
+						<longdesc>Listă separată prin virgule de domenii DNS-SD ce ar trebui să fie vizibile în locația „network:///”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Modalitatea de afișare a serviciului local dns-sd">
+						<longdesc>Valori posibile: „merged”, „separate” și „disabled”.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL pentru configurări proxy automate">
+						<longdesc>URL cu opțiuni automate de proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port proxy SOCKS">
+						<longdesc>Portul serverului proxy definit în „/system/proxy/socks_host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nume proxy SOCKS">
+						<longdesc>Numele serverului proxy SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port proxy FTP">
+						<longdesc>Portul serverului proxy definit în „/system/proxy/ftp_host”</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nume proxy FTP">
+						<longdesc>Numele serverului proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port proxy HTTPS">
+						<longdesc>Portului serverului proxy definit în „/system/proxy/secure_host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nume proxy HTTPS">
+						<longdesc>Numele serverului proxy HTTPS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mod configurare proxy">
+						<longdesc>Selectați modul de configurare proxy. Valorile suportate sunt „none”, „manual” și „auto”.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Adrese fără proxy">
+						<longdesc>Această cheie conține o listă a adreselor la care se preferă conectarea directă, nu prin proxy. Aceste adrese pot fi nume de servere, domenii (cu caractere „wildcard”, de ex. *.foo.com), adrese IP (atât IPv4, cât și IPv6) și adrese de rețea cu mască (de ex. 192.168.0.0/16).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Parolă proxy HTTP">
+						<longdesc>Parolă necesară la autentificarea la serverul proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nume utilizator proxy HTTP">
+						<longdesc>Nume utilizator necesar autentificării la serverul proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentificare la conectarea prin proxy">
+						<longdesc>La activare, conectarea la serverul proxy necesită autentificare. Combinația nume_utilizator/parolă e definită de „/system/http_proxy/authentication_user” și „/system/http_proxy/authentication_password”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port proxy HTTP">
+						<longdesc>Portul serverului proxy definit în „/system/http_proxy/host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nume proxy HTTP">
+						<longdesc>Numele serverului proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Utilizează proxy HTTP">
+						<longdesc>Activează opțiunile proxy la accesarea adreselor HTTP în Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="কম্পোনেন্ট প্রদর্শনের ডিফল্ট অ্যাপ্লিকেশন">
+								<longdesc>আবশ্যকরূপে কোনো কম্পোনেন্ট সহযোগে প্রদর্শনের উদ্দেশ্যে চিহ্নিত ফাইল প্রদর্শনের জন্য ব্যবহৃত অ্যাপ্লিকেশন। %s পরামিতির দ্বারা ফাইলের URI উল্লিখিত হবে ও পরামিতি %c দ্বারা কম্পোনেন্টের IID নির্দিষ্ট করা হবে।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ডিফল্ট টার্মিন্যালের জন্য exec আর্গুমেন্ট">
+								<longdesc>ডিফল্ট টার্মিন্যাল অ্যাপ্লিকেশনের জন্য ব্যবহারযোগ্য exec আর্গুমেন্ট।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ডিফল্ট টার্মিন্যাল অ্যাপ্লিকেশন">
+								<longdesc>আবশ্যকরূপে টার্মিন্যাল প্রয়োগকারী অ্যাপ্লিকেশনগুলির দ্বারা ব্যবহারযোগ্য ডিফল্ট টার্মিন্যাল।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;h323&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;h323&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;h323&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;callto&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;callto&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;callto&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;aim&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;aim&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;aim&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;mailto&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;mailto&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;mailto&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;https&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;https&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;https&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;http&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;http&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;man&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;man&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;man&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;info&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;info&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;info&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;ghelp&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;ghelp&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;ghelp&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="টার্মিন্যালে কমান্ড চালানো হবে">
+								<longdesc>এই ধরনের URL ব্যবস্থাকারী কমান্ড টার্মিন্যালে চালানো হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URL ব্যবস্থাপনার হ্যান্ডলার">
+								<longdesc>সক্রিয় করা হলে, &quot;trash&quot; URL ব্যবস্থাপনার উদ্দেশ্যে ব্যবহৃত কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="উল্লিখিত কমান্ডের দ্বারা &quot;trash&quot; URL ব্যবস্থাপনা করা হবে কিনা">
+								<longdesc>&quot;command&quot; কি&apos;র দ্বারা &quot;trash&quot; URL ব্যবস্থাপনা নির্ধারিত হলে মান true (সত্য)।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="ডেস্কটপের মধ্যে টার্মিন্যাল খোলার ফলে ব্যক্তিগত ডিরেক্টরি প্রদর্শন করে টার্মিন্যাল আরম্ভ করা হবে কি না">
 						<longdesc>মান true (সত্য) হলে, ডেস্কটপের মধ্যে টার্মিন্যাল খোলা হলে, ব্যক্তিগত ডিরেক্টরি প্রদর্শন করে টার্মিন্যাল আরম্ভ করা হবে। অন্যথা, টার্মিন্যালটি ডেস্কটপ প্রদর্শন করে খোলা হবে। উল্লেখ্য, ডেস্কটপ ও ব্যক্তিগত ডিরেক্টরিটি একই হলে এই কি-র ব্যবহার অমূলক।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ওয়ার্ক-গ্রুপ">
+						<longdesc>ব্যবহারকারী যে Windows নেটওয়ার্কিং ওয়ার্কগ্রুপ অথবা ডোমেইনের অংশ। নতুন ওয়ার্কগ্রুপ সম্পূর্ণরূপে সক্রিয় করার জন্য ব্যবহারকারীকে সম্ভবত লগ-আউট করে পুনরায় লগ-ইন করতে হবে।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD পরিসেবার জন্য অতিরিক্ত ডোমেইন অনুসন্ধান করা হবে">
+						<longdesc>&quot;network:///&quot; location&apos;র মধ্যে প্রদর্শনযোগ্য DNS-SD&apos;র তালিকা, কমা চিহ্ন দ্বারা বিভাজিত</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="স্থানীয় DNS-SD পরিসেবা প্রদর্শনের প্রণালী">
+						<longdesc>সম্ভব মান &quot;merged&quot;, &quot;separate&quot; ও &quot;disabled&quot;।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="স্বয়ংক্রিয় প্রক্সি কনফিগারেশনের URL">
+						<longdesc>প্রক্সি কনফিগার করার জন্য ব্যবহৃত মান প্রস্তুতকারী URL।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS প্রক্সি পোর্ট">
+						<longdesc>প্রক্সি করার উদ্দেশ্যে ব্যবহৃত মেশিনের পোর্ট &quot;/system/proxy/socks_host&quot; দ্বারা ব্যাখ্যা করা হয়।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS প্রক্সি হোস্ট-নেম">
+						<longdesc>socks প্রক্সির জন্য ব্যবহারযোগ্য মেশিনের নাম।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP প্রক্সি পোর্ট">
+						<longdesc>প্রক্সি করার উদ্দেশ্যে ব্যবহৃত মেশিনের পোর্ট &quot;/system/proxy/ftp_host&quot; দ্বারা ব্যাখ্যা করা হয়।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP প্রক্সির হোস্ট-নেম">
+						<longdesc>FTP প্রক্সির জন্য ব্যবহারযোগ্য মেশিনের নাম।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="নিরাপদ HTTP প্রক্সি পোর্ট">
+						<longdesc>প্রক্সি করার উদ্দেশ্যে ব্যবহৃত মেশিনের পোর্ট &quot;/system/proxy/secure_host&quot; দ্বারা ব্যাখ্যা করা হয়।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="নিরাপদ HTTP প্রক্সি হোস্ট-নেম">
+						<longdesc>নিরাপদ HTTP প্রক্সির জন্য ব্যবহারযোগ্য মেশিনের নাম।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="প্রক্সি কনফিগারেশন মোড">
+						<longdesc>প্রক্সি কনফিগারেশন মোড নির্বাচন করুন। সমর্থিত মান হল &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="প্রক্সি-বিহীন হোস্ট">
+						<longdesc>প্রক্সির (যদি সক্রিয়) পরিবর্তে সরাসরি সংযোগকারী হোস্টের তালিকা এই কি দ্বারা উল্লিখিত হয়েছে। হোস্ট-নেম, ডোমেইন (প্রারম্ভিক ওয়াইল্ডকার্ডসহ যেমন *.foo.com), IP হোস্ট ঠিকানা (IPv4 ও IPv6) ও নেটমাস্কসহ নেটওয়ার্ক ঠিকানার (যেমন 192.168.0.0/24) মান এই ক্ষেত্রে অন্তর্ভুক্ত করা যাবে।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP প্রক্সি পাসওয়ার্ড">
+						<longdesc>HTTP প্রক্সির ক্ষেত্রে অনুমোদনের জন্য প্রযোজ্য পাসওয়ার্ড</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP প্রক্সি ব্যবহারকারীর নাম">
+						<longdesc>HTTP প্রক্সির ক্ষেত্রে অনুমোদনের জন্য প্রযোজ্য ব্যবহারকারীর নাম।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="প্রক্সি সার্ভারের সংযোগ অনুমোদন করা হবে">
+						<longdesc>মান true (সত্য) হলে প্রক্সি সার্ভারের সাথে সংযোগের জন্য অনুমোদন আবশ্যক। ব্যবহারকারীর নাম/পাসওয়ার্ড জুটি &quot;/system/http_proxy/authentication_user&quot; ও &quot;/system/http_proxy/authentication_password&quot; দ্বারা ব্যাখ্যা করা হয়।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP প্রক্সি পোর্ট">
+						<longdesc>প্রক্সি করার উদ্দেশ্যে ব্যবহৃত মেশিনের পোর্ট &quot;/system/http_proxy/host&quot; দ্বারা ব্যাখ্যা করা হয়।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP প্রক্সি হোস্ট-নেম">
+						<longdesc>HTTP প্রক্সির জন্য ব্যবহারযোগ্য মেশিনের নাম।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP প্রক্সি ব্যবহার করা হবে">
+						<longdesc>ইন্টারনেটের মাধ্যমে HTTP ব্যবহারের সময় প্রক্সি সংক্রান্ত বৈশিষ্ট্য সক্রিয় করা হবে</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

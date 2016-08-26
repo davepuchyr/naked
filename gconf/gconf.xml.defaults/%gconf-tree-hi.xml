@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="डिफ़ॉल्ट अवयव प्रदर्शक अनुप्रयोग">
+								<longdesc>फाइल देखने के लिये प्रयोगार्थ अनुप्रयोग जो उनको देखने के लिये एक घटक की जरूरत समझता है. पैरामीटर %s फाइल URIs के द्वारा प्रतिस्थापित होगा, पैरामीटर %c को घटक IID से विस्थापित किया जायेगा.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="डिफ़ॉल्ट टर्मिनल हेतु ईएक्सईसी ऑर्गुमेंट">
+								<longdesc>डिफ़ॉल्ट टर्मिनल अनुप्रयोग में उपयोग हेतु ईएक्सईसी ऑर्गुमेंट.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="डिफ़ॉल्ट टर्मिनल अनुप्रयोग">
+								<longdesc>उन अनुप्रयोगों हेतु डिफ़ॉल्ट टर्मिनल अनुप्रयोग जिन्हें टर्मिनल की आवश्यकता होती है.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;h323&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;h323&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;h323&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;callto&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;callto&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;callto&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;aim&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;aim&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;aim&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;mailto&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;mailto&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;mailto&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;https&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;https&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;https&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;http&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;http&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;http&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;man&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;man&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;man&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;info&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;info&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;info&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;ghelp&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;ghelp&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;ghelp&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;trash&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;trash&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;trash&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="एसएमबी वर्कग्रुप">
+						<longdesc>Windows संजाल कार्यसमूह या डोमेन जिसका उपयोक्ता हिस्सा है. नये कार्यसमूह के पूरी तरह प्रभावी होने के लिये उपयोक्ता को लॉग आउट व लॉग बैक होने की जरूरत है.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD सेवा में देखने के लिये अतिरिक्त डोमेन">
+						<longdesc>DNS-SD डोमेन के कोमा से अलग सूची जिसे &quot;network:///&quot; स्थान में दृश्य होना चाहिये.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="स्थानीय DNS-SD सेवा कैसे दिखानी है">
+						<longdesc>संभावित मान हैं &quot;merged&quot;, &quot;separate&quot; और &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="स्वचालित प्रॉक्सी विन्यास यूआरएल">
+						<longdesc>यूआरएल जो प्रॉक्सी विन्यास मूल्यों को प्रदान करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="सॉक्स प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/proxy/socks_host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="सॉक्स प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी सॉक्स किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="एफ़टीपी प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/proxy/ftp_host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="एफ़टीपी प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी एफ़टीपी किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="सुरक्षित एचटीटीपी प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/proxy/secure_host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="सुरक्षित एचटीटीपी प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी सिक्योर एचटीटीपी किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="प्रॉक्सी विन्यास मोड">
+						<longdesc>प्रॉक्सी विन्यास मोड चुनें. समर्थित मूल्य हैं &quot;कुछ नहीं&quot;, &quot;हस्तचालित&quot;, &quot;स्वचालित&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="नॉन-प्रॉक्सी होस्ट्स">
+						<longdesc>यह कुंजी में मेजबानों की सूची शामिल है जो सीधे जुड़ा है, बजाय प्राक्सी से होकर (अगर .ह सक्रिय है). मान मेजबाननाम, डोमेन (using an initial wildcard like *.foo.com), IP मेजबान पता (दोनों IPv4 और IPv6) और नेटमास्क के साथ संजाल पता (कुछ इस तरह का 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="एचटीटीपी प्राक्सी पासवर्ड">
+						<longdesc>जब एचटीटीपी प्रॉक्सी कर रहे हों तो प्रामाणीकरण हेतु पास करने के लिए पासवर्ड.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी उपयोगकर्तानाम">
+						<longdesc>जब एचटीटीपी प्रॉक्सी कर रहे हों तो प्रामाणीकरण हेतु पास करने के लिए उपयोगकर्ता नाम.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="प्रॉक्सी सर्वर कनेक्शन्स प्रामाणित करें">
+						<longdesc>अगर सही है, तब प्रॉक्सी सर्वर में संबंधन के लिये सत्यापन की जरूरत होती है. username/password कोंबो को &quot;/system/http_proxy/authentication_user&quot; औऱ &quot;/system/http_proxy/authentication_password&quot; के द्वारा परिभाषित होता है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/http_proxy/host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी एचटीटीपी किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी उपयोग करें">
+						<longdesc>जब इंटरनेट पर एचटीटीपी एक्सेस किया जाए तो प्रॉक्सी विन्यास सक्षम करें.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

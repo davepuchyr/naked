@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Стандардна апликација за преглед на содржина">
+								<longdesc>Апликацијата што ќе се користи за преглед на датотеки кои што имаат потреба од компонента за преглед. Параметарот %s ќе биде заменет од страна на URI, параметрот %c ќе биде заменете од IID на компонентата.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec аргумент за стандарден терминал">
+								<longdesc>Еxec аргументот за употреба со стандардната терминална апликација.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Стандардна апликација за терминал">
+								<longdesc>Стандардната апликација која што ќе се користи како терминал за апликациите кои имаат потреба од терминал.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;h323&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „h323“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;h323&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „h323“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;callto&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „callto“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;callto&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „callto“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;aim&quot; URL">
+								<longdesc>Ако е вклучено, командата користена за справување со „aim“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда треба да се справи со &quot;aim&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „aim“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;mailto&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „mailto“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;mailto&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „mailto“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;https&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „https“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;https&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „https“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;http&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „http“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;http&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „http“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;man&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „man“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;man&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „man“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;info&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „info“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;info&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „info“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;ghelp&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „ghelp“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;ghelp&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „ghelp“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Изврши ја командата во терминал">
+								<longdesc>Точно ако командата која што се користи за справување со овој тип на адреси треба да биде извршена во терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Справувачот за &quot;trash&quot; URL">
+								<longdesc>Ако·е·вклучено,·командата·користена·за·справување·со „trash“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали наведената команда да се справи со &quot;trash&quot; URL">
+								<longdesc>Точно ако одредената команда во клучот „команда“ треба да се справува со „trash“ адреси.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB работна група">
+						<longdesc>Работната група или доменот на Windows чиј што член е корисникот. Зада биде додаден во нова работна група корисникот може ќе треба да се одјави и повторно да се најави.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Екстра домени за пребарување на DNS-SD сервиси">
+						<longdesc>Листа разделена со запирки од DNS-SD домените кои што би требало да се видливи на локацијата „network:///“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Како да ги прикаже локалните DNS-SD сервиси">
+						<longdesc>Можни вредности се &quot;припоено&quot;, &quot;одделено&quot; и &quot;искулучено&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL за автоматска конфигурација на proxy">
+						<longdesc>URL кое што снабдува вредност за конфигурација на proxy</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proxy порта">
+						<longdesc>Портата на машината дефинирана во &quot;/system/proxy/socks_host&quot; преку која што користите прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proxy име на хост">
+						<longdesc>Името на машината што ќе се користи како прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порта за FTP proxy">
+						<longdesc>Портата на машината дефинирана во &quot;/system/proxy/ftp_host&quot; преку која што користите прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Име на хост за FTP proxy">
+						<longdesc>Име на машината преку која се преминува за FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Безбедена HTTP proxy порта">
+						<longdesc>Портата на машината дефинирана во &quot;/system/proxy/secure_host&quot; преку која што користите прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Име на хост за безбеден HTTP proxy">
+						<longdesc>Име на машината преку која безбедно се преминува за HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Режим за конфигурирање на proxy">
+						<longdesc>Изберете го режимот за конфигурирање на proxy. Поддржани вредности се &quot;ништо&quot;, &quot;рачно&quot;, &quot;автоматски&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Хостови без proxy">
+						<longdesc>Копчето содржи листа на хостови кои што се врзани директно наместо прекупрокси (доколку е активно). Вредностите можат да бидат имиња на хостови, домени (со користење на некој знак како на пример *.foo.com), IP адреси на хостови (вклучувајќи IPv4 и IPv6) и мрежни адреси со маски (нешто како 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Лозинка за HTTP proxy">
+						<longdesc>Лозинка за преминување на автентикацијата кога се работи преку HTTP proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Корисничко име за HTTP proxy">
+						<longdesc>Корисничко име и лозинка за проверка кога користите HTTP прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Барај proxy автентикација за врските до серверот">
+						<longdesc>Ако е точно, тогаш врските до proxy серверот бараат проверка. Корисничкото име и лозинката дефинирани од страна на „/system/http_proxy/authentication_user“ и „/system/http_proxy/authentication_password“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порта за HTTP proxy">
+						<longdesc>Портата на машината дефинирана во &quot;/system/http_proxy/host&quot; преку која што користите прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Име на хост за HTTP proxy">
+						<longdesc>Име на машината преку која се преминува за HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Користи HTTP proxy">
+						<longdesc>Ги вклучува подесувањата за proxy кога се пристапува на HTTP преку Интернет.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ഡീഫോള്‍ട്ടായ കംപോണന്‍റ് വ്യൂവര്‍ ആപ്ളിക്കേഷന്‍">
+								<longdesc>പ്രയോഗത്തില്‍ ഉപയോഗിക്കുന്ന ഫയലുകള്‍ കാണുന്നതിനായി ആവശ്യമുളള ഘടകം. %s പരാമീറ്ററിന് പകരം ഫയലിന്‍റെ URI, %c പരാമീറ്ററിന് പകരം ഘടകം IID എന്നിവ ഉപയോഗിക്കുന്നു.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ഡീഫോള്‍ട്ട് ടെര്‍മിനലിനായുളള exec ആര്‍ഗ്യുമെന്‍റ്">
+								<longdesc>ഡീഫോള്‍ട്ടായ ടെര്‍മിനല്‍ പ്രയോഗത്തിന് ആയുളള exec ആര്‍ഗ്യുമെന്‍റ്</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ഡീഫോള്‍ട്ടായ ടെര്‍മിനല്‍ പ്രയോഗം">
+								<longdesc>ടെര്‍മിനല്‍ ആവശ്യമായ പ്രയോഗങ്ങള്‍ക്ക് ഉപയോഗിക്കുന്നതിനായുളള ഡീഫോള്‍ട്ടായ ടെര്‍മിനല്‍ പ്രയോഗം</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;h323&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;h323&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;h323&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;callto&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;callto&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;callto&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;aim&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;aim&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;aim&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;mailto&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;mailto&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;mailto&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;https&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;https&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;https&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;http&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;http&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;http&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;man&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;man&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;man&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;info&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;info&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;info&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;ghelp&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;ghelp&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;ghelp&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ടെര്‍മിനലില്‍ നിര്‍ദ്ദേശം പ്രവര്‍ത്തിപ്പിക്കുക">
+								<longdesc>ഈ തരത്തിലുളള നിര്‍ദ്ദേശം കൈകാര്യം ചെയ്യുന്ന നിര്‍ദ്ദേശം ഒരു ടെര്‍മിനലിലാണ് പ്രവര്‍ത്തിക്കേണ്ടത് എങ്കില്‍ ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URL കൈകാര്യം ചെയ്യുവാനുളള സംവിധാനം">
+								<longdesc>പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ &quot;trash&quot; URL കൈകാര്യം ചെയ്യുന്നതിനായുളള നിര്‍ദ്ദേശം.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;trash&quot; URL കൈകാര്യം ചെയ്യണമോ എന്ന്">
+								<longdesc>&quot;command&quot; കീയില്‍ പറഞ്ഞിരിക്കുന്ന നിര്‍ദ്ദേശം &quot;trash&quot; URL കൈകാര്യം ചെയ്യണമെങ്കില്‍, ശരി (ട്രൂ) ആണ്.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB വര്‍ക്ക് ഗ്രൂപ്പ്">
+						<longdesc>ഉപയോക്താവ് ഭാഗമായിരിക്കുന്ന Windows നെറ്റ്‍വര്‍ക്കിങ് ഗ്രൂപ്പ് അല്ലെങ്കില്‍ ഡൊമെയിന്‍. ഒരു പുതിയ വര്‍ക്ക് ഗ്രൂപ്പ് കംപ്യൂട്ടര്‍ അംഗീകരിക്കണമെങ്കില്‍ ഉപയോക്താവ് ലോഗൌട്ട് ചെയ്ത് വീണ്ടും ലോഗിന്‍ ചെയ്യേണ്ടതാകുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD സേവനങ്ങള്‍ തിരയുന്നതിനുളള അധികമായ ഡൊമെയിനുകള്‍">
+						<longdesc>&quot;നെറ്റ്‍വര്‍ക്ക്:///&quot; സ്ഥാനത്ത് ദൃശ്യമായിരിക്കേണ്ട കോമാ ഉപയോഗിച്ച് വേര്‍തിരിച്ചിരിക്കുന്ന DNS-SD ഡൊമെയിനുകള്‍.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ലോക്കല്‍ DNS-SD സേവനം എങ്ങനെ പ്രദര്‍ശിപ്പിക്കണം എന്ന്">
+						<longdesc>&quot;യോജിച്ചിരിക്കുന്നു&quot;, &quot;വേര്‍പ്പെട്ട്&quot;, &quot;അപ്രാപ്യമായ&quot; എന്നിവയാണ് സാധ്യമായ മൂല്ല്യങ്ങള്‍.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ഓട്ടോമാറ്റിക്ക് പ്രോക്സി കോണ്‍ഫിഗറേഷനുളള URL">
+						<longdesc>പ്രോക്സി കോണ്‍ഫിഗറേഷന്‍ മൂല്ല്യങ്ങള്‍ ലഭ്യമാക്കുന്ന URL</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS പ്രോക്സി പോര്‍ട്ട്">
+						<longdesc>നിങ്ങള്‍ പ്രോക്സി ചെയ്യുന്ന കംപ്യൂട്ടറിന്‍റെ പോര്‍ട്ട് &quot;/system/proxy/socks_host&quot; വ്യക്തമാക്കിയിരിക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS പ്രോക്സി ഹോസ്റ്റ് നെയിം">
+						<longdesc>സോക്ക്സ് വഴി പ്രോക്സി ചെയ്യുന്നതിനുളള കംപ്യൂട്ടറിന്‍റെ പേര്.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP പ്രോക്സി പോര്‍ട്ട്">
+						<longdesc>നിങ്ങള്‍ പ്രോക്സി ചെയ്യുന്ന കംപ്യൂട്ടറിന്‍റെ പോര്‍ട്ട് &quot;/system/proxy/ftp_host&quot; വ്യക്തമാക്കിയിരിക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP പ്രോക്സി ഹോസ്റ്റ് നെയിം">
+						<longdesc>FTP വഴി പ്രോക്സി ചെയ്യുന്നതിനുളള കംപ്യൂട്ടറിന്‍റെ പേര്.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="സെക്ക്യൂര്‍ HTTP പ്രോക്സി പോര്‍ട്ട്">
+						<longdesc>നിങ്ങള്‍ പ്രോക്സി ചെയ്യുന്ന കംപ്യൂട്ടറിന്‍റെ പോര്‍ട്ട് &quot;/system/proxy/secure_host&quot; വ്യക്തമാക്കിയിരിക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="സെക്ക്യൂര്‍ HTTP പ്രോക്സി ഹോസ്റ്റ് നെയിം">
+						<longdesc>സുരക്ഷിതമായ HTTP വഴി പ്രോക്സി ചെയ്യുന്നതിനുളള കംപ്യൂട്ടറിന്‍റെ പേര്.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="പ്രോക്സി കോണ്‍ഫിഗറേഷന്‍ മോഡ്">
+						<longdesc>പ്രോക്സി കോണ്‍ഫിഗറേഷന്‍ രീതി തിരഞ്ഞെടുക്കുക. &quot;ഒന്നുമില്ല&quot;, &quot;മാനുവല്‍&quot;, &quot;ഓട്ടോ&quot; ആണ് പിന്തുണയുളള മൂല്ല്യങ്ങള്‍.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="നോണ്‍-പ്രോക്സി ഹോസ്റ്റുകള്‍">
+						<longdesc>പ്രോക്സി വഴി (സജ്ജമെങ്കില്‍) അല്ലാതെ നേരിട്ട് കണക്ട് ചെയ്യുന്ന ഹോസ്റ്റുകളുടെ ലിസ്റ്റ് ഈ കീയില്‍ അടങ്ങുന്നു. ഹോസ്റ്റ് നെയിമുകള്‍, ഡോമെയിനുകള്‍ (*.foo.com പോലുളള ആരംഭത്തിലുളള വൈള്‍ഡ് കാര്‍ഡ് ഉപയോഗിക്കുന്നു), IP ഹോസ്റ്റ് വിലാസങ്ങള്‍ ( IPv4, IPv6 എന്നിവ), നെറ്റ്മാസ്കുളള നെറ്റ്‍വര്‍ക്ക് വിലാസങ്ങള്‍ (192.168.0.0/24 പോലുളളവ) എന്നിവ മൂല്ല്യങ്ങള്‍ ആവാം.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP പ്രോക്സി പാസ്‍വേര്‍ഡ്">
+						<longdesc>HTTP പ്രോക്സി ചെയ്യുന്പോള്‍ ആധികാരികത ഉറപ്പുവരുത്തുന്നതിനുളള പാസ്‍വേര്‍ഡ്.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP പ്രോക്സി ഉപയോക്തൃനാമം">
+						<longdesc>HTTP പ്രോക്സി ചെയ്യുന്പോള്‍ ആധികാരികത ഉറപ്പ് വരുത്തുന്നതിനായി നിങ്ങള്‍ ഉപയോഗിക്കുന്ന പേര്.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="പ്രോക്സി സര്‍വര്‍ കണക്ഷനുകളില്‍ ആധികാരികത ഉറപ്പ് വരുത്തുക">
+						<longdesc>ട്രൂ എങ്കില്‍, പ്രോക്സി സര്‍വറിലേക്കുളള കണക്ഷനുകള്‍ക്ക് ആധികാരികത ഉറപ്പ് വരുത്തേണ്ടതുണ്ട്. &quot;/system/http_proxy/authentication_user&quot; , &quot;/system/http_proxy/authentication_password&quot; ഉപയോഗിച്ച് username/password കോംപോ വ്യക്തമാക്കിയിരിക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP പ്രോക്സി പോര്‍ട്ട്">
+						<longdesc>നിങ്ങള്‍ പ്രോക്സി ചെയ്യുന്ന കംപ്യൂട്ടറിന്‍റെ പോര്‍ട്ട് &quot;/system/http_proxy/host&quot; വ്യക്തമാക്കിയിരിക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP പ്രോക്സി ഹോസ്റ്റ് നെയിം">
+						<longdesc>HTTP വഴി പ്രോക്സി ചെയ്യുന്നതിനുളള കംപ്യൂട്ടറിന്‍റെ പേര്.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP പ്രോക്സി ഉപയോഗിക്കുക">
+						<longdesc>ഇന്‍റര്‍നെറ്റിലൂടെ HTTP ലഭ്യമാക്കുന്പോള്‍ പ്രോക്സി ക്രമീകരണങ്ങള്‍ സജ്ജമാക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

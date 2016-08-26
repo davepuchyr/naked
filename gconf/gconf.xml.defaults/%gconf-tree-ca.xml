@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplicació de visualització de components predeterminada">
+								<longdesc>L&apos;aplicació a usar per a visualitzar fitxers que requereixen un component per a poder ser visualitzats. Es reemplaçarà el paràmetre %s amb l&apos;URI del fitxer, i es reemplaçarà el paràmetre %c amb l&apos;IID del component.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argument d&apos;execució per al terminal predeterminat">
+								<longdesc>L&apos;argument d&apos;execució a usar per a l&apos;aplicació de terminal predeterminada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicació de terminal predeterminada">
+								<longdesc>L&apos;aplicació de terminal a usar per defecte per a aplicacions que requereixin un terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «h323»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «h323», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «h323»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «h323».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «callto»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «callto», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «callto»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «callto».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «aim»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «aim», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «aim»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «aim».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «mailto»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «mailto», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «mailto»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «mailto».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «https»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «https», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «https»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «https».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «http»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «http», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «http»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «http».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «man»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «man», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «man»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «man».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «info»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «info», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «info»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «info».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «ghelp»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «ghelp», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «ghelp»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «ghelp».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executa l&apos;ordre en un terminal">
+								<longdesc>Vertader si el programa per a gestionar aquest URL hauria d&apos;executar-se en un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El gestor per a els URL «trash»">
+								<longdesc>L&apos;ordre utilitzada per a gestionar URL «trash», si estan habilitades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Si l&apos;ordre especificada hauria de gestionar els URL «trash»">
+								<longdesc>Vertader si el programa especificat en la clau «command» hauria de gestionar els URL «trash».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Si en obrir un terminal a l&apos;escriptori s&apos;obrirà un terminal al directori personal">
 						<longdesc>Si s&apos;estableix a «True» (cert), llavors en obrir un terminal a l&apos;escriptori s&apos;obrirà al directori personal. En cas contrari, s&apos;obrirà al directori de l&apos;escriptori. Fixeu-vos que la clau és irrellevant si el directori de l&apos;escriptori és idèntic al directori personal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grup de treball d&apos;SMB">
+						<longdesc>El grup de treball o domini de la xarxa de Windows al qual pertany l&apos;usuari. Per a que un grup de treball nou tingui efecte, és possible que l&apos;usuari necessite sortir i tornar a entrar.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Dominis extra dins dels quals cercar serveis DNS-SD">
+						<longdesc>Llista separada per comes de dominis DNS-SD que haurien de ser visibles a la ubicació «network:///».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Com mostrar serveis DNS-SD locals">
+						<longdesc>Els valors possibles són «merged», «separate» i «disabled».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL de configuració automàtica del servidor intermediari">
+						<longdesc>URL que proveeix valors de configuració del servidor intermediari.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port del servidor intemediari de SOCKS">
+						<longdesc>El port a l&apos;ordinador definit per «/system/proxy/socks_host» pel que escolta el servidor intermediari.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nom del servidor intermediari de SOCKS">
+						<longdesc>El nom del servidor que fa de servidor intermediari de socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port del servidor intermediari d&apos;FTP">
+						<longdesc>El port a l&apos;ordinador definit per «/system/proxy/ftp_host» pel que escolta el servidor intermediari.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nom del servidor intermediari d&apos;FTP">
+						<longdesc>El nom del servidor que fa de servidor intermediari d&apos;FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port del servidor intermediari d&apos;HTTP segur">
+						<longdesc>El port a l&apos;ordinador definit per «/system/proxy/secure_host» pel que escolta el servidor intermediari.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Port del servidor intermediari d&apos;HTTP segur">
+						<longdesc>El nom del servidor que fa de servidor intermediari d&apos;HTTP segur.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mode de configuració del servidor intermediari">
+						<longdesc>Selecciona el mode de configuració del servidor intermediari. Els valors disponibles són «none» (cap), «manual», «auto».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Ordinadors sense servidor intermediari">
+						<longdesc>Aquesta clau conté una llista d&apos;ordinadors als que s&apos;està connectat directament, i no a través d&apos;un servidor intermediari (si és actiu). Els valors poden ser noms d&apos;ordinador, dominis (usant un comodí inicial, com *.foo.com), adreces IP d&apos;ordinadors (tant IPv4 com IPv6) i adreces de xarxa amb una màscara de xarxa (alguna cosa com 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Contrasenya del servidor intermediari d&apos;HTTP">
+						<longdesc>Contrasenya a passar com autenticació quan es fa servir el servidor intermediari d&apos;HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nom d&apos;usuari del servidor intermediari d&apos;HTTP">
+						<longdesc>Nom d&apos;usuari a passar com autenticació quan es fa servir el servidor intermediari d&apos;HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentica les connexions al servidor intermediari">
+						<longdesc>Si és vertader, les connexions al servidor intermediari requereixen autenticació. La combinació usuari/contrasenya és definida per «/system/http_proxy/authentication_user» i «/system/http_proxy/authentication_password».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port del servidor intermediari d&apos;HTTP">
+						<longdesc>El port a l&apos;ordinador definit per «/system/http_proxy/host» pel que escolta el servidor intermediari.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nom del servidor intermediari d&apos;HTTP">
+						<longdesc>El nom del servidor que fa de servidor intemediari d&apos;HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Utilitza un servidor intermediari d&apos;HTTP">
+						<longdesc>Habilita els paràmetres del servidor intermediari quan s&apos;accedeix a HTTP per Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

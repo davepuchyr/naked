@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Porwr cydran rhagosodedig">
+								<longdesc>Y rhaglen i&apos;w ddefnyddio i bori ffeiliau sydd angen cydran er mwyn eu gwylio. Amnewidir y paramedr %s gan URI y ffeil, ac amnewidir y paramedr %c gan IID y gydran.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Ymresymiad exec ar gyfer y derfynell rhagosodedig">
+								<longdesc>Yr ymresymiad exec i&apos;w ddefnyddio ar gyfer y rhaglen derfynell rhagosodedig.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Rhaglen terfynell rhagosodedig">
+								<longdesc>Y rhaglen derfynell rhagosodedig a ddefnyddir gan raglenni sydd angen terfynell.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;h323&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;h323&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;h323&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;callto&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;callto&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;callto&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;aim&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;aim&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;aim&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;mailto&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;mailto&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;mailto&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;https&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;https&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;https&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;http&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;http&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;http&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;man&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;man&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;man&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;info&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;info&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;info&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;ghelp&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;ghelp&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;ghelp&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Rhedeg y gorchymyn mewn terfynell">
+								<longdesc>Gwir os dylid rhedeg y gorchymyn sy&apos;n delio â&apos;r math yma o LAU mewn terfynell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Y trinydd ar gyfer LAU &quot;trash&quot;">
+								<longdesc>Y gorchymyn a ddefnyddir i ymdrin â LAU &quot;trash&quot;, os yn alluog.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A ddylai&apos;r gorchymyn penodedig ymdrin â LAU &quot;trash&quot;">
+								<longdesc>Gwir os ddylai&apos;r gorchymyn a benodir yn yr allwedd &quot;command&quot; ymdrin â LAU &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grŵp gwaith SMB">
+						<longdesc>Y grŵp gwaith neu&apos;r parth rhwydweithio Windows mae&apos;r defnyddiwr yn rhan ohono. Cyn i grŵp gwaith newydd ddod i rym, efallai bydd rhaid i&apos;r defnyddiwr allgofnodi a mewngofnodi eto.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Parthau ychwanegol i chwilio am wasanaethau DNS-SD ynddynt">
+						<longdesc>Rhestr o barthau DNS-SD, wedi&apos;u gwahanu gan gomáu, a ddylai fod yn weladwy yn y lleoliad &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Sut i ddangos gwasanaeth DNS-SD lleol">
+						<longdesc>Gwerthoedd posib: &quot;merged&quot;, &quot;separate&quot; a &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="LAU i gyflunio&apos;r dirprwy&apos;n awtomatig">
+						<longdesc>URL sy&apos;n rhoi manylion cyflunio&apos;r dirprwy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Porth gweinydd dirprwy SOCKS">
+						<longdesc>Y porth ar y peiriant a ddiffinnir gan &quot;/system/proxy/socks_host&quot; yr ydych yn ei ddefnyddio fel dirprwy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Enw gweinydd y dirprwy SOCKS">
+						<longdesc>Enw&apos;r peiriant i&apos;w ddefnyddio fel dirprwy SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Porth gweinydd dirprwy FTP">
+						<longdesc>Y porth ar y peiriant a ddiffinnir gan &quot;/system/proxy/ftp_host&quot; yr ydych yn ei ddefnyddio fel dirprwy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Enw&apos;r gweinydd dirprwy FTP">
+						<longdesc>Enw&apos;r peiriant i&apos;w ddefnyddio fel dirprwy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Porth gweinydd dirprwy HTTP diogel">
+						<longdesc>Y porth ar y peiriant a ddiffinnir gan &quot;/system/proxy/secure_host&quot; yr ydych yn ei ddefnyddio fel dirprwy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Enw&apos;r gweinydd dirprwy HTTP diogel">
+						<longdesc>Enw&apos;r peiriant i&apos;w ddefnyddio fel dirprwy HTTP diogel.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Modd cyfluniad y dirprwy">
+						<longdesc>Dewiswch fodd rhagosod y dirprwy. Y gwerthoedd caniateir yw &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Gweinyddion di-ddirprwy">
+						<longdesc>Mae&apos;r allwedd hon yn cynnwys rhestr o weinyddion y cysylltir â hwy yn uniongyrchol, yn hytrach na thrwy&apos;r dirprwy (os defnyddir). Medrwch roi fan hyn enwau gweinyddion, parth-enwau (gan ddefnyddio gwylltnod i ddechrau, fel *.foo.com), rhifau IP gweinyddion (IPv6 yn ogystal â IPv4) a rhifau rhwydwaith gyda masg rhwydwaith (tebyg i 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Cyfrinair y dirprwy HTTP">
+						<longdesc>Cyfrinair i&apos;w basio i&apos;r dirprwy HTTP wrth ddilysu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Enw defnyddiwr y dirprwy HTTP">
+						<longdesc>Enw&apos;r defnyddiwr i&apos;w basio i&apos;r dirprwy HTTP wrth ddilysu</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Dilysu cysylltiadau â&apos;r gweinydd dirprwy">
+						<longdesc>Os yn wir, bydd angen dilysu cysylltiadau â&apos;r gweinydd dirprwy. Defnyddir y pâr enw defnyddiwr/cyfrinair a benodir gan &quot;/system/http_proxy/authentication_user&quot; a &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Porth gweinydd dirprwy HTTP">
+						<longdesc>Y porth ar y peiriant a ddiffinnir gan &quot;/system/http_proxy/host&quot; yr ydych yn ei ddefnyddio fel dirprwy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Enw&apos;r gweinydd dirprwy HTTP">
+						<longdesc>Enw&apos;r peiriant i&apos;w ddefnyddio fel dirprwy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Defnyddio dirprwy HTTP">
+						<longdesc>Galluogi&apos;r gosodiadau dirprwy wrth gyrchu HTTP dros y Rhyngrwyd.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

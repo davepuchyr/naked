@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Öntanımlı içerik görüntüleme uygulaması">
+								<longdesc>Görüntülemek için kullanılan uygulama, görüntülemek için içerik gerektirir. %s parametresi doyaların URI &apos;si ile, %c parametresi ise içeriğin IID&apos;si ile değiştirilecek. </longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Öntanımlı uçbirim için çalıştırma argümanı">
+								<longdesc>Öntanımlı uçbirim uygulamsı için çalıştırma argümanları.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Öntanımlı uçbirim uygulaması">
+								<longdesc>Uçbirim gerektiren uygulamalar için öntanımlı uçbirim uygulaması.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;h323&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;h323&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; de belirtilen programın &quot;h323&quot; URL&apos;lerini işletmek için ayarlanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;callto&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;callto&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;callto&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;aim&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;aim&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;aim&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;mailto&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;mailto&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;mailto&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;https&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;https&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;https&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;http&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;http&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;http&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;man&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;man&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;man&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;info&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;info&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;info&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;ghelp&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;ghelp&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;ghelp&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Komutu uçbirim içinde çalıştır">
+								<longdesc>Eğer seçiliyse, bu URL&apos;yi işletecek program uçbirimde çalışması gerekiyor demektir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URL&apos;leri için işleyici">
+								<longdesc>Eğer etkinse, &quot;trash&quot; URL&apos;lerinin işlemek için kullanılacak komut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Belirtilen komutun &quot;trash&quot; URL&apos;lerini işlemesi">
+								<longdesc>Eğer seçiliyse, &quot;command&quot; da belirtilen programın &quot;trash&quot; URL&apos;lerini işletmesi için ayalalanır.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB çalışma gurubu">
+						<longdesc>Kullanıcının parçası olduğu Windows ağ çalışma grubu ya da etki alanı. Yeni çalışma grubunun tam olarak işlemesi için kullanıcının çıkış yapıp tekrar giriş yapması gerekebilir.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="İçinde DNS-SD servislerini aramak için ek alan adları">
+						<longdesc>&quot;network:///&quot; konumunda görülmesi gereken DNS-SD alan adlarının virgül ile ayırılmış listesi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Yerel DNS-SD servislerinin nasıl gösterileceği">
+						<longdesc>Geçerli değerler, &quot;merged&quot; (birleşik), &quot;separate&quot; (ayrık) ve &quot;disabled&quot; (kapalı)&apos;dir.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Otomatik vekil sunucu yapılandırma adresi">
+						<longdesc>Vekil ayar değerlerini sağlayan URL.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCS vekil sunucu portu">
+						<longdesc>&quot;/system/proxy/socks_host&quot; ile tanımlanmış vekil olarak kullanacağınız makinenin portu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS vekil sunucu adı">
+						<longdesc>Socks için kullanılacak vekilin makine adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP vekil sunucu portu">
+						<longdesc>&quot;/system/proxy/ftp_host&quot; ile tanımlanmış vekil olarak kullanacağınız makinenin portu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP vekil sunucu makine adı">
+						<longdesc>FTP için kullanılacak vekilin makine adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Güvenli HTTP sunucu portu">
+						<longdesc>&quot;/system/proxy/secure_host&quot; ile tanımlanmış vekil olarak kullanacağınız makinenin portu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Güvenli HTTP vekil sunucu adı">
+						<longdesc>Güvenli HTTP için kullanılacak vekilin makine adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Vekil sunucu yapılandırma kipi">
+						<longdesc>Vekil yapılandırma kipi seç. Geçerli değerler &quot;none&quot;, &quot;manual&quot; ve &quot;auto&quot;dur.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Vekil olmayan makineler">
+						<longdesc>Bu anahtar vekil (eğer aktifse) aracılığından daha çok, direk bağlanmış sunucuların listesini içerir. Değerler, sunucu adları, alanları (enbaşta maske kullanarak, *.foo.com), IP sunucu adresleri (hem IPv4 hem IPv6) ve ağ maskeli ağ adresleri (192.168.0.0/24 benzeri) olabilir.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP vekil sunucu parolası">
+						<longdesc>HTTP vekili kimlik doğrulaması için kullanılacak şifre.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP vekil sunucu kullanıcı adı">
+						<longdesc>HTTP vekili kimlik doğrulamasında kullanacağı kullanıcı adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Vekil sunucu bağlantılarında kimlik doğrulaması yap">
+						<longdesc>Eğer seçiliyse, vekil sunucusuna bağlantılar kimlik doğrulaması gerektirir. kullanıcı adı/parola ikilisi &quot;/system/http_proxy/authentication_user&quot; ve  &quot;/system/http_proxy/authentication_password&quot; ile tanımlanır.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP vekil sunucu portu">
+						<longdesc>&quot;/system/http_proxy/host&quot; ile tanımlanmış vekil olarak kullanacağınız makinenin portu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP vekil sunucu makine adı">
+						<longdesc>HTTP için kullanılacak vekilin makine adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP vekili kullan">
+						<longdesc>HTTP&apos;ye İnternet üzerinden bağlanırken vekili etkin kılar.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

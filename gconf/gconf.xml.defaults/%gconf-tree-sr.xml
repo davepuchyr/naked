@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Подразумевани програм за преглед делова">
+								<longdesc>Програм који се користи за прегледање датотека које захтевају компоненту за преглед. Параметар %s ће бити замењен адресом датотеке, а параметар %c ће бити замењен IID-ом компоненте.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргумент извршавања за подразумевани терминал">
+								<longdesc>Аргумент извршавања за подразумевани терминалски програм.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Подразумевани терминалски програм">
+								<longdesc>Подразумевани терминалски програм који се користи за програме којима је неопходан терминал.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „h323“ адресама">
+								<longdesc>Наредба коришћена за баратање „h323“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „h323“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „h323“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „callto“ адресама">
+								<longdesc>Наредба коришћена за баратање „callto“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „callto“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „callto“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „aim“ адресама">
+								<longdesc>Наредба коришћена за баратање „aim“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „aim“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „aim“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „mailto“ адресама">
+								<longdesc>Наредба коришћена за баратање „mailto“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „mailto“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „mailto“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „https“ адресама">
+								<longdesc>Наредба коришћена за баратање „https“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „https“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „https“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „http“ адресама">
+								<longdesc>Наредба коришћена за баратање „http“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „http“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „http“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „man“ адресама">
+								<longdesc>Наредба коришћена за баратање „man“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „man“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „man“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „info“ адресама">
+								<longdesc>Наредба коришћена за баратање „info“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „info“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „info“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „ghelp“ адресама">
+								<longdesc>Наредба коришћена за баратање „ghelp“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „ghelp“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „ghelp“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Покрени наредбу у терминалу">
+								<longdesc>Укључено ако наредба која се користи за ове адресе треба да се покреће у терминалу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Руковаоц „trash“ адресама">
+								<longdesc>Наредба коришћена за баратање „trash“ адресама, ако је укључено.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Да ли наведена наредба треба да се користи за „trash“ адресе.">
+								<longdesc>Укључено ако наредба наведена у кључу „command“ треба да се користи за „trash“ адресе.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Да ли покретање терминала са радне површи отвара личну фасциклу">
 						<longdesc>Уколико је изабрано, отварање терминала са радне површи ће отворити лични директоријум. У супротном, терминал ће бити покренут са радном путањом до радне површи. Уколико је радна површ уједно и лична фасцикла, ова опција је небитна.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="СМБ радна група">
+						<longdesc>Радна група или домен Windows мреже чији је корисник члан. Да би нова радна група узела маха корисник ће можда морати да се одјави и поново пријави.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Допунски домени на којима да тражи DNS-SD услуге">
+						<longdesc>Запетом раздвојен списак DNS-SD домена који су доступни на путањи „network:///.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Како да приказује локалну DNS-SD услугу">
+						<longdesc>Допуштене вредности су „merged“ (спојено), „separate“ (раздвојено) и „disabled“ (искључено).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Адреса за самоподешавање посредника">
+						<longdesc>Адреса која обезбеђује вредности за подешавање посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт SOCKS посредника">
+						<longdesc>Порт машине одређене помоћу „/system/proxy/socks_proxy“ која је посредник.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Име SOCKS посредника">
+						<longdesc>Име рачунара за SOCKS посредовање.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт FTP посредника">
+						<longdesc>Порт рачунара датог у „/system/proxy/ftp_proxy“ кроз који посредује.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Име FTP посредника">
+						<longdesc>Име рачунара за FTP посредовање.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт безбедног HTTP посредника">
+						<longdesc>Порт рачунара датог у „/system/proxy/secure_proxy“ кроз који посредује.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Име безбедног HTTP посредника">
+						<longdesc>Име рачунара за безбедно веб (HTTPS) посредовање.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Начин подешавања посредника">
+						<longdesc>Изаберите режим подешавања посредника. Допуштене вредности су „none“, „manual“ и „auto“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Беспосредничке адресе">
+						<longdesc>Овај кључ садржи списак рачунара који су непосредно повезани, уместо путем посредника (уколико је у дејству). Ове вредности могу бити имена рачунара, домени (помоћу почетних навода као што је *.нешто.ију), ИП адресе рачунара (било ИП4 било ИП6) и адресе мрежа уз мрежну маску (нешто као што је 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Лозинка HTTP посредника">
+						<longdesc>Лозинка која се користи за идентификацију код веб посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Корисник HTTP посредника">
+						<longdesc>Корисничко име које се шаље при идентификацији код веб посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Идентификуј везе са посредничким сервером">
+						<longdesc>Уколико је постављено, везе са посредничким сервером се идентификују. Пар корисник/лозинка се узима из „/system/http_proxy/authentication_user“ и „/system/http_proxy/authentication_password“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт HTTP посредника">
+						<longdesc>Порт рачунара датог у „/system/http_proxy/host“ кроз који посредује.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Име HTTP посредника">
+						<longdesc>Име рачунара за веб (HTTP) посредовање.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Користи веб посредника">
+						<longdesc>Укључује подешавања посредника при приступу вебу преко Интернета.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

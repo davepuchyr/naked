@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಘಟಕ ನೋಡುವ ಅನ್ವಯ">
+								<longdesc>ಕಡತಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಒಂದು ಘಟಕದ ಅಗತ್ಯವಿರುವಂತಹ ಕಡತಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಬಳಸಬೇಕಾದ ಒಂದು ಅನ್ವಯ. %s ನಿಯತಾಂಕವನ್ನು ಕಡತಗಳ URI ಗಳಿಂದ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ, ಹಾಗು %c ನಿಯತಾಂಕವನ್ನು ಘಟಕದ IID ಇಂದ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಟರ್ಮಿನಲ್‌ಗಾಗಿನ Exec ಆರ್ಗ್ಯುಮೆಂಟ್">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಟರ್ಮಿನಲ್ ಅನ್ವಯದಲ್ಲಿ ಬಳಸಬೇಕಿರುವ exec ಆರ್ಗ್ಯುಮೆಂಟ್.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಟರ್ಮಿನಲ್ ಅನ್ವಯ">
+								<longdesc>ಟರ್ಮಿನಲ್ಲಿನ ಅಗತ್ಯವಿರುವ ಅನ್ವಯಗಳಲ್ಲಿ ಬಳಸಬೇಕಿರುವ ಪೂರ್ವನಿಯೋಜಿತ ಟರ್ಮಿನಲ್ ಅನ್ವಯ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;h323&quot;  URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ &quot;h323&quot; URLs">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;h323&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="ಗಣಕತೆರೆಯಲ್ಲಿ ಒಂದು ಟರ್ಮಿನಲ್ ಅನ್ನು ತೆರೆಯುವುದರಿಂದ ಅದು ನೆಲೆ (ಹೋಮ್) ಕಡತಕೋಶದಲ್ಲಿ ಒಂದು ಟರ್ಮಿನಲ್ ಅನ್ನು ತೆರೆಯುತ್ತದೆಯೆ">
 						<longdesc>true ಗೆ ಬದಲಾಯಿಸಿದರೆ, ಗಣಕತೆರೆಯಲ್ಲಿ ಒಂದು ಟರ್ಮಿನಲ್ ಅನ್ನು ತೆರೆಯುವುದರಿಂದ ಅದು ನೆಲೆ (ಹೋಮ್) ಕಡತಕೋಶದಲ್ಲಿ ಒಂದು ಟರ್ಮಿನಲ್ ಅನ್ನು ತೆರೆಯುತ್ತದೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಅದು ಗಣಕತೆರೆ ಕೋಶದಲ್ಲಿ ತೆರೆಯಲ್ಪಡುತ್ತದೆ. ಗಣಕತೆರೆ ಕಡತಕೋಶ ಹಾಗು ನೆಲೆ ಕಡತಕೋಶ ಎರಡೂ ಒಂದೇ ಆಗಿದ್ದಲ್ಲಿ ಈ ಕೀಲಿಯ ಉಪಯೋಗವಿರುವುದಿಲ್ಲ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ಕೆಲಸದಗುಂಪು">
+						<longdesc>ಬಳಕೆದಾರರು ಒಂದು ಭಾಗವಾದ ವಿಂಡೋಸ್ ನೆಟ್‌ವರ್ಕಿಂಗ್ ವರ್ಕ್-ಗ್ರೂಪ್ ಅಥವ ಡೊಮೈನಿನ ಹೆಸರು. ಹೊಸ ವರ್ಕ್-ಗ್ರೂಪ್ ಸಂಪೂರ್ಣವಾಗಿ ಕಾರ್ಯರೂಪಕ್ಕೆ ಬರಲು ಬಳಕೆದಾರರು ನಿರ್ಗಮಿಸಿ ನಂತರ ಮರಳಿ ಪ್ರವೇಶಿಸುವ ಅಗತ್ಯವಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD ಸೇವೆಗಳನ್ನು ಹುಡುಕಬೇಕಿರುವ ಹೆಚ್ಚಿನ ಘಟಕಗಳು">
+						<longdesc>&quot;network:///&quot; ಸ್ಥಳದಲ್ಲಿ ಕಾಣಿಸಬೇಕಿರುವ ಅರ್ಧವಿರಾಮ ಚಿಹ್ನೆವನ್ನು ಹೊಂದಿರುವ DNS-SD ಕ್ಷೇತ್ರಗಳ ಪಟ್ಟಿ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ಸ್ಥಳೀಯ DNS-SD ಸೇವೆಯನ್ನು ಹೇಗೆ ತೋರಿಸಬೇಕು">
+						<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು &quot;ಒಗ್ಗೂಡಿಸಲಾದ&quot;, &quot;ಪ್ರತ್ಯೇಕ&quot; ಹಾಗು &quot;ಅಶಕ್ತಗೊಂಡ&quot; ಆಗಿರುತ್ತವೆ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ಸ್ವಯಂಚಾಲಿತ ಪ್ರಾಕ್ಸಿ ಸಂರಚನೆಯ ಯುಆರ್ಎಲ್">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸಂರಚನಾ ಮೌಲ್ಯಗಳನ್ನು ಒದಗಿಸುವ ಯುಆರ್ಎಲ್.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/proxy/socks_host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸಾಕ್ಸ್ ಮಾಡಲು ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/proxy/ftp_host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ FTP ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="ಸುರಕ್ಷಿತ HTTP ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/proxy/secure_host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ಸುರಕ್ಷಿತ HTTP ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸುರಕ್ಷಿತ HTTP ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ಪ್ರಾಕ್ಸಿ ಸಂರಚನಾ ಕ್ರಮ">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸಂರಚನಾ ಕ್ರಮವನ್ನು ಆರಿಸಿ. ಬೆಂಬಲವಿರುವ ಮೌಲ್ಯಗಳು, &quot;ಯಾವುದೂ ಇಲ್ಲ&quot;, &quot;ಕೈಯಾರೆ&quot;, &quot;ತಾನಾಗಿಯೆ&quot; ಆಗಿರುತ್ತವೆ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ಪ್ರಾಕ್ಸಿಯಲ್ಲದ ಅತಿಥೇಯಗಳು">
+						<longdesc>ಈ ಕೀಲಿಯು ಪ್ರಾಕ್ಸಿಯ (ಸಕ್ರಿಯವಾಗಿದ್ದಲ್ಲಿ) ಮೂಲಕ ಸಂಪರ್ಕಿತವಾಗಿಲ್ಲದೆ, ನೇರವಾಗಿ ಸಂಪರ್ಕವನ್ನು ಹೊಂದಿರುವ ಅತಿಥೇಯಗಳ ಪಟ್ಟಿಯನ್ನು ಹೊಂದಿರುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ಅತಿಥೇಯದ ಹೆಸರುಗಳು, ಕ್ಷೇತ್ರದ ಹೆಸರುಗಳು (*.foo.com ನಂತಹ ಆರಂಭಿಕ ವೈಲ್ಡ್‍ಕಾರ್ಡ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು), IP ಅತಿಥೇಯ ವಿಳಾಸಗಳು (IPv4 ಹಾಗು IPv6) ಹಾಗು ಒಂದು ನೆಟ್‌ಮಾಸ್ಕಿನೊಂದಿನ (192.168.0.0/24 ನಂತಹವುಗಳು) ಜಾಲಬಂಧ ವಿಳಾಸಗಳು ಆಗಿರುತ್ತಿವೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಗುಪ್ತಪದ">
+						<longdesc>HTTP ಪ್ರಾಕ್ಸಿ ಕಾರ್ಯವು ನಡೆಸುವಾಗ ದೃಢೀಕರಿಸಲು ಬಳಸಬೇಕಿರುವ ಗುಪ್ತಪದ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಬಳಕೆದಾರಹೆಸರು">
+						<longdesc>HTTP ಪ್ರಾಕ್ಸಿ ಕಾರ್ಯವನ್ನು ನಡೆಸುವಾಗ ದೃಢೀಕರಿಸಲು ಬಳಸಬೇಕಿರುವ ಬಳಕೆದಾರ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕ ಸಂಪರ್ಕಗಳನ್ನು ದೃಢೀಕರಿಸು">
+						<longdesc>true ಆದಲ್ಲಿ, ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕಕ್ಕಾಗಿ ಸಂಪರ್ಕಗಳಿಗೆ ದೃಢೀಕರಣದ ಅಗತ್ಯವಿರುತ್ತದೆ. ಬಳಕೆದಾರಹೆಸರು/ಗುಪ್ತಪದದ ಸಿದ್ಧತೆಯನ್ನು &quot;/system/http_proxy/authentication_user&quot; ಹಾಗು /system/http_proxy/authentication_password&quot; ಇಂದ ಸೂಚಿಸಲಾಗುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/http_proxy/host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ HTTP ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿಯನ್ನು ಬಳಸು">
+						<longdesc>ಅಂತರ್ಜಾಲದ ಮೂಲಕ HTTP ಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವಾಗ ಪ್ರಾಕ್ಸಿ ಸಿದ್ಧತೆಗಳನ್ನು ಶಕ್ತಗೊಳಿಸು.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

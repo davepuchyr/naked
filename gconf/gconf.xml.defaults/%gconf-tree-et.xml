@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Vaikimisi komponentide vaatamise rakendus">
+								<longdesc>Rakendus, mida kasutada failide puhul, mille vaatamiseks on vaja kasutada komponenti. Parameeter %s asendatakse faili URI&apos;ga, parameeter %c komponendi IID&apos;ga.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Vaikimisi terminalikäivitusargument">
+								<longdesc>Vaikimisi terminalirakenduse käivitusargument.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Vaikimisi terminalirakendus">
+								<longdesc>Vaikimisi terminalirakendus kasutamiseks terminali vajavate rakenduste jaoks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;h323&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;h323&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;h323&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;callto&quot; URLide  käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;callto&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;callto&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;aim&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;aim&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;aim&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;mailto&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;mailto&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;mailto&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;https&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;https&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;https&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;http&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;http&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;http&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;man&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;man&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;man&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;info&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;info&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;info&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;ghelp&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;ghelp&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;ghelp&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;trash&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;trash&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;trash&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Kui terminal avada töölaual, avab see kodukataloogis">
 						<longdesc>Kui tõene, siis töölaual terminali avamine avab selle kodukataloogis. Muul juhul avatakse see töölaua kataloogis. See valik on tähendusetu, kui töölaud ja kodukataloogi kattuvad.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB töögrupp">
+						<longdesc>Windows&apos;i võrgunduse töögrupi või domeeni nimi, kuhu see kasutaja kuulub. Selleks et kasutaja saaks täielikult ära kasutada uue töögrupi privileege, peaks ta kõigepealt välja ja seejärel uuesti sisse logima.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Lisadomeenid DNS-SD teenuste otsimiseks">
+						<longdesc>Komadega eraldatud rida DNS-SD domeenidest, mis peaksid olema nähtavad võrgukohas &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kuidas kuvada kohalikku DNS-SD teenust">
+						<longdesc>Võimalikud väärtused on &quot;kokkupandud&quot;, &quot;eraldatud&quot; ja &quot;keelatud&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automaatne proksi seadistamise URL">
+						<longdesc>URL, mis tagab proxi seadistuste väärtused.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proksi port">
+						<longdesc>Port, defineeritud &quot;/system/proxy/socks_host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proksiserveri aadress">
+						<longdesc>Socks proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP proksi port">
+						<longdesc>Port, defineeritud &quot;/system/proxy/ftp_host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP proksiserveri aadress">
+						<longdesc>FTP proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Turvalise HTTP proksi port">
+						<longdesc>Port, defineeritud &quot;/system/proxy/secure_host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Turvalise HTTP proksiserveri aadress">
+						<longdesc>Turvalise HTTP proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proksi seadistusrežiim">
+						<longdesc>Vali proksi konfiguratsiooni mood. Toetatud väärtused on &quot;pole&quot;, &quot;käsitsi&quot;, &quot;automaatne&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Proksi kasutamiskeeluga serverid">
+						<longdesc>See võti sisaldab nimekirja hostidest kuhu ühendutakse otse, ilma et kasutataks proxyt (isegi kui see on aktiivne). Väärtused võivad olla hostinimed, domeenid (kasutades vormi *.foo.com), IP-aadressid (nii IPv6 kui IPv6) ja võrguaadressid koos võrgumaskiga (näiteks 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP proksi salasõna">
+						<longdesc>Parool, mida HTTP proxile autentimiseks saata.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP proksi kasutajanimi">
+						<longdesc>Kasutajanimi mida saadetakse autentimiseks HTTP proxile.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Proksiserveri ühenduste autentimine">
+						<longdesc>Kui tõene, siis ühendused proxy-serverisse vajavad autentimist. Kasutajanimi/salasõna on defineeritud võtmetega &quot;/system/http_proxy/authentication_user&quot; ja &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP proksi port">
+						<longdesc>Port, defineeritud &quot;/system/http_proxy/host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP proksiserveri aadress">
+						<longdesc>HTTP proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP proksi kasutamine">
+						<longdesc>Lubab proksi seaded, kui HTTP-le pääsetakse ligi Interneti kaudu.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

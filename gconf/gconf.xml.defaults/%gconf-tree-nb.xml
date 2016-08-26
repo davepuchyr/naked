@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt applikasjon for visning av komponent">
+								<longdesc>Applikasjon som skal brukes for å vise filer som krever en komponent for visning. Parameteren %s vil erstattes med filens URIer, parameteren %c vil erstattes med komponentens IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Kjøringsargument for forvalgt terminal">
+								<longdesc>Kjøringsargument som skal brukes for forvalgt terminalprogram.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt terminalapplikasjon">
+								<longdesc>Forvalgt terminalprogram som skal brukes for programmer som krever en terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «h323»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «h323»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «h323»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «h323»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «callto»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «callto»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «callto»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «callto»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «aim»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «aim»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «aim»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «aim»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «mailto»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «mailto»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «mailto»-URLer">
+								<longdesc> True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «mailto»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «https»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «https»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «https»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «https»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «http»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «http»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «http»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «http»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «man»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «man»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «man»-URLer">
+								<longdesc> True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «man»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «info»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «info»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «info»-URLer">
+								<longdesc> True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «info»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «ghelp»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «ghelp»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «ghelp»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «ghelp»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «papirkurv»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «trash»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «trash»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «trash»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-arbeidsgruppe">
+						<longdesc>Arbeidsgruppe eller domene brukeren er del av i Windows-nettverket. Brukeren må logge ut for at endringer skal tre i kraft.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Ekstra domener som skal sjekkes for DNS-SD-tjenester">
+						<longdesc>Kommaseparert liste med DNS-SD-domener som skal være synlige i lokasjonen «network:///».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Hvordan vises lokale DNS-SD-tjenester">
+						<longdesc>Mulige verdier er «merged», «separate» og «disabled».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL for automatisk konfigurasjon av proxy">
+						<longdesc>URL som oppgir verdier for konfigurasjon av proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port for SOCKS-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/proxy/socks_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Vertsnavn for SOCKS-proxy">
+						<longdesc>Maskinnavn for SOCKS-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port for FTP-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/proxy/ftp_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Vertsnavn for FTP-proxy">
+						<longdesc>Maskinnavn for FTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port for HTTPS-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/proxy/secure_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Vertsnavn for HTTPS-proxy">
+						<longdesc>Maskinnavn for HTTPS-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Konfigurasjonsmodus for proxy">
+						<longdesc>Velg konfigurasjonsmodus for proxy. Verdier som er støttet er «none», «manual», «auto».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Verter som ikke skal bruke proxy">
+						<longdesc>Denne nøkkelen inneholder en liste med verter som har direkte forbindelse i stedet for å gå via proxy (hvis denne er aktiv). Verdiene kan være vertsnavn, domener (med jokertegn som *.domene.no), IP-adresse for verten (både IPv4 og IPv6) og nettverksadresser med en nettmaske (som 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Passord for HTTP-proxy">
+						<longdesc>Passord som skal oppgis ved autentisering for bruk av HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Brukernavn for HTTP-proxy">
+						<longdesc>Brukernavn som skal oppgis som autentisering ved bruk av HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentiser forbindelser til proxytjener">
+						<longdesc>Hvis sann vil tilkoblinger til proxytjener kreve autentisering. Brukernavn/passord-kombinasjonen er definert i «/system/http_proxy/authentication_user» og «/system/http_proxy/authentication_password».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port for HTTP-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/http_proxy/host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Vertsnavn for HTTP-proxy">
+						<longdesc>Maskinnavn for HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Bruk HTTP-proxy">
+						<longdesc>Aktiverer proxy-innstillinger ved aksess via HTTP til Internett.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

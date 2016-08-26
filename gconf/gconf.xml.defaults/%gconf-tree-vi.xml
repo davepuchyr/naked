@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Ứng dụng xem thành phần mặc định">
+								<longdesc>Ứng dụng cần dùng để xem tập tin cần thiết thành phần để xem nó. Tham số %s sẽ được thay thế bằng các URI của tập tin đó, tham số %c sẽ được thay thế bằng IID của thành phần.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Đối số thức hiện cho thiết bị cuối mặc định">
+								<longdesc>Đối số thực hiện cần dùng cho ứng dụng thiết bị cuối mặc định</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Ứng dụng thiết bị cuối mặc định">
+								<longdesc>Ứng dụng thiết bị cuối mặc định cần dùng cho các ứng dụng cần thiết thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « h323 »">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « h323 », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « h323 » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « h323 ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « callto » (gợi đến)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « callto » (gọi đến), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « callto » (gợi đến) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « callto » (gợi đến).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « aim »">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « aim », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « aim » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « aim ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « mailto » (gởi thư cho)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « mailto » (gởi thư cho), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « mailto » (gởi thư cho) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « mailto » (gởi thư cho).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « https »">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « https », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « https » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « https ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « http »">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « http », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « http » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « http ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « man » (trang hướng dẫn)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « man » (trang hướng dẫn), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « man » (trang hướng dẫn) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « man » (trang hướng dẫn).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « info » (thông tin)">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « info » (thông tin), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « info » (thông tin) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « info » (thông tin).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « ghelp » (trợ giúp g)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « ghelp » (trợ giúp g), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « ghelp » (trợ giúp g) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « ghelp » (trợ giúp g).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « trash » (rác)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « trash » (rác), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « trash » (rác) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « trash » (rác).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,112 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Khi mở cửa sổ dòng lệnh ở màn hình nền sẽ mở một cửa sổ dòng lệnh tại thư mục chính">
 						<longdesc>Nếu đặt là đúng, lệnh mở cửa sổ dòng lệnh ở màn hình nền sẽ mở cửa sổ dòng lệnh trong thư mục chính. Nếu không, nó sẽ mở trong thư mục của màn hình nền. Chú ý rằng khóa này không thích hợp nếu thư mục màn hình nền cũng là thư mục chính.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Nhóm làm việc SMB">
+						<longdesc>Nhóm làm việc chạy mạng Windows hay miền chứa người dùng này. Người dùng có lẽ cần phải đăng xuất rồi đăng nhập lại để dùng một nhóm làm việc mới.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Những miền thêm nơi cần tìm dịch vụ DNS-SD">
+						<longdesc>Danh sách các miền DNS-SD, định giới bằng dấu phẩy, nên được hiển thị trong địa điểm « network:// ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Cách hiển thị dịch vụ DNS-SD cục bộ">
+						<longdesc>Giá trị có thể là:
+ • merged — đã phối hợp.
+ • separate — riêng,
+ • disabled — đã tắt.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL cấu hình tự động ủy nhiệm">
+						<longdesc>URL cung cấp giá trị cấu hình ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Cổng ủy nhiệm SOCKS">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/proxy/socks_host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Tên máy ủy nhiệm SOCKS">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Cổng ủy nhiệm FTP">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/ftp_proxy/host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Tên máy ủy nhiệm FTP">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Cổng ủy nhiệm HTTP bảo mật">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/proxy/secure_host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Tên máy ủy nhiệm HTTP bảo mật">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm HTTP bảo mật.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Chế độ cấu hình ủy nhiệm">
+						<longdesc>Hãy chọn chế độ cấu hình ủy nhiệm. Giá trị được hỗ trợ là:
+ • none — không có,
+ • manual — tự làm,
+ • auto — tự động.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Máy khác ủy nhiệm">
+						<longdesc>Khóa này chứa danh sách các máy được kết nối trực tiếp, hơn là qua ủy nhiệm (nếu nó hoạt động). Giá trị có thể là tên máy, miền (dùng ký tự đại diện ban đầu như « *.phu.com »), địa chỉ IP của máy (cả IPv4 lẫn IPv6) và địa chỉ mạng có mặt nạ mạng (như « 192.168.0.0/24 »).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Mật khẩu ủy nhiệm HTTP">
+						<longdesc>Mật khẩu để gởi qua là xác thực khi dùng ủy nhiệm HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Tên người dùng ủy nhiệm HTTP">
+						<longdesc>Tên người dùng để gởi qua là xác thực khi dùng ủy nhiệm HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Xác thực sự kết nối đến máy phục vụ ủy nhiệm">
+						<longdesc>Nếu đúng, mọi sự kết nối đến máy phục vụ ủy nhiệm cần thiết xác thực. Tổ hợp tên người dùng và mật khẩu được định nghĩa bằng « /system/http_proxy/authentication_user » và « /system/http_proxy/authentication_password ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Cổng ủy nhiệm HTTP">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/http_proxy/host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Tên máy ủy nhiệm HTTP">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Dùng ủy nhiệm HTTP">
+						<longdesc>Bật chạy thiết lập ủy nhiệm khi truy cập HTTP qua Mạng.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

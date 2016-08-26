@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Osagaien ikustaile lehenetsia">
+								<longdesc>Fitxategiak bistaratzeko eta hauek ikusteko behar duen osagaia eskatzen duen aplikazioa. %s parametroa fitxategiaren URIagatik, eta %c parametroa IID osagaiagatik ordeztuko dira.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec argumentua, terminal lehenetsirako">
+								<longdesc>Exec argumentua terminal aplikazio lehenetsian erabiltzeko.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminal aplikazio lehenetsia">
+								<longdesc>Terminal aplikazio lehenetsia, terminala eskatzen duten aplikazioetan erabiltzeko.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLen kudeatzailea">
+								<longdesc>&quot;h323&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;h323&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;h323&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLen kudeatzailea">
+								<longdesc>&quot;callto&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;callto&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;callto&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLen kudeatzailea">
+								<longdesc>&quot;aim&quot; URLak kudeatzeko komandoa, gaitua egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;aim&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;aim&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLen kudeatzailea">
+								<longdesc>&quot;mailto&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;mailto&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;mailto&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLen kudeatzailea">
+								<longdesc>&quot;https&quot; komandoa kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;https&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;https&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLen kudeatzailea">
+								<longdesc>&quot;http&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;http&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;http&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLen kudeatzailea">
+								<longdesc>&quot;man&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;man&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;man&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLen kudeatzailea">
+								<longdesc>&quot;info&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;info&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;info&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLen kudeatzailea">
+								<longdesc>&quot;ghelp&quot; URLak kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;ghelp&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;ghelp&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Exekutatu komandoa terminalean">
+								<longdesc>Egia (true) URL hau kudeatzeko programa terminal batean exekutatu behar bada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLen kudeatzailea">
+								<longdesc>&quot;trash&quot; komandoa kudeatzeko komandoa, gaituta egonez gero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Hemen zehaztutako komandoak &quot;trash&quot; URLak kudeatuko ditu.">
+								<longdesc>Ezarri egi gisa (true) &quot;komandoa&quot; gakoan zehaztutako komandoak &quot;trash&quot; URLak kudeatuko baditu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Mahaigainean terminal bat irekitzean erabiltzailearen direktorio nagusian terminala irekiko den ala ez adierazten du.">
 						<longdesc>TRUE (Egia) gisa ezartzen bada, mahaigainean terminal bat irekitzean erabiltzailearen direktorio nagusian irekiko da terminala. Bestela, erabiltzailearen mahaigaineko direktorioan irekiko da terminala. Jakin ezazu gako honek ez duela garrantzirik baldin eta mahaigaineko direktorioa erabiltzailearen direktorio nagusiaren berdina bada.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB lan-taldea">
+						<longdesc>Erabiltzailea harpidetuta dagoen Windows sareko lan-taldea edo domeinua. Lan-talde berri batek erabateko eragina edukitzeko erabiltzaileak saioa amaitu eta berriro saioa hasi beharko du.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domeinu gehigarriak DNS-SD zerbitzuetan bilatzeko">
+						<longdesc>Komaz bereiztutako DNS-SD domeinuen zerrenda, &quot;network:///&quot; helbidean ikusgai izango dena.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="DNS-SD zerbitzua bistaratzeko modua">
+						<longdesc>Balio erabilgarriak &quot;merged&quot;, &quot;separate&quot; eta &quot;disabled&quot; dira.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Proxy konfigurazio automatikoaren URLa">
+						<longdesc>URLa proxy-aren konfigurazioko balioak eskaintzeko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proxy-aren ataka">
+						<longdesc>Ordenagailuaren ataka, &quot;/system/proxy/socks_host&quot;-ean definituta proxy-arena egiteko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proxy ostalariaren izena">
+						<longdesc>Ordenagailuaren izena, proxy socks egiten duenarena.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP proxy-aren ataka">
+						<longdesc>Ordenagailuaren ataka, &quot;/system/proxy/ftp_host&quot;-ean definituta proxy-arena egiteko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP proxy ostalariaren izena">
+						<longdesc>Ordenagailuaren izena, proxy FTPa egiten duenarena.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="HTTP Seguruaren proxy -aren ataka">
+						<longdesc>Ordenagailuaren ataka, &quot;/system/proxy/secure_host&quot;-ean definituta proxy-arena egiteko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="HTTP Seguruaren proxy ostalariaren izena">
+						<longdesc>Ordenagailuaren izena, proxy HTTP segurua egiten duenarena.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxy-aren konfigurazio modua">
+						<longdesc>Hautatu proxy-aren konfigurazio modua. Onartutako balioak &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Proxy-rik gabe konektatuko diren ostalariak">
+						<longdesc>Gako honek zuzenean konektatzen diren ostalarien zerrenda dauka, proxy-aren bitartez egin beharrean (nahiz eta abioan egon). Balioak ostalarien izenak, domeinuak (*.lelo.com bezalako hasierako komodina erabiliz), IP helbideak (bai IPv4 bai IPv6) eta sareko helbideak, sare-maskarekin, (192.168.0.0/24 bezalakoak).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP proxy-aren pasahitza">
+						<longdesc>Pasahitza, HTTP proxy-a erabiltzean autentifikatzeko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP proxy-ko erabiltzaile-izena">
+						<longdesc>Erabiltzaile-izena HTTP proxy-a egiterakoan egiaztatzeko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentifikatu proxy zerbitzariaren konexioak">
+						<longdesc>Egia bada, proxy zerbitzarira konektatzeko autentifikazioa eskatuko da. Erabiltzailea/pasahitza bikotea &quot;/system/http_proxy/authentication_user&quot;-ean eta &quot;/system/http_proxy/authentication_password&quot;-ean definitzen dira.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP proxy-aren ataka">
+						<longdesc>Ordenagailuaren ataka, &quot;/system/http_proxy/host&quot;-ean definituta proxy-arena egiteko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP proxy ostalariaren izena">
+						<longdesc>Ordenagailuaren izena, proxy HTTPa egiten duenarena.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Erabili HTTP proxy-a">
+						<longdesc>Proxy-aren konfigurazioa gaitzen du HTTP internet bidez sarbidetzean</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

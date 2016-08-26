@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="โปรแกรมแสดงปริยาย">
+								<longdesc>โปรแกรมแสดง แฟ้มที่ต้องใช้คอมโพเนนต์แสดง %s จะถูกแทนที่ด้วย URI ของแฟ้ม และ %c จะถูกแทนที่ด้วย IID ของคอมโพเนนต์</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="อาร์กิวเมนต์ exec สำหรับเทอร์มินัลปริยาย">
+								<longdesc>อาร์กิวเมนต์สำหรับโปรแกรมเทอร์มินัลปริยาย</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="โปรแกรมเทอร์มินัลปริยาย">
+								<longdesc>โปรแกรมเทอร์มินัลปริยาย ไว้ใช้สำหรับ โปรแกรมที่ต้องใช้เทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด h323">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด h323 (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด h323">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด h323</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด callto">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด callto (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด callto">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด callto</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด aim">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด aim (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด aim">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด aim</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด mailto">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด mailto (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด mailto">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด mailto</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด https">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด https (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด https">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด https</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด http">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด http (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด http">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด http</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด man">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด man (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด man">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด man</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด info">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด info (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด info">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมใน &quot;command&quot; จัดการ URL ชนิด info</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด ghelp">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด ghelp (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด ghelp">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด ghelp</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="เรียกใช้โปรแกรมในเทอร์มินัล">
+								<longdesc>ตั้งเป็นค่าจริงถ้าโปรแกรมที่จัดการ URL นี้ควรถูกเรียกใช้ในเทอร์มินัล</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="คำสั่งจัดการ URL ชนิด trash">
+								<longdesc>คำสั่งสำหรับจัดการ URL ชนิด trash (ถ้าเปิดใช้)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="กำหนดให้คำสั่งนี้จัดการ URL ชนิด trash">
+								<longdesc>ตั้งเป็นค่าจริงถ้าต้องการให้โปรแกรมในคีย์ &quot;command&quot; จัดการ URL ชนิด trash</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="การเปิดเทอร์มินัลบนพื้นโต๊ะจะเปิดในไดเรกทอรีบ้านหรือไม่">
 						<longdesc>หากกำหนดเป็นจริง การเปิดเทอร์มินัลบนพื้นโต๊ะจะเป็นการเปิดเทอร์มินัลในไดเรกทอรีบ้าน มิฉะนั้น ก็จะเปิดในไดเรกทอรีพื้นโต๊ะ สังเกตว่า ค่านี้จะไม่มีผลหากไดเรกทอรีพื้นโต๊ะกับไดเรกทอรีบ้านเป็นที่เดียวกัน</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="เวิร์กกรุป SMB">
+						<longdesc>เวิร์กกรุปหรือโดเมนของเครือข่ายวินโดวส์ที่ผู้ใช้อาศัยอยู่ ผู้ใช้อาจต้องออกจากระบบแล้วเข้าใหม่เพื่อจะเริ่มใช้เวิร์กกรุปใหม่ได้</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="โดเมนเพิ่มเติมที่จะมองหาบริการ DNS-SD">
+						<longdesc>รายการโดเมน DNS-SD (คั่นด้วยจุลภาค) ที่น่าจะมองเห็นได้ในตำแหน่ง &quot;network:///&quot;</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="วิธีแสดงผลบริการ DNS-SD ในเครือข่ายท้องถิ่น">
+						<longdesc>ค่าที่เป็นไปได้คือ &quot;merged&quot;, &quot;separate&quot; และ &quot;disabled&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL สำหรับตั้งค่าพร็อกซีโดยอัตโนมัติ">
+						<longdesc>URL ที่จัดส่งค่าตั้งพร็อกซี</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="พอร์ตพร็อกซี SOCKS">
+						<longdesc>พอร์ตบนเครื่องที่ตั้งไว้ใน &quot;/system/proxy/socks_host&quot; ที่จะใช้ติดต่อผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="ชื่อโฮสต์พร็อกซี SOCKS">
+						<longdesc>ชื่อเครื่องที่จะติดต่อ socks ผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="พอร์ตพร็อกซี FTP">
+						<longdesc>พอร์ตบนเครื่องที่ตั้งไว้ใน &quot;/system/proxy/ftp_host&quot; ที่จะใช้ติดต่อผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="ชื่อโฮสต์พร็อกซี FTP">
+						<longdesc>ชื่อเครื่องที่จะติดต่อ FTP ผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="พอร์ตพร็อกซี Secure HTTP">
+						<longdesc>พอร์ตบนเครื่องที่ตั้งไว้ใน &quot;/system/proxy/secure_host&quot; ที่จะใช้ติดต่อผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ชื่อโฮสต์พร็อกซี Secure HTTP">
+						<longdesc>ชื่อเครื่องที่จะติดต่อ Secure HTTP ผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="โหมดการตั้งค่าพร็อกซี">
+						<longdesc>เลือกโหมดการตั้งค่าพร็อกซี สามารถตั้งเป็น &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="โอสต์ที่ไม่ติดต่อผ่านพร็อกซี">
+						<longdesc>คีย์นี้เก็บรายชื่อโฮสต์ที่ให้ติดต่อโดยตรง แทนที่จะผ่านพร็อกซี (ถ้าเปิดทำงานอยู่)  สามารถตั้งเป็น ชื่อโฮสต์ โดเมน (ใช้ wildcard ข้างหน้าเช่น *.foo.com), ที่อยู่ IP (ทั้ง IPv4 และ IPv6) หรือที่อยู่บนเครือข่ายพร้อมกับ netmask (เช่น 192.168.0.0/24)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="รหัสผ่านพร็อกซี HTTP">
+						<longdesc>รหัสผ่านสำหรับการตรวจสอบสิทธิ์ใช้พร็อกซี HTTP</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="ชื่อบัญชีผู้ใช้พร็อกซี HTTP">
+						<longdesc>ชื่อบัญชีผู้ใช้สำหรับตรวจสอบสิทธิ์กับพร็อกซี HTTP</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ตรวจสอบสิทธิ์ก่อนใช้พร็อกซี">
+						<longdesc>ถ้าตั้งเป็นค่าจริง การเชื่อมต่อผ่านพร็อกซีจะต้องผ่านการตรวจสอบสิทธิ์ก่อน ชื่อผู้ใช้และรหัสผ่านเอามาจาก &quot;/system/http_proxy/authentication_user&quot; และ &quot;/system/http_proxy/authentication_password&quot;</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="พอร์ตพร็อกซี HTTP">
+						<longdesc>พอร์ตบนเครื่องที่ตั้งไว้ใน &quot;/system/http_proxy/host&quot; ที่จะใช้ติดต่อผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="ชื่อโฮสต์พร็อกซี HTTP">
+						<longdesc>ชื่อเครื่องที่จะติดต่อ HTTP ผ่าน</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="ใช้พร็อกซี HTTP">
+						<longdesc>ใช้ค่าพร็อกซีที่ตั้งไว้เวลาใช้ HTTP บนอินเทอร์เน็ต</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

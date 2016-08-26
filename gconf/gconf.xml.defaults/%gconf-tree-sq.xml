@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Programi i prezgjedhur për shikimin e komponuesit">
+								<longdesc>Programi që duhet përdorur për të shikuar files që kanë nevojë për një komponent që të shikohen. Parametri %s do të zevendësohet nga URl e file, parametri %c do të zevendësohet nga IID e komponentit.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumenti exec për terminalin e prezgjedhur">
+								<longdesc>Argumenti exec që duhet përdorur për terminalin e prezgjedhur</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Programi terminal i prezgjedhur">
+								<longdesc>Programi terminal i prezgjedhur që duhet përdorur për programet që kërkojnë një terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;h323&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;h323&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;h323&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;callto&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;callto&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;callto&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;aim&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;aim&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;aim&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;mailto&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;mailto&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;mailto&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;https&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;http&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;https&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;http&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;http&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;http&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;man&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;man&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;man&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;info&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;info&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;info&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;ghelp&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;ghelp&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;ghelp&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ekzekuto komandën në një terminal">
+								<longdesc>E vërtetë nëse komanda e përdorur për të trajtuar këtë lloj URL duhet të zbatohet në një terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Trajtuesi i URLve &quot;trash&quot;">
+								<longdesc>Komanda e përdorur për të trajtuar URLtë &quot;trash&quot;, nëse aktive.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nëse komanda e caktuar duhet të trajtojë URLtë &quot;trash&quot;">
+								<longdesc>E vërtetë nëse komanda e përcaktuar tek kyçi &quot;komanda&quot; duhet të trajtojë URLtë &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grup pune SMB">
+						<longdesc>Grupi i punës i rrjetit Windows apo domain pestar i të cilit është përdoruesi. Në menyrë që grupi i ri i punës të njihet efektivisht përdoruesit do t&apos;i duhet të shkëputet dhe të identifikohet përsëri.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domain-e të tjerë që duhen kontrolluar për shërbimet DNS-SD">
+						<longdesc>Lista e domain-eve DNS-SD, të ndarë me presje, që do të jenë të dukshëm tek pozicioni i rrjetit &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Si duhet shfaqur shërbimi lokal DNS-SD">
+						<longdesc>Vlerat e mundshme janë &quot;merged&quot;, &quot;separate&quot; dhe &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL e konfigurimit automatik të proxy">
+						<longdesc>URL që ve në dispozicion vlerat e konfigurimit të proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Porta e proxy SOCKS">
+						<longdesc>Porta e makinës e përcaktuar nga &quot;/system/proxy/socks_host&quot; nga do të kalojë proxy juaj.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Emri i host proxy SOCKS">
+						<longdesc>Emri i makinës për kalimin tek proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Porta e proxy FTP">
+						<longdesc>Porta e makinës e përcaktuar nga &quot;/system/proxy/ftp_host&quot; nga do të kalojë proxy juaj.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Emri i host proxy FTP">
+						<longdesc>Emri i makinës për kalimin tek proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Porta e proxy të sigurt HTTP">
+						<longdesc>Porta e makinës e përcaktuar nga &quot;/system/proxy/secure_host&quot; nga do të kalojë proxy juaj.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Emri i host i proxy të sigurtë HTTP">
+						<longdesc>Emri i makinës për kalimin tek proxy i sigurt HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Modaliteti i konfigurimit proxy">
+						<longdesc>Zgjidh modalitetin e konfigurimit proxy. Vlerat e pranuara janë &quot;asnjë&quot;, &quot;manualisht&quot;, &quot;automatikisht&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Asnjë host proxy">
+						<longdesc>Ky kyç përmban një listë me hostet e lidhur direkt, pa përdorur proxy (nëse ai është aktiv). Vlerat mund të jenë hostnames, domains (duke përdorur si parashtesë një wildcard si p.sh. *.foo.com), adresat IP të host (IPv4 dhe IPv6) dhe adresat e rrjetit me një netmask (diçka të ngjashme me 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Fjalëkalimi për proxy HTTP">
+						<longdesc>Fjalëkalimi që duhet dhënë si autentifikues kur kryen proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Përdoruesi për proxy HTTP">
+						<longdesc>Emri i përdoruesit që duhet dhënë për autentifikim kur përdoret proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentifiko lidhjet proxy server">
+						<longdesc>Nëse e vërtetë, atëhere lidhjet me server-in proxy kanë nevojë për autentifikim. Kombinimi përdorues/fjalëkalim përcaktohet nga &quot;/system/http_proxy/authentication_user&quot; dhe &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Porta e proxy HTTP">
+						<longdesc>Porta e makinës e përcaktuar nga &quot;/system/http_proxy/host&quot; nga do të kalojë proxy juaj.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Emri i host proxy HTTP">
+						<longdesc>Emri i makinës për kalimin tek proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Përdor proxy HTTP">
+						<longdesc>Aktivon rregullimet e proxy kur përdor HTTP në Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

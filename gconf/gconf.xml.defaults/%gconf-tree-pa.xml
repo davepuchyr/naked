@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਭਾਗ ਦਰਸ਼ਕ ਐਪਲੀਕੇਸ਼ਨ">
+								<longdesc>ਫਾਇਲਾਂ ਨੂੰ ਵੇਖਣ ਲਈ ਵਰਤਣ ਵਾਲਾ ਕਾਰਜ, ਜੋ ਕਿ ਹਿੱਸੇ ਵੇਖਣ ਦੇ ਲਈ ਜ਼ਰੂਰੀ ਹੈ। ਪੈਰਾਮੀਟਰ %s ਨੂੰ ਫਾਇਲ ਦੇ URI ਨਾਲ ਤਬਦੀਲ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ, ਪੈਰਾਮੀਟਰ %c ਨੂੰ ਹਿੱਸੇ IID ਨਾਲ ਤਬਦੀਲ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਟਰਮੀਨਲ ਲਈ Exec ਆਰਗੂਮੈਂਟ">
+								<longdesc>ਡਿਫਾਲਟ ਟਰਮੀਨਲ ਕਾਰਜ ਵਿੱਚ ਵਰਤਣ ਲਈ Exec ਆਰਗੂਮੈਂਟ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਟਰਮੀਨਲ ਐਪਲੀਕੇਸ਼ਨ">
+								<longdesc>ਡਿਫਾਲਟ ਟਰਮੀਨਲ ਕਾਰਜ, ਜੋ ਕਿ ਕਾਰਜਾਂ ਲਈ ਵਰਤਣਾ ਹੈ, ਜੋ ਕਿ ਟਰਮੀਨਲ ਦੀ ਮੰਗ ਕਰਦੇ ਹਨ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;h323&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;h323&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;h323&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;callto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;callto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;callto&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ|</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਕਮਾਂਡ ਲਾਈਨ &quot;aim&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ, ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;aim&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿੱਤਾ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ,&quot;aim&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;mailto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;mailto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;mailto&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;https&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;https&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;https&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;http&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;http&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;http&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;man&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;man&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;man&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;info&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;info&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;info&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;ghelp&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;ghelp&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;ghelp&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; (ਰੱਦੀ) URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;trash&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;trash (ਰੱਦੀ)&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;trash&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="ਕੀ ਡੈਸਕਟਾਪ ਉੱਤੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹਣ ਨਾਲ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਟਰਮੀਨਲ ਖੁੱਲ੍ਹੇ">
 						<longdesc>ਜੇ ਸਹੀਂ ਕੀਤਾ ਤਾਂ ਡੈਸਕਟਾਪ ਉੱਤੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹਣ ਨਾਲ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਟਰਮੀਨਲ ਖੁੱਲ੍ਹੇਗਾ। ਨਹੀਂ ਤਾਂ, ਇਹ ਡੈਸਕਟਾਪ ਡਾਇਰੈਕਟਰੀ ਖੋਲ੍ਹੋਗਾ। ਯਾਦ ਰੱਖੋ ਕਿ ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰਦੀ ਹੈ, ਜੇ ਡੈਸਕਟਾਪ ਡਾਇਰੈਕਟਰੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਦੇ ਅਨੁਰੂਪ ਹੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ਵਰਕਗਰੁੱਪ">
+						<longdesc>Windows ਨੈੱਟਵਰਕ ਵਰਕਗਰੁੱਪ ਜਾਂ ਡੋਮੇਨ, ਜਿਸ ਦਾ ਯੂਜ਼ਰ ਭਾਗ ਹੈ। ਇੱਕ ਨਵੇਂ ਵਰਕਗਰੁੱਪ ਨੂੰ ਪੂਰੀ ਤਰਾਂ ਸਰਗਰਮ ਹੋਣ ਲਈ ਯੂਜ਼ਰ ਲਾਗਆਉਟ ਅਤੇ ਮੁੜ ਲਾਗਇਨ ਕਰ ਸਕਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="ਇਸ ਵਿੱਚ DNS-SD ਸਰਵਿਸਾਂ ਦੀ ਖੋਜ ਲਈ ਹੋਰ ਡੋਮੇਨਾਂ">
+						<longdesc>DNS-SD ਡੋਮੇਨਾਂ ਦੀ ਕਾਮਿਆਂ ਨਾਲ ਵੱਖ ਕੀਤੀ ਸੂਚੀ, ਜੋ ਕਿ &quot;network:///&quot; ਟਿਕਾਣੇ ਉੱਤੇ ਵਿਖਾਈ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ਲੋਕਲ DNS-SD ਸਰਵਿਸ ਨੂੰ ਕਿਵੇਂ ਵੇਖਾਉਣਾ ਹੈ">
+						<longdesc>ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;merged (ਰਲਵੇਂ)&quot;, &quot;separate(ਵੱਖਰੇ)&quot; ਅਤੇ &quot;disabled(ਆਯੋਗ)&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ਆਟੋਮੈਟਿਕ ਪਰਾਕਸੀ ਸੰਰਚਨਾ URL">
+						<longdesc>URL, ਜੋ ਕਿ ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਮੁੱਲ ਉਪਲੱਬਧ ਕਰਵਾਉਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ&quot;/system/proxy/socks_host&quot; ਨੇ ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਪਰਾਕਸੀ ਸਾਕਟ ਲਈ ਮਸ਼ੀਨ ਨਾਂ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ &quot;/system/proxy/ftp_host&quot; ਨੇ ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਪਰਾਕਸੀ FTP ਕਰਨ ਵਾਲੀ ਮਸ਼ੀਨ ਦਾ ਨਾਂ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="ਸੁਰੱਖਿਅਤ HTTP ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ &quot;/system/proxy/secure_host&quot; ਨੇ ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ਸੁਰੱਖਿਅਤ HTTP ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਮਸ਼ੀਨ ਦਾ ਨਾਂ, ਜਿਸ ਰਾਹੀ ਪਰਾਕਸੀ ਸੁਰੱਖਿਅਤ HTTP ਕਰਨੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਮੋਡ">
+						<longdesc>ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਮੋਡ ਦੀ ਚੋਣ ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਕੁਝ ਨਹੀਂ&quot;, &quot;ਦਸਤੀ&quot;, &quot;ਆਟੋ&quot;।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ਕੋਈ ਪਰਾਕਸੀ ਹੋਸਟ ਨਹੀਂ">
+						<longdesc>ਇਹ ਕੁੰਜੀ ਉਹਨਾਂ ਹੋਸਟਾਂ ਦੀ ਸੂਚੀ ਉਪਲੱਬਧ ਕਰਵਾਉਦੀ ਹੈ, ਜੋ ਸਿੱਧੇ ਜੁਡ਼ੇ ਹਨ, ਨਾ ਕਿ ਪਰਾਕਸੀ (ਜੇ ਸਰਗਰਮ ਹੈ)। ਮੁੱਲ ਹੋਸਟ ਨਾਂ, ਡੋਮੇਨ (ਸ਼ੁਰੂਆਤੀ wildcard ਜਿਵੇਂ ਕਿ *.foo.com ਵਰਤ ਕੇ ), IP ਹੋਸਟ ਐਡਰੈਸ (ਦੋਵੇਂ IPv4 ਅਤੇ IPv6) ਅਤੇ ਨੈਟਵਰਕ ਸਿਰਨਾਵੇਂ ਨਾਲ ਨੈੱਟਮਾਸਕ (ਜਿਵੇਂ ਕਿ 192.168.0.0/24)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਪਾਸਵਰਡ">
+						<longdesc>ਪਰਮਾਣਿਕਤਾ ਨੂੰ ਦੇਣ ਲਈ ਪਾਸਵਰਡ, ਜਦੋਂ ਕਿ HTTP ਪਰਾਕਸੀ ਦੀ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾ ਰਹੀ ਹੋਵੇ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਯੂਜ਼ਰ ਨਾਂ">
+						<longdesc>ਯੂਜ਼ਰ ਨਾਂ, ਪਰਮਾਣਕਤਾ ਨੂੰ ਲੰਘਣ ਲਈ, ਜਦੋਂ ਕਿ HTTP ਪਰਾਕਸੀਇੰਗ ਕਰ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ਪਰਮਾਣਿਤ ਪਰਾਕਸੀ ਸਰਵਰ ਕੁਨੈਕਸ਼ਨ">
+						<longdesc>ਜੇਕਰ ਸਹੀ ਹੈ ਤਾਂ, ਪਰਾਕਸੀ ਸਰਵਰ ਤੇ ਕੁਨੈਕਸ਼ਨ ਸਮੇ ਪਰਮਾਣਕਿਤਾ ਲਈ ਦੀ ਲੋਡ਼ ਪਵੇਗੀ। ਯੂਜ਼ਰ ਨਾਂ/ਪਾਸਵਰਡ ਡੱਬਾ &quot;/system/http_proxy/authentication_user&quot; ਅਤੇ &quot;/system/http_proxy/authentication_password&quot; ਨੇ ਦਿੱਤਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ &quot;/system/http_proxy/host&quot; ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਮਸ਼ੀਨ ਦਾ ਨਾਂ, ਜਿਸ ਰਾਹੀ ਪਰਾਕਸੀ HTTP ਕਰਨੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਵਰਤੋਂ">
+						<longdesc>ਪਰਾਕਸੀ ਸੈਟਿੰਗ ਯੋਗ ਕਰੋ, ਜਦੋ ਕਿ ਇੰਟਰਨੈੱਟ &apos;ਤੇ HTTP ਨੂੰ ਵਰਤਦੇ ਹੋ।</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

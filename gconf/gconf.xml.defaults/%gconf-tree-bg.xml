@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Стандартната програма-компонент за преглед">
+								<longdesc>Програмата, която да се използва за преглед на файлове, които изискват определен компонент за преглед. Параметърът %s ще бъде заменен пътя до файла, параметъра %c ще бъде заменен с IID на компонента.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргументът exec за стандартната програма за терминал">
+								<longdesc>Аргументът за изпълнение (exec) за терминалния емулатор по подразбиране.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Стандартна програма за терминал">
+								<longdesc>Стандартната терминална програма да се използва за програми, които изискват терминал.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „h323“">
+								<longdesc>Програмата за обработка на адреси от вида „h323“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „h323“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „h323“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „callto“">
+								<longdesc>Програмата обработка на адреси от вида „callto“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „callto“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „callto“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „aim“">
+								<longdesc>Програмата за обработка на адреси от вида „aim“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „aim“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „aim“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „mailto“">
+								<longdesc>Програмата за обработка на адреси от вида „mailto“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „mailto“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „mailto“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „https“">
+								<longdesc>Програмата за обработка на адреси от вида „https“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „https“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „https“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „http“">
+								<longdesc>Програмата за обработка на адреси от вида „http“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „http“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „http“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „man“">
+								<longdesc>Програмата за обработка на адреси от вида „man“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „man“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „man“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „info“">
+								<longdesc>Програмата за обработка на адреси от вида „info“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „info“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „info“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „ghelp“">
+								<longdesc>Програмата за обработка на адреси от вида „ghelp“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „ghelp“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „ghelp“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Пускане на програмата в терминал">
+								<longdesc>Истина, ако програмата, която ще обслужва този вид адреси, трябва да бъде изпълнена в терминал.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Програма за обработка на адреси от вида „trash“">
+								<longdesc>Програмата за обработка на адреси от вида „trash“, ако е включена.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Дали избраната програма да обработва адреси от вида „trash“">
+								<longdesc>Истина, ако програмата в ключа „command“ ще обслужва адреси от вида „trash“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Работна група на SMB">
+						<longdesc>Работната група или домейнът на Windows, в която потребителят участва. Възможно е да се наложи да излезете и да влезете в системата отново, за да може тази настройка да влезе в сила.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Допълнителни домейни, в които да се търсят услуги от тип DNS-SD">
+						<longdesc>Списък от домейни тип DNS-SD, разделени със запетаи, които трябва да са видими в местоположението „network:///“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Как да се показва локална услуга от тип DNS-SD">
+						<longdesc>Възможни стойности са „merged“, „separate“ и „disabled“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Адрес за автоматични настройки на сървъра-посредник">
+						<longdesc>Адрес, от който се вземат настройките на сървъра-посредник.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт на сървъра-посредник за SOCKS">
+						<longdesc>Портът на сървъра-посредник, който е дефиниран в „/system/proxy/socks_host“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Име на сървъра-посредник за SOCKS">
+						<longdesc>Името на сървъра-посредник за връзки по SOCKS</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт на сървъра-посредник за FTP">
+						<longdesc>Портът на сървъра-посредник, който е дефиниран в „/system/proxy/ftp_host“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Име на сървъра-посредник за FTP">
+						<longdesc>Името на сървъра-посредник за връзки по FTP</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт на сървъра-посредник за HTTPS">
+						<longdesc>Портът на сървъра-посредник, който е дефиниран в „/system/proxy/secure_host“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Име на сървъра-посредник за HTTPS">
+						<longdesc>Името на сървъра-посредник за връзки по сигурен HTTP (HTTPS)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Режим на конфигурация на сървър-посредник">
+						<longdesc>Изберете режим на настройка на сървър-посредник. Поддържани стойности са „none“ — без сървър посредник, „manual“ — настройка на ръка и „auto“ — автоматично настройване.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Сървъри, които да не минават през сървър-посредник">
+						<longdesc>Този ключ съдържа списък с хостове, които за свързани директно, вместо през сървър-посредник (ако е активно). Стойностите могат да са хостове, домейни (*.foo.com), IP адреси на хостове(и IPv4, и IPv6) и мрежови адреси с мрежова маска (192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Парола за сървъра-посредник за HTTP">
+						<longdesc>Парола, която да се подава като идентификация на сървъра-посредник за HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Потребителско име за сървъра-посредник за HTTP">
+						<longdesc>Потребителско име, което да се подава като идентификация, при използване на сървър-посредник за HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Идентификация при връзката със сървъра-посредник">
+						<longdesc>Ако е истина, връзките към сървъра-посредник изискват идентификация. Комбинацията „потребителско име/парола“ е дефинирана в „/system/http_proxy/authentication_user“ и „/system/http_proxy/authentication_password“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт на сървъра-посредник за HTTP">
+						<longdesc>Портът на сървъра-посредник, който е дефиниран в „/system/proxy/http_host“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Име на сървъра-посредник за HTTP">
+						<longdesc>Името на сървъра-посредник за връзки по HTTP</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Използване на сървър-посредник за HTTP">
+						<longdesc>Включване на настройки за сървър-посредник за HTTP в Интернет</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

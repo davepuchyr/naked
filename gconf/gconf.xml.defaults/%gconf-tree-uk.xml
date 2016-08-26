@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Типова програма перегляду компонентів">
+								<longdesc>Програма, що використовується для перегляду файлів, для перегляду яких потрібен компонент. Параметр %s буде замінений адресою (URI) файлу, параметр %c - ідентифікатором (IID) компоненту.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргументи виконання для типового терміналу">
+								<longdesc>Аргументи виконання, що використовуються типовою програмою терміналу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Типова програма терміналу">
+								<longdesc>Типова програма терміналу, що використовується з програмами, якім потрібен термінал.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;h323&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;h323&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;callto&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;callto&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;aim&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;aim&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;mailto&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;mailto&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;https&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;https&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;http&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;http&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;man&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;man&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;info&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;info&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;ghelp&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;ghelp&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Виконувати команду у терміналі">
+								<longdesc>Ввімкнено, якщо програма, вказана для обробки посилань (URL) повинна запускатись у терміналі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обробник URL типу &quot;trash&quot;">
+								<longdesc>Якщо ввімкнено, команда використовується для обробки URL типу &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Чи повинна вказана команда обробляти посилання(URL) типу &quot;trash&quot;">
+								<longdesc>Якщо команда вказана у ключі &quot;command&quot;, програма буде обробляти посилання (URL) типу &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Чи відкривання терміналу на робочому столі призводить до відкривання терміналу у домашньому каталозі">
 						<longdesc>Якщо встановлено, при відкриванні терміналу на робочому столі відкривається термінал із домашнім каталогом. У іншому разі, він відкривається у каталозі із робочим столом. цей ключ не чутливий до того чи є ідентичним каталог робочого столу домашньому каталогу.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Робоча група протоколу SMB">
+						<longdesc>Робоча група чи домен Windows, членом якого є користувач. При вказуванні нової робочої групи для набрання змінами повної сили користувачу може знадобитись вийти з сенсу та увійти знову.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Додаткові домени для пошуку у них служб DNS-SD">
+						<longdesc>Перелік розділених комою доменів DNS-SD, які повинні бути видимими за адресою &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Як відображати локальну службу DNS-SD">
+						<longdesc>Можливими значеннями є &quot;merged&quot;, &quot;separate&quot; and &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Посилання (URL) на автоматичне налаштовування проксі-служби">
+						<longdesc>Посилання (URL), що забезпечує значення для автоматичного налаштовування проксі-служби.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт проксі-служби протоколу SOCKS">
+						<longdesc>Порт на вузлі проксі-сервера, що визначений ключем &quot;/system/proxy/socks_host&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Вузол проксі-служби протоколу SOCKS">
+						<longdesc>Назва вузла проксі-сервера протоколу SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт проксі-сервера протоколу FTP">
+						<longdesc>Порт на вузлі проксі-сервера, що визначений ключем &quot;/system/proxy/ftp_host&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Назва вузла проксі-сервера протоколу FTP">
+						<longdesc>Назва вузла проксі-сервера протоколу FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт проксі-сервера захищеного протоколу HTTP">
+						<longdesc>Порт на вузлі проксі-сервера, що визначений ключем &quot;/system/proxy/secure_host&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Назва вузла проксі-сервера захищеного протоколу HTTP">
+						<longdesc>Назва вузла проксі-сервера захищеного протоколу HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Режим налаштовування проксі-служби">
+						<longdesc>Виберіть режим налаштовування проксі-служби. Можливі значення &quot;none&quot;, (немає) &quot;manual&quot;, (вручну) &quot;auto&quot; (автоматично).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Вузли поза проксі-службою">
+						<longdesc>Цей ключ містить перелік вузлів, з&apos;єднання з якими встановлюється безпосередньо, обминаючи проксі-службу (якщо вона активна). Значення можуть бути іменами вузлів, доменами (з використанням шаблонів подібних до *.foo.com), IP адресами вузлів (як IPv4, так і IPv6) та адресами мереж з використанням маски (щось схоже не, 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Пароль для проксі-сервера протоколу HTTP">
+						<longdesc>Пароль для автентифікації проксі-службою протоколу HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Ім&apos;я користувача проксі-сервера протоколу HTTP">
+						<longdesc>Ім&apos;я користувача, що використовується при автентифікацій проксі-службою протоколу HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="З&apos;єднання з проксі-сервером вимагають автентифікації">
+						<longdesc>Якщо ввімкнено, з&apos;єднання з проксі-сервером вимагатимуть аутентифікації. Пара параметрів ім&apos;я/пароль визначається ключами &quot;/system/http_proxy/authentication_user&quot; та &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт проксі-сервера протоколу HTTP">
+						<longdesc>Порт на вузлі проксі-сервера, що визначений ключем &quot;/system/http_proxy/host&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Назва вузла проксі-сервера протоколу HTTP">
+						<longdesc>Назва вузла проксі-сервера протоколу HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Використовувати HTTP проксі">
+						<longdesc>Вмикає параметри проксі-служби для протоколу HTTP через Інтернет.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

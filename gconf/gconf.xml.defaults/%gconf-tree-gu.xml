@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="મૂળભૂત ભાગો દેખાડનાર કાર્યક્રમ">
+								<longdesc>ફાઇલોને જોવા માટે ઉપયોગમાં લેવાતા કાર્યક્રમ માટે તેને જોવા માટે ભાગ જરુરી છે. પરિમાણ %s ફાઇલના URI થી બદલાઇ જશે, પરિમાણ %c ભાગI ID થી બદલાઇ જશે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="મૂળભૂત ટર્મિનલ માટે ચલાવવાની દલીલ">
+								<longdesc>મૂળભૂત ટર્મિનલ કાર્યક્રમ માટે exec દલીલનો ઉપયોગ કરવાનો છે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="મૂળભૂત ટર્મિનલ કાર્યક્રમ">
+								<longdesc>કાર્યક્રમનો ઉપયોગ કરવા માટે મૂળભૂત ટર્મિનલ કાર્યક્રમ કે જેના માટે ટર્મિનલ જરુરી છે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;H323&quot; URL ને નિયંત્રિત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;h323&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;h323&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;callto&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;callto&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;callto&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;aim&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;aim&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;aim&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;mailto&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;mailto&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;mailto&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;http&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;https&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;https&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;http&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;http&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;http&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;man&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;man&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;man&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;info&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;info&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;info&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;ghelp&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;ghelp&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;ghelp&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="આદેશને ટર્મિનલમાં કાર્યક્રમ ચલાવો">
+								<longdesc>સાચું જો આ પ્રકારના URL ને નિયંત્રિત કરવા માટેનો આદેશ ટર્મિનલમાં ચાલે.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URL માટે નિયંત્રક">
+								<longdesc>&quot;trash&quot; URL ને નિયંત્રત કરવા માટેનો આદેશ, જો સક્રિય હોય.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="શું સ્પષ્ટ કરેલ આદેશ &quot;trash&quot; URL ને નિયંત્રિત કરે">
+								<longdesc>સાચું જો &quot;command&quot; કી માં સ્પષ્ટ કરેલ આદેશ &quot;trash&quot; URL ને નિયંત્રિત કરે.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="ક્યાંતો ઘર પાનાંમાં ડેસ્કટોપ ટર્મિનલને ખોલે છે તે પર ટર્મિનલને ખોલી રહ્યા છે">
 						<longdesc>જો true તરીકે સુયોજિત હોયતો, પછી ડેસ્કટોપર પર ટર્મિનલને ખોલવા દરમ્યાન ઘર ડિરેક્ટરીમાં ટર્મિનલને ખોલશો. નહિં તો, તે ડેસ્કટોપ ડિરેક્ટરીમાં ખોલેલ હશે. નોંધો કે જે આ કી એ અસુસંગત છે જો ડેસ્કટોપ ડિરેક્ટરી એ ઘર ડિરેક્ટરીમાં સરખી હોય તો.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB કામ કરતુ જૂથ">
+						<longdesc>Windows નેટવર્કીંગ વર્કગ્રુપ અથવા ડોમેઈન કે જેનો વપરાશકર્તા ભાગ છે. નવા વર્કગ્રુપ માટે સંપૂર્ણ અસર લેવા માટે કે જેની માટે વપરાશકર્તાએ પ્રવેશ બહાર નીકળવાની અને ફરીથી પ્રવેશ કરવાની જરૂર છે.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD સેવાઓ માટે જોવા માટે વધારાના ડોમેઈનો">
+						<longdesc>અલ્પવિરામથી અલગ પાડેલ DNS-SD ડોમેઈનોની યાદી કે જે &quot;network:///&quot; સ્થાનમાં દ્રશ્યમાન હોવું જોઈએ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="કેવી રીતે સ્થાનિક DNS-SD સેવા પ્રદર્શિત કરવી">
+						<longdesc>&quot;ભેગું થયેલ&quot;, &quot;અલગ&quot; અને &quot;નિષ્ક્રિય&quot; શક્ય કિંમતો છે.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="આપોઆપ પ્રોક્સી રુપરેખાંકિત URL">
+						<longdesc>URL કે જે પ્રોક્સીની રુપરેખાંકનની કિંમતો આપે છે.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS પ્રોક્સી પોર્ટ">
+						<longdesc>યંત્ર પર વ્યાખ્યાયિત પોર્ટ &quot;/સિસ્ટમ/પ્રોક્સી/socks_યજમાન&quot; કે જેની તમે સીધી પ્રોક્સી કરો છો.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS પ્રોક્સી યજમાન નામ">
+						<longdesc>પ્રોક્સી socks through માટે યંત્રનુ નામ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP પ્રોક્સી પોર્ટ">
+						<longdesc>યંત્ર પર વ્યાખ્યાયિત પોર્ટ &quot;/સિસ્ટમ/પ્રોક્સી/ftp_યજમાન&quot; કે જેની તમે સીધી પ્રોક્સી કરો છો.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP પ્રોક્સી યજમાન નામ">
+						<longdesc>પ્રોક્સી FTP through માટે યંત્રનુ નામ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="સુરક્ષિત HTTP પ્રોક્સી પોર્ટ">
+						<longdesc>યંત્ર પર વ્યાખ્યાયિત પોર્ટ &quot;/સિસ્ટમ/પ્રોક્સી/સુરક્ષિત_યજમાન&quot; કે જેની તમે સીધી પ્રોક્સી કરો છો.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="સુરક્ષિત HTTP પ્રોક્સી યજમાન નામ">
+						<longdesc>સુરક્ષિત પ્રોક્સી HTTP through માટે યંત્રનુ નામ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="પ્રોક્સી રુપરેખાંકનની સ્થિતિ">
+						<longdesc>પ્રોક્સી રુપરેખાંકનની સ્થિતિ પસંદ કરો. આધારિત કિંમતો &quot;કોઇ નંહિ&quot;, &quot;માનવીય રીતે&quot;, &quot;આપોઆપ&quot; છે.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="યજમાનો માટે કોઇ પ્રોક્સી નથી">
+						<longdesc>આ કી એવા યજમાનોની યાદી ધરાવે છે કે જે પ્રત્યક્ષ રીતે સંકળાયેલા છે, પ્રોક્સીથી નહિ (જો તે સક્રિયહોય તે). કિંમતો યજમાનના નામો, પ્રદેશો (શરુઆતનુ વાઇલ્ડકાર્ડ વાપરીને જેવુ કે *.foo.com), IP યજનામ સરનામુ (બંને IPv4 અને IPv6) અને નેટવર્ક સરનામુ નેટમાસ્કની સાથે (જેવુ કે ૧૯૨.૧૬૮.૦.૦/૨૪).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP પ્રોક્સી પાસવર્ડ">
+						<longdesc>જ્યારે HTTP ની પ્રોક્સી કરતા હોઇએ ત્યારે સાચુ છે કે નહિ તેની ખાતરી કરવા માટે આપવાનો પાસવર્ડ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP પ્રોક્સી વપરાશકર્તા">
+						<longdesc>જ્યારે HTTPની પ્રોક્સીનુ કામ કરતા હોઇએ ત્યારે સાચાની ખાતરી કરવા માટે આપવાનુ વપરાશકર્તાનુ નામ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="પ્રોક્સી સર્વરના સંપર્કોને સાચા છે કે નહિ તે તપાસો">
+						<longdesc>જો સાચું હોય, તો પછી પ્રોક્સી સર્વર સાથેના જોડાણોને સત્તાધિકરણની જરૂર છે. વપરાશકર્તાનામ/પાસવર્ડ બંને &quot;/system/http_proxy/authentication_user&quot; અને &quot;/system/http_proxy/authentication_password&quot; દ્વારા વ્યાખ્યાયિત થાય છે.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP પ્રોક્સી પોર્ટ">
+						<longdesc>યંત્ર પર વ્યાખ્યાયિત પોર્ટ &quot;/સિસ્ટમ/http_પ્રોક્સી/યજમાન&quot; કે જેની તમે સીધી પ્રોક્સી કરો છો.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP પ્રોક્સી યજમાન નામ">
+						<longdesc>પ્રોક્સી HTTP through માટે યંત્રનુ નામ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP પ્રોક્સીનો ઉપયોગ કરો">
+						<longdesc>ઇન્ટરનેટ ઉપર HTTP ને પ્રપ્ત કરતા હોઇએ ત્યારે પ્રોક્સી સુયોજનાઓને સક્રિય કરો.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

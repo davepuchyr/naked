@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Rindranasa fizahana singa fototra lasitra">
+								<longdesc>Ny rindranasa ampiasaina hizahana ireo rakitra mila singa fototra raha hizaha azy ireo. Hosoloina ny URIn&apos;ilay rakitra ny mpizahaka %s; hosoloina ny IIDn&apos;ilay singa fototra ny mpizahaka %c.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema>
+								<longdesc>Ny tondrikim-panatanterahana ampiasaina amin&apos;ilay rindranasan&apos;ny terminal lasitra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Rindranasan&apos;ny terminal lasitra">
+								<longdesc>Ny rindranasan&apos;ny terminal lasitra ampiasaina amina rindranasa mila terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;h323&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;h323&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;h323&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;h323&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;callto&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;callto&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;callto&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;callto&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;aim&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;aim&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;aim&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;aim&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;mailto&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;mailto&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;mailto&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;mailto&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;https&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;https&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;https&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;https&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;http&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;http&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;http&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;http&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;man&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;man&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;man&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;man&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;info&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;info&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;info&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;info&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;ghelp&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;ghelp&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;ghelp&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;ghelp&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;trash&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;trash&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;trash&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;trash&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Vondron-tsolosaina SMB">
+						<longdesc>Ny vondron-tsolosaina mifandray na domenan&apos;ny Windows misy ilay mpampiasa. Mety mila mivoaka ary miverina miditra indray ilay mpampiasa mba ahafahan&apos;ny vondrona vaovao iray miasa tanteraka.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domena fanampiny hitadiavana sampan&apos;asa DNS-SD">
+						<longdesc>Domena DNS-SD saraham-paingo izay tokony ho hita ao amin&apos;ny &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Ny fomba fanehoana sampan&apos;asa DNS-SD">
+						<longdesc>&quot;merged&quot;, &quot;separate&quot; ary &quot;disabled&quot; no sanda mety ampiasaina.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL fikirakirana proxy avy hatrany">
+						<longdesc>URL manome sandan-kirakira-na proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Iriky ny proxy SOCKS">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/proxy/socks_host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy SOCKS">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Iriky ny proxy FTP">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/proxy/ftp_host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy FTP">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Iriky ny proxy HTTP azo antoka">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/proxy/secure_host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy HTTP azo antoka">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy HTTP azo antoka.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Fomba fikirakirana ny proxy">
+						<longdesc>Safidio ny fomba hikirakirana ny proxy. Ireto ireo sanda raisina an-tànana: &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Mpampiantrano tsy proxy">
+						<longdesc>Ity famaha ity dia misy ireo mpampiantrano ifandraisana mivantana fa tsy amin&apos;ny alalan&apos;ny proxy (raha toa ka mandeha). Mety ho anaram-pampiantrano, domena (mampiasa marika manokana toy ny *.foo.com), adiresim-pampiantrano IP (IPv4 sy IPv6) ary adiresin-drezo misy sarona (zavatra tahaka ny 192.168.0.0/24) ilay sanda.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Teny fanalahidin&apos;ny proxy HTTP">
+						<longdesc>Ny teny fanalahidy omena hamarinina rehefa manao proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Anaran&apos;ny mpampiasan&apos;ny proxy HTTP">
+						<longdesc>Anaram-pampiasa omena hamarinina rehefa manao proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Manamarina ny fifandraisana amin&apos;ny mpizara proxy">
+						<longdesc>Raha toa ka marina, dia mila fanamarinana ny fifandraisana amin&apos;ilay mpizara proxy. Ny &quot;/system/http_proxy/authentication_user&quot; sy ny &quot;/system/http_proxy/authentication_password&quot; no mamaritra ny amboara anaran&apos;ny mpampiasa/teny fanalahidy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Iriky ny proxy HTTP">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/http_proxy/host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy HTTP">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Hampiasa proxy HTTP">
+						<longdesc>Mandefa ny kirakiran&apos;ny proxy rehefa mampiasa HTTP amin&apos;ny Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

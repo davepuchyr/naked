@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="デフォルトのコンポーネント・ビューア・アプリケーション">
+								<longdesc>コンポーネントが必要となるファイルを閲覧するためのアプリケーションです。%s はファイルの URI で、パラメータ %c はコポーネントの IID でそれぞれ置き換えられます。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="デフォルトの端末で使用する Exec 用引数">
+								<longdesc>デフォルトの端末アプケーションで使用するプログラムを実行する時の引数です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="デフォルトの端末アプリケーション">
+								<longdesc>端末を必要とするアプリケーションで使用するデフォルトの端末アプリケーションです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; の URL の処理">
+								<longdesc>&quot;h323&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで &quot;h323&quot; の URL を処理するかどうか">
+								<longdesc>&quot;h323&quot; の URL を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;callto&quot; の 処理">
+								<longdesc>&quot;callto&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;callto&quot; を処理するかどうか">
+								<longdesc>URL &quot;callto&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;aim&quot; の 処理">
+								<longdesc>&quot;aim&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;aim&quot; を処理するかどうか">
+								<longdesc>URL &quot;aim&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;mailto&quot; の 処理">
+								<longdesc>&quot;mailto&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;mailto&quot; を処理するかどうか">
+								<longdesc>URL &quot;mailto&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;https&quot; の 処理">
+								<longdesc>&quot;https&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;https&quot; を処理するかどうか">
+								<longdesc>URL &quot;https&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;http&quot; の 処理">
+								<longdesc>&quot;http&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;http&quot; を処理するかどうか">
+								<longdesc>URL &quot;http&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;man&quot; の 処理">
+								<longdesc>&quot;man&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;man&quot; を処理するかどうか">
+								<longdesc>URL &quot;man&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;info&quot; の 処理">
+								<longdesc>&quot;info&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;info&quot; を処理するかどうか">
+								<longdesc>URL &quot;info&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;ghelp&quot; の 処理">
+								<longdesc>&quot;ghelp&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;ghelp&quot; を処理するかどうか">
+								<longdesc>URL &quot;ghelp&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;trash&quot; の 処理">
+								<longdesc>&quot;trash&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;trash&quot; を処理するかどうか">
+								<longdesc>URL &quot;trash&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="デスクトップではなくホーム・フォルダーで端末を開くかどうか">
 						<longdesc>TRUE にした場合、たとえデスクトップ上で端末を開いても実際にはホーム・フォルダーから端末を開きます。それ以外は、デスクトップのフォルダーから開きます。デスクトップ・フォルダーがホーム・フォルダーの場合、このキーによる効果はありません。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ワークグループ">
+						<longdesc>ユーザが所属する Windows ネットワーク・グループまたはドメインです。新しいワークグループを認識するには、ユーザがそのグループにログインしてログアウトする必要があります。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD サービスで検索する追加ドメイン">
+						<longdesc>コンマ (,) で区切った DNS-SD のリストで、&quot;network:///&quot; の中に表示されます。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ローカルの DNS-SD サービスの表示方法">
+						<longdesc>設定可能な値: &quot;merged&quot;、&quot;separate&quot;、&quot;disabled&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="自動プロキシ設定の URL">
+						<longdesc>プロキシの設定値を提供する URL です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/proxy/socks_host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS プロキシのホスト名">
+						<longdesc>SOCKS プロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/proxy/ftp_host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP プロキシのホスト名">
+						<longdesc>FTP プロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="セキュア HTTP プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/proxy/secure_host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="セキュア HTTP プロキシのホスト名">
+						<longdesc>セキュア HTTP のプロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="プロキシ設定モード">
+						<longdesc>プロキシ設定モードを選択します (利用可能な値: &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;)。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="プロキシではないホスト名">
+						<longdesc>このキーには、(アクティブな場合は) プロキシ経由ではなく直接接続される多くのホストが含まれています。ホスト名、ドメイン (*.foo.com のように先頭にワイルド・カードが使われます)、IP ホスト・アドレス (IPv4 と IPv6 の両方)、ネット・マスクが併記されたネットワーク・アドレス (192.168.0.0/24のような値) といった値になります。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP プロキシのパスワード">
+						<longdesc>HTTP プロキシを利用するときに認証として引き渡すパスワードです。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP プロキシのユーザ名">
+						<longdesc>HTTP プロキシを利用するときに認証として引き渡すユーザ名です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="認証プロキシ・サーバへの接続">
+						<longdesc>TRUE の場合、プロキシ・サーバへの接続で認証が要求されます。ユーザ名/パスワードの組み合わせは &quot;/system/http_proxy/authentication_user&quot; と &quot;/system/http_proxy/authentication_password&quot; で定義されます。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/http_proxy/host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP プロキシのホスト名">
+						<longdesc>HTTP のプロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP プロキシの使用">
+						<longdesc>インターネットへ HTTP アクセスするときにプロキシの設定を有効にします。</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

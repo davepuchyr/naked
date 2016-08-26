@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplicação visualizadora por omissão de componente">
+								<longdesc>A aplicação a utilizar para visualizar ficheiros que requerem um componente para que possam ser visualizadas. O parâmetro %s será substituído pelo URI do ficheiro, o parâmetro %c será substituído pelo IID do componente.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumentos de execução para consola por omissão">
+								<longdesc>O argumento de execução a utilizar para a aplicação de consola por omissão.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicação de consola por omissão">
+								<longdesc>A aplicação de consola a utilizar por omissão para aplicações que necessitem de uma consola.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;h323&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;h323&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;h323&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;callto&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;callto&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;callto&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;aim&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;aim&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;aim&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;mailto&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;mailto&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;mailto&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;https&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;https&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;https&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;http&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;http&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;http&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;man&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;man&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;man&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;info&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;info&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;info&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;ghelp&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;ghelp&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;ghelp&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;trash&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;trash&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;trash&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Se abrir uma consola no ambiente de trabalho abre uma consola na pasta pessoal do utilizador">
 						<longdesc>Se definido como verdadeiro, abrir uma consola no ambiente de trabalho irá abrir uma consola na pasta pessoal do utilizador. Caso contrário, a consola será aberta no directório do ambiente de trabalho. Note que esta chave é irrelevante caso o directório do ambiente de trabalho seja o mesmo que a pasta pessoal do utilizador.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grupo de trabalho SMB">
+						<longdesc>O grupo de trabalho de rede Windows ou o domínio a que o utilizador pertence. Para que um novo grupo de trabalho tenha efeito total o utilizador poderá ter de terminar a sessão e iniciá-la novamente.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domínios adicionais onde procurar serviços DNS-SD">
+						<longdesc>Lista separada por vírgulas de domínios DNS-SD que deverão ser visíveis na localização de rede &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Como apresentar o serviço DNS-SD local">
+						<longdesc>Valores possíveis são &quot;merged&quot;, &quot;separate&quot; e &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL de configuração automática de proxy">
+						<longdesc>URL que disponibiliza valores de configuração da proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Porto de proxy SOCKS">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/socks_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nome de máquina de proxy SOCKS">
+						<longdesc>O nome da máquina através da qual efectuar proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Porto do proxy FTP">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/ftp_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nome de máquina da proxy FTP">
+						<longdesc>O nome da máquina através da qual efectuar proxy de FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Porto de proxy de HTTP seguro">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/secure_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nome de máquina de proxy de HTTP seguro">
+						<longdesc>O nome da máquina através da qual efectuar proxy de HTTP seguro.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Modo de configuração proxy">
+						<longdesc>Seleccione o modo de configuração de proxy. Valores suportados são &quot;none&quot; (nenhum), &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Máquina não-proxy">
+						<longdesc>Esta chave contém uma lista de máquinas às quais a ligação deverá ser directa, e não através da proxy (caso esteja activa). Os valores podem ser nomes de máquinas, domínios (utilizando um caracter global tal como *.exemplo.pt), endereços IP (tanto IPv4 como IPv6) e endereços de rede com uma máscara de rede (algo como 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Senha da proxy HTTP">
+						<longdesc>Senha a indicar como autenticação ao efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Utilizador da proxy HTTP">
+						<longdesc>Utilizador a indicar como autenticação ao efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autenticar ligações ao servidor proxy">
+						<longdesc>Se verdadeiro, ligações ao servidor proxy requerem autenticação. O conjunto utilizador/senha é definido por &quot;/system/http_proxy/authentication_user&quot; e &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Porto do proxy HTTP">
+						<longdesc>O porto na máquina, definido por &quot;/system/http_proxy/host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nome de máquina da proxy HTTP">
+						<longdesc>O nome da máquina através da qual efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Utilizar proxy HTTP">
+						<longdesc>Activa as definições de proxy ao aceder por HTTP à Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

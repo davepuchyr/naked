@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Standardprogram för komponentvisning">
+								<longdesc>Programmet som används för visning av filer som kräver en komponent för att visa dem. Parametern %s kommer att ersättas av filens URI:er, och parametern %c kommer att ersättas av komponent-IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exekveringsargument för standardterminal">
+								<longdesc>Exekveringsargumentet att använda för standardterminalprogrammet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Standardterminalprogram">
+								<longdesc>Standardterminalprogrammet att använda för program som kräver en terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;h323&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;h323&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;h323&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;h323&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;callto&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;callto&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;callto&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;callto&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;aim&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;aim&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;aim&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;aim&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;mailto&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;mailto&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;mailto&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;mailto&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;https&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;https&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;https&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;https&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;http&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;http&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;http&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;http&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;man&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;man&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;man&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;man&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;info&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;info&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;info&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;info&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;ghelp&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;ghelp&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;ghelp&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;ghelp&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kör kommandot i ett terminalfönster">
+								<longdesc>Sant om kommandot för att hantera denna typ av URL ska köras i ett terminalfönster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Hanteraren för &quot;trash&quot;-URL:er">
+								<longdesc>Kommandot som används för att hantera &quot;trash&quot;-URL:er, om aktiverat.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Huruvida det angivna kommandot ska hantera &quot;trash&quot;-URL:er">
+								<longdesc>Sant om kommandot som är angivet i nyckeln &quot;command&quot; ska hantera &quot;trash&quot;-URL:er.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Huruvida öppnandet av en terminal på skrivbordet öppnar en terminal i hemkatalogen">
 						<longdesc>Om inställd till sant kommer öppnandet av en terminal på skrivbordet att öppna en terminal i hemkatalogen. Om inte kommer det att öppnas i skrivbordskatalogen. Observera att den här nyckeln är irrelevant om skrivbordskatalogen är identisk med hemkatalogen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-arbetsgrupp">
+						<longdesc>Windows-nätverksarbetsgruppen eller -domänen som användaren är del av. För att en ny arbetsgrupp ska börja gälla kan användaren behöva logga ut och in igen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Extra domäner som dns-sd-tjänster ska sökas i">
+						<longdesc>Kommaseparerad lista med dns-sd-domäner som ska synas på platsen &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Hur den lokala DNS-SD-tjänsten ska visas">
+						<longdesc>Möjliga värden är &quot;merged&quot;, &quot;separate&quot; och &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL för automatisk proxykonfiguration">
+						<longdesc>URL som tillhandahåller proxykonfigurationsvärden.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port för SOCKS-proxyserver">
+						<longdesc>Porten på maskinen som definieras av &quot;/system/proxy/socks_host&quot; som du använder som proxyserver.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Värdnamn för SOCKS-proxyserver">
+						<longdesc>Namnet på maskinen som ska agera proxyserver för socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port för FTP-proxyserver">
+						<longdesc>Porten på maskinen som definieras av &quot;/system/proxy/ftp_host&quot; som du använder som proxyserver.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Värdnamn för FTP-proxyserver">
+						<longdesc>Namnet på maskinen som ska agera proxyserver för FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port för säker HTTP-proxyserver">
+						<longdesc>Porten på maskinen som definieras av &quot;/system/proxy/secure_host&quot; som du använder som proxyserver.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Värdnamn för säker HTTP-proxyserver">
+						<longdesc>Namnet på maskinen som ska agera proxyserver för säker HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxykonfigurationsläge">
+						<longdesc>Välj proxykonfigurationsläget. Värden som stöds är &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Värdnamn för ickeproxyvärdar">
+						<longdesc>Denna nyckel innehåller en lista med värdar som ansluts till direkt istället för att gå via proxyservern (om den är igång). Värdena kan vara värdnamn, domäner (genom användning av ett inledande jokertecken som *.blaha.se), IP-värdadresser (både IPv4 och IPv6) och nätverksadresser med en nätmask (någonting liknande 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Lösenord för HTTP-proxyserver">
+						<longdesc>Lösenord att skicka som autentisering vid användning av HTTP-proxyserver.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Användarnamn för HTTP-proxyserver">
+						<longdesc>Användarnamn att skicka som autentisering vid användning av HTTP-proxyserver.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentisera proxyserveranslutningar">
+						<longdesc>Om detta är sant kräver anslutningarna till proxyservern autentisering. Användarnamn- och lösenordsparet definieras av &quot;/system/http_proxy/authentication_user&quot; och &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port för HTTP-proxyserver">
+						<longdesc>Porten på maskinen som definieras av &quot;/system/http_proxy/host&quot; som du använder som proxyserver.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Värdnamn för HTTP-proxyserver">
+						<longdesc>Namnet på maskinen som ska agera proxyserver för HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Använd HTTP-proxyserver">
+						<longdesc>Aktiverar proxyinställningarna vid åtkomst av HTTP över Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

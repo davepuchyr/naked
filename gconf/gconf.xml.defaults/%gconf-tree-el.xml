@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Προεπιλεγμένο συστατικό εφαρμογής προβολής">
+								<longdesc>Η εφαρμογή για την προβολή αρχείων που απαιτούν ένα συστατικό για την προβολή τους. Η παράμετρος %s θα αντικαταστηθεί από το  URIs αρχείου και η παράμετρος %c θα αντικατασταθεί από το IID συστατικού.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Παράμετρος Exec για προεπιλεγμένο τερματικό">
+								<longdesc>Η παράμετρος exec για χρήση στην προεπιλεγμένη εφαρμογή τερματικού.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Προεπιλεγμένη εφαρμογή τερματικού">
+								<longdesc>Η προεπιλεγμένη εφαρμογή τερματικού για χρήση σε εφαρμογές που απαιτούν ένα τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;h323&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;h323&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;h323&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;h323&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;callto&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;callto&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;callto&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;callto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;aim&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;aim&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;aim&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται &quot;aim&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;mailto&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;mailto&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;mailto&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;mailto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;https&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;https&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;https&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;https&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;http&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;http&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;http&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;http&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;man&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό  &quot;man&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;man&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται   &quot;man&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;info&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;info&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;info&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;info&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;ghelp&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;ghelp&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;ghelp&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται &quot;ghelp&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;trash&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;trash&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;trash&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;trash&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Αν θα ανοίγει τερματικό στον αρχικό κατάλογο όποτε ανοίγετε τερματικό στην επιφάνεια εργασίας">
 						<longdesc>Αν είναι αληθές, όποτε ανοίγετε τερματικό στην επιφάνεια εργασίας, θα ανοίγει τερματικό στον αρχικό κατάλογο. Διαφορετικά, το τερματικό θα ανοίγει στον κατάλογο της επιφάνειας εργασίας. Σημειώστε ότι αυτή η επιλογή έχει νόημα μόνο αν ο κατάλογος της επιφάνειας εργασίας δεν είναι ο αρχικός κατάλογος.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Ομάδα εργασίας SMB">
+						<longdesc>Το Windows networking workgroup ή ο τομέας όπου ανήκει ο χρήστης. Για να πραγματοποιηθεί η δημιουργία ενός νέου workgroup ο χρήστης θα πρέπει να αποσυνδεθεί καινα επανασυνδεθεί.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Επιπρόσθετοι τομείς για αναζήτηση υπηρεσιών dns-sd">
+						<longdesc>Λίστα διαχωρισμένη με κόμμα από τομείς dns-sd που θα πρέπει να είναι ορατοί στην τοποθεσία &quot;network:///&quot; </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Πως να εμφανίζεται η τοπική υπηρεσία DNS-SD">
+						<longdesc>Πιθανές τιμές είναι &quot;merged&quot;, &quot;separate&quot; and &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Αυτόματη ρύθμιση URL ρύθμισης διαμεσολαβητή">
+						<longdesc>Το URL που παρέχει τιμές ρύθμισης διαμεσολαβητή.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Θύρα διαμεσολαβητή SOCKS">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το  &quot;/system/proxy/socks_host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Όνομα συστήματος διαμεσολαβητή SOCKS">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Θύρα διαμεσολαβητή FTP ">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το &quot;/system/proxy/ftp_host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Όνομα συστήματος διαμεσολαβητή FTP ">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Θύρα ασφαλούς διαμεσολαβητή HTTP">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το &quot;/system/proxy/secure_host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Όνομα συστήματος ασφαλούς διαμεσολαβητή HTTP">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση ασφαλούς HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Λειτουργία ρυθμίσεων διαμεσολαβητή">
+						<longdesc>Επιλογή λειτουργίας ρύθμισης διαμεσολαβητή. Υποστηριζόμενες τιμές είναι &quot;καμμία&quot;, &quot;χειροκίνητη&quot;, &quot;αυτόματη&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Συστήματα χωρίς διαμεσολαβητή">
+						<longdesc>Αυτό το κλειδί περιέχει μια λίστα από συστήματα στα οποία γίνεται απευθείας σύνδεση, παρά μέσω του διαμεσολαβητή (αν είναι ενεργός). Οι τιμές μπορεί να είναι ονόματα συστήματος, τομείς (με τη χρήση μιας αρχικής wildcard όπως *.foo.com), διευθύνσεις IP (και IPv4 και IPv6) και διευθύνσεις δικτύου με  netmask (κάτι σαν 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Κωδικός διαμεσολαβητή HTTP">
+						<longdesc>Κωδικός πρόσβασης για πιστοποίηση όταν γίνεται διαμεσολάβηση HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Όνομα χρήστη διαμεσολαβητή HTTP">
+						<longdesc>Όνομα χρήστη για να περάσει ως πιστοποίηση κατά τη διαμεσολάβηση http.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Πιστοποίηση συνδέσεων στον εξυπηρετητή διαμεσολάβησης">
+						<longdesc>Αν αληθές, τότε οι συνδέσεις στο διαμεσολαβητή απαιτούν πιστοποίηση. Τα όνομα χρήστη/κωδικός καθορίζονται από το &quot;/system/http_proxy/authentication_user&quot; και &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Θύρα διαμεσολαβητή HTTP">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το  &quot;/system/http_proxy/host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Όνομα συστήματος διαμεσολαβητή HTTP">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Χρήση διαμεσολαβητή HTTP">
+						<longdesc>Ενεργοποιεί τις ρυθμίσεις διαμεσολαβητή κατά την πρόσβαση HTTP στο διαδίκτυο.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

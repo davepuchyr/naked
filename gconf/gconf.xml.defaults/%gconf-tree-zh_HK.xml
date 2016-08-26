@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="預設的元件檢視程式">
+								<longdesc>有些檔案需要有一個元件來檢視它們，這裏指定檢視所用的程式。參數 %s 會被檔案的 URI 所取代，參數 %c 會被元件 IID 所取代。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="預設終端機的 Exec 參數">
+								<longdesc>預設終端機所使用的 exec 參數。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="預設的終端機">
+								<longdesc>應用程式需要使用終端機時，預設執行的終端機。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“h323”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“h323”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“h323”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「h323」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“callto”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“callto”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“callto”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)中的指令為處理「callto」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="沒有處理“aim”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“aim”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“aim”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「aim」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“mailto”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“mailto”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“mailto”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「mailto」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“https”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“https”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“https”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「https」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“http”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“http”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“http”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「http」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“man”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“man”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“man”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「man」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“info”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“info”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“info”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「info」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“ghelp”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“ghelp”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“ghelp”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「ghelp」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在終端機中執行指令">
+								<longdesc>如設定為‘TRUE’，處理此 URL 的程式必須在終端機中執行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="處理“trash”URL 的處理程序">
+								<longdesc>若有啟用，用來處理“trash”URL 的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的指令應否處理“trash”URL">
+								<longdesc>如設定為「TRUE」，在「command」(指令)欄中的指令為處理「trash」URL 的程式。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB 工作羣組">
+						<longdesc>使用者所屬的 Windows 網絡羣組或網域。新的羣組可能要等使用者再登入後才能完全生效，</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="找尋 DNS-SD 服務的額外網域">
+						<longdesc>在“network:///”位置中顯示的 DNS-SD 網域清單，以逗號隔開。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="如何顯示本地端的 DNS-SD 服務">
+						<longdesc>可能值為“merged”,“separate”以及“disabled”。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="自動代理伺服器組態網址">
+						<longdesc>提供代理伺服器組態的網址。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS 代理伺服器連接埠">
+						<longdesc>在“/system/proxy/socks_host’中定義的代理伺服器的埠號。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS 代理伺服器主機名稱">
+						<longdesc>socks 代理伺服器主機名稱。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP 代理伺服器埠號">
+						<longdesc>在“/system/proxy/ftp_host’中定義的代理伺服器的埠號。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP 代理伺服器主機名稱">
+						<longdesc>FTP 代理伺服器主機名稱。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="安全式 HTTP 代理伺服器連接埠">
+						<longdesc>在“/system/proxy/secure_host’中定義的代理伺服器的埠號。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="安全式 HTTP 代理伺服器主機名稱">
+						<longdesc>用在安全式 HTTP 的代理伺服器主機名稱。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="代理伺服器組態模式">
+						<longdesc>選擇代理伺服器設置模式。支援的值有“none”、“manual”、“auto”。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="不使用代理伺服器的主機">
+						<longdesc>這個鍵值包含了要直接連線，不透過代理伺服器（如果有使用）的主機。數值可以為主機名稱、網域（開頭使用萬用字符如 *.foo.com）、IP 位址（IPv4 和 IPv6 皆可）或帶有子網絡遮罩的位址（像是 192.168.0.0/24）。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP 代理伺服器密碼">
+						<longdesc>使用 HTTP 代理伺服器時進行認證的密碼。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP 代理伺服器使用者名稱">
+						<longdesc>使用 HTTP 代理伺服器時用來驗證的使用者名稱。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="驗證代理伺服器連線">
+						<longdesc>如設定為“true”，那麼連接到代理伺服器時需要認證。使用者/密碼的組合在
+“/system/http_proxy/authentication_user”和“/system/http_proxy/authentication_password”中設定。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP 代理伺服器連接埠">
+						<longdesc>在“/system/http_proxy/host’中定義的代理伺服器的埠號。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP 代理伺服器主機名稱">
+						<longdesc>HTTP 代理伺服器主機名稱。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="使用 HTTP 代理伺服器">
+						<longdesc>經互聯網存取 HTTP 時啟用代理伺服器設定。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Подразумјевани програм за преглед дијелова">
+								<longdesc>Програм који се користи за прегледање датотека које захтјевају компоненту за преглед. Параметар %s ће бити замјењен адресом датотеке, а параметар %c ће бити замјењен IID-ом компоненте.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргумент извршавања за подразумјевани терминал">
+								<longdesc>Аргумент извршавања за подразумјевани терминалски програм.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Подразумјевани терминалски програм">
+								<longdesc>Подразумјевани терминалски програм који се користи за програме којима је неопходан терминал.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="СМБ радна група">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Адреса за самоподешавање посредника">
+						<longdesc>Адреса која обезбеђује вриједности за подешавање посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт SOCKS посредника">
+						<longdesc>Порт машине одређене помоћу „/system/proxy/socks_proxy“ која је посредник.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Име SOCKS посредника">
+						<longdesc>Име рачунара SOCKS посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт FTP посредника">
+						<longdesc>Порт машине одређене помоћу „/system/proxy/ftp_proxy“ која је посредник.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Име FTP посредника">
+						<longdesc>Име рачунара FTP посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт безбједног HTTP посредника">
+						<longdesc>Порт машине одређене помоћу „/system/proxy/secure_proxy“ која је посредник.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Име безбједног HTTP посредника">
+						<longdesc>Име рачунара за безбедно веб (HTTPS) посредовање.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Режим подешавања посредника">
+						<longdesc>Изаберите режим подешавања посредника. Допуштене вриједности су „none“, „manual“ и „auto“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Беспосредничке адресе">
+						<longdesc>Овај кључ садржи списак рачунара који су непосредно повезани, умјесто путем посредника (уколико је у дејству). Ове вриједности могу бити имена рачунара, домени (помоћу почетних навода као што је *.нешто.ију), ИП адресе рачунара (било ИПв4 било ИПв6) и адресе мрежа уз мрежну маску (нешто као што је 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Лозинка HTTP посредника">
+						<longdesc>Лозинка која се користи за идентификацију код веб посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Корисник HTTP посредника">
+						<longdesc>Корисничко име које се шаље при идентификацији код веб посредника.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Идентификуј везе са посредничким сервером">
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт HTTP посредника">
+						<longdesc>Порт машине одређене помоћу „/system/http_proxy/host“ која је посредник.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Име HTTP посредника">
+						<longdesc>Име рачунара за веб (HTTP) посредовање.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Користи веб посредника">
+						<longdesc>Укључује подешавања посредника при приступу вебу преко Интернета.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

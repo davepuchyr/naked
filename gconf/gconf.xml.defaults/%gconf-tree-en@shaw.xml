@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑒𐑩𐑥𐑐𐑴𐑯𐑩𐑯𐑑 𐑝𐑿𐑼 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯">
+								<longdesc>𐑞 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯 𐑑 𐑿𐑕 𐑓𐑹 𐑝𐑿𐑦𐑙 𐑓𐑲𐑤𐑟 𐑞𐑨𐑑 𐑮𐑦𐑒𐑢𐑲𐑼 𐑩 𐑒𐑩𐑥𐑐𐑴𐑯𐑩𐑯𐑑 𐑑 𐑝𐑿 𐑞𐑧𐑥. 𐑞 𐑐𐑼𐑨𐑥𐑩𐑑𐑼 %s 𐑢𐑦𐑤 𐑚𐑰 𐑮𐑦𐑐𐑤𐑱𐑕𐑑 𐑚𐑲 𐑞 file&apos;s URIs, 𐑞 𐑐𐑼𐑨𐑥𐑩𐑑𐑼 %c 𐑢𐑦𐑤 𐑚𐑰 𐑮𐑦𐑐𐑤𐑱𐑕𐑑 𐑚𐑲 𐑞 𐑒𐑩𐑥𐑐𐑴𐑯𐑩𐑯𐑑 IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="𐑧𐑜𐑟𐑧𐑒 𐑸𐑜𐑿𐑥𐑩𐑯𐑑 𐑓𐑹 𐑛𐑦𐑓𐑷𐑤𐑑 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑞 𐑧𐑜𐑟𐑧𐑒 𐑸𐑜𐑿𐑥𐑩𐑯𐑑 𐑑 𐑿𐑕 𐑓𐑹 𐑞 𐑛𐑦𐑓𐑷𐑤𐑑 𐑑𐑻𐑥𐑦𐑯𐑩𐑤 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑑𐑻𐑥𐑦𐑯𐑩𐑤 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯">
+								<longdesc>𐑞 𐑛𐑦𐑓𐑷𐑤𐑑 𐑑𐑻𐑥𐑦𐑯𐑩𐑤 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯 𐑑 𐑿𐑕 𐑓𐑹 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯𐑟 𐑞𐑨𐑑 𐑮𐑦𐑒𐑢𐑲𐑼 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="𐑞 𐑣𐑨𐑯𐑛𐑤𐑼 𐑓𐑹 &quot;h323&quot; URL𐑟">
+								<longdesc>𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;h323&quot; URL𐑟, 𐑦𐑓 𐑦𐑯𐑱𐑚𐑩𐑤𐑛.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="𐑢𐑧𐑞𐑼 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑒𐑩𐑥𐑭𐑯𐑛 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;h323&quot; URL𐑟">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑦𐑯 𐑞 &quot;command&quot; 𐑒𐑰 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;h323&quot; URL𐑟.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="𐑞 𐑣𐑨𐑯𐑛𐑤𐑼 𐑓𐑹 &quot;aim&quot; URL𐑟">
+								<longdesc>𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;aim&quot; URL𐑟, 𐑦𐑓 𐑦𐑯𐑱𐑚𐑩𐑤𐑛.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="𐑢𐑧𐑞𐑼 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑒𐑩𐑥𐑭𐑯𐑛 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;aim&quot; URL𐑟">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑦𐑯 𐑞 &quot;command&quot; 𐑒𐑰 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;aim&quot; URL𐑟.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="𐑞 𐑣𐑨𐑯𐑛𐑤𐑼 𐑓𐑹 &quot;http&quot; URL𐑟">
+								<longdesc>𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;http&quot; URL𐑟, 𐑦𐑓 𐑦𐑯𐑱𐑚𐑩𐑤𐑛.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="𐑢𐑧𐑞𐑼 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑒𐑩𐑥𐑭𐑯𐑛 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;http&quot; URL𐑟">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑦𐑯 𐑞 &quot;command&quot; 𐑒𐑰 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;http&quot; URL𐑟.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="𐑞 𐑣𐑨𐑯𐑛𐑤𐑼 𐑓𐑹 &quot;man&quot; URL𐑟">
+								<longdesc>𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;man&quot; URL𐑟, 𐑦𐑓 𐑦𐑯𐑱𐑚𐑩𐑤𐑛.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="𐑢𐑧𐑞𐑼 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑒𐑩𐑥𐑭𐑯𐑛 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;man&quot; URL𐑟">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑦𐑯 𐑞 &quot;command&quot; 𐑒𐑰 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;man&quot; URL𐑟.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="𐑞 𐑣𐑨𐑯𐑛𐑤𐑼 𐑓𐑹 &quot;info&quot; URL𐑟">
+								<longdesc>𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;info&quot; URL𐑟, 𐑦𐑓 𐑦𐑯𐑱𐑚𐑩𐑤𐑛.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="𐑢𐑧𐑞𐑼 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑒𐑩𐑥𐑭𐑯𐑛 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;info&quot; URL𐑟">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑦𐑯 𐑞 &quot;command&quot; 𐑒𐑰 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;info&quot; URL𐑟.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="𐑮𐑳𐑯 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 𐑞𐑦𐑕 𐑑𐑲𐑐 𐑝 URL 𐑖𐑫𐑛 𐑚𐑰 𐑮𐑳𐑯 𐑦𐑯 𐑩 𐑑𐑻𐑥𐑦𐑯𐑩𐑤.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="𐑞 𐑣𐑨𐑯𐑛𐑤𐑼 𐑓𐑹 &quot;trash&quot; URL𐑟">
+								<longdesc>𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑿𐑕𐑑 𐑑 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;trash&quot; URL𐑟, 𐑦𐑓 𐑦𐑯𐑱𐑚𐑩𐑤𐑛.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="𐑢𐑧𐑞𐑼 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑒𐑩𐑥𐑭𐑯𐑛 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;trash&quot; URL𐑟">
+								<longdesc>𐑑𐑮𐑵 𐑦𐑓 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑦𐑯 𐑞 &quot;command&quot; 𐑒𐑰 𐑖𐑫𐑛 𐑣𐑨𐑯𐑛𐑩𐑤 &quot;trash&quot; URL𐑟.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema>
+						<longdesc>𐑞 ·𐑢𐑦𐑯𐑛𐑴𐑟 𐑯𐑧𐑑𐑢𐑻𐑒𐑦𐑙 𐑢𐑻𐑒𐑜𐑮𐑵𐑐 𐑹 𐑛𐑴𐑥𐑱𐑯 𐑞𐑨𐑑 𐑞 𐑿𐑟𐑼 𐑦𐑟 𐑐𐑸𐑑 𐑝. 𐑦𐑯 𐑹𐑛𐑼 𐑓𐑹 𐑩 𐑯𐑿 𐑢𐑻𐑒𐑜𐑮𐑵𐑐 𐑑 𐑓𐑫𐑤𐑦 𐑑𐑱𐑒 𐑦𐑓𐑧𐑒𐑑 𐑞 𐑿𐑟𐑼 𐑥𐑱 𐑯𐑰𐑛 𐑑 𐑤𐑪𐑜 𐑬𐑑 𐑯 𐑤𐑪𐑜 𐑚𐑨𐑒 𐑦𐑯.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="display_local">
+					<local_schema>
+						<longdesc>𐑐𐑪𐑕𐑩𐑚𐑩𐑤 𐑝𐑨𐑤𐑿𐑟 𐑸 &quot;merged&quot;, &quot;separate&quot; 𐑯 &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="𐑷𐑑𐑴𐑥𐑨𐑑𐑦𐑒 𐑐𐑮𐑪𐑒𐑕𐑦 𐑒𐑩𐑯𐑓𐑦𐑜𐑘𐑼𐑱𐑖𐑩𐑯 URL">
+						<longdesc>URL 𐑞𐑨𐑑 𐑐𐑮𐑩𐑝𐑲𐑛𐑟 𐑐𐑮𐑪𐑒𐑕𐑦 𐑒𐑩𐑯𐑓𐑦𐑜𐑘𐑼𐑱𐑖𐑩𐑯 𐑝𐑨𐑤𐑿𐑟.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="·𐑕𐑪𐑒𐑕 𐑐𐑮𐑪𐑒𐑕𐑦 𐑐𐑹𐑑">
+						<longdesc>𐑞 𐑐𐑹𐑑 𐑪𐑯 𐑞 𐑥𐑩𐑖𐑰𐑯 𐑛𐑦𐑓𐑲𐑯𐑛 𐑚𐑲 &quot;/system/proxy/socks_host&quot; 𐑞𐑨𐑑 𐑿 𐑐𐑮𐑪𐑒𐑕𐑦 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="·𐑕𐑪𐑒𐑕 𐑐𐑮𐑪𐑒𐑕𐑦 𐑣𐑴𐑕𐑑 𐑯𐑱𐑥">
+						<longdesc>𐑞 𐑥𐑩𐑖𐑰𐑯 𐑯𐑱𐑥 𐑑 𐑐𐑮𐑪𐑒𐑕𐑦 ·𐑕𐑪𐑒𐑕 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema>
+						<longdesc>𐑞 𐑐𐑹𐑑 𐑪𐑯 𐑞 𐑥𐑩𐑖𐑰𐑯 𐑛𐑦𐑓𐑲𐑯𐑛 𐑚𐑲 &quot;/system/proxy/ftp_host&quot; 𐑞𐑨𐑑 𐑿 𐑐𐑮𐑪𐑒𐑕𐑦 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="𐑕𐑦𐑒𐑘𐑫𐑼 HTTP 𐑐𐑮𐑪𐑒𐑕𐑦 𐑐𐑹𐑑">
+						<longdesc>𐑞 𐑐𐑹𐑑 𐑪𐑯 𐑞 𐑥𐑩𐑖𐑰𐑯 𐑛𐑦𐑓𐑲𐑯𐑛 𐑚𐑲 &quot;/system/proxy/secure_host&quot; 𐑞𐑨𐑑 𐑿 𐑐𐑮𐑪𐑒𐑕𐑦 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="𐑕𐑦𐑒𐑘𐑫𐑼 HTTP 𐑐𐑮𐑪𐑒𐑕𐑦 𐑣𐑴𐑕𐑑 𐑯𐑱𐑥">
+						<longdesc>𐑞 𐑥𐑩𐑖𐑰𐑯 𐑯𐑱𐑥 𐑑 𐑐𐑮𐑪𐑒𐑕𐑦 𐑕𐑦𐑒𐑘𐑫𐑼 HTTP 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="𐑐𐑮𐑪𐑒𐑕𐑦 𐑒𐑩𐑯𐑓𐑦𐑜𐑘𐑼𐑱𐑖𐑩𐑯 𐑥𐑴𐑛">
+						<longdesc>𐑕𐑩𐑤𐑧𐑒𐑑 𐑞 𐑐𐑮𐑪𐑒𐑕𐑦 𐑒𐑩𐑯𐑓𐑦𐑜𐑘𐑼𐑱𐑖𐑩𐑯 𐑥𐑴𐑛. 𐑕𐑩𐑐𐑹𐑑𐑩𐑛 𐑝𐑨𐑤𐑿𐑟 𐑸 &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="𐑯𐑪𐑯-𐑐𐑮𐑪𐑒𐑕𐑦 𐑣𐑴𐑕𐑑𐑕">
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP 𐑐𐑮𐑪𐑒𐑕𐑦 𐑐𐑭𐑕𐑢𐑼𐑛">
+						<longdesc>𐑐𐑭𐑕𐑢𐑼𐑛 𐑑 𐑐𐑭𐑕 𐑨𐑟 𐑷𐑔𐑧𐑯𐑑𐑦𐑒𐑱𐑖𐑩𐑯 𐑢𐑧𐑯 𐑛𐑵𐑦𐑙 HTTP 𐑐𐑮𐑪𐑒𐑕𐑦𐑦𐑙.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP 𐑐𐑮𐑪𐑒𐑕𐑦 𐑿𐑟𐑼𐑯𐑱𐑥">
+						<longdesc>𐑿𐑟𐑼 𐑯𐑱𐑥 𐑑 𐑐𐑭𐑕 𐑨𐑟 𐑷𐑔𐑧𐑯𐑑𐑦𐑒𐑱𐑖𐑩𐑯 𐑢𐑧𐑯 𐑛𐑵𐑦𐑙 HTTP 𐑐𐑮𐑪𐑒𐑕𐑦𐑦𐑙.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="𐑷𐑔𐑧𐑯𐑑𐑦𐑒𐑱𐑑 𐑐𐑮𐑪𐑒𐑕𐑦 𐑕𐑻𐑝𐑼 𐑒𐑩𐑯𐑧𐑒𐑖𐑩𐑯𐑟">
+						<longdesc>𐑦𐑓 𐑑𐑮𐑵, 𐑞𐑧𐑯 𐑒𐑩𐑯𐑧𐑒𐑖𐑩𐑯𐑟 𐑑 𐑞 𐑐𐑮𐑪𐑒𐑕𐑦 𐑕𐑻𐑝𐑼 𐑮𐑦𐑒𐑢𐑲𐑼 𐑷𐑔𐑧𐑯𐑑𐑦𐑒𐑱𐑖𐑩𐑯. 𐑞 𐑿𐑟𐑼𐑯𐑱𐑥/𐑐𐑭𐑕𐑢𐑼𐑛 𐑒𐑭𐑥𐑚𐑴 𐑦𐑟 𐑛𐑦𐑓𐑲𐑯𐑛 𐑚𐑲 &quot;/system/http_proxy/authentication_user&quot; 𐑯 &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP 𐑐𐑮𐑪𐑒𐑕𐑦 𐑐𐑹𐑑">
+						<longdesc>𐑞 𐑐𐑹𐑑 𐑪𐑯 𐑞 𐑥𐑩𐑖𐑰𐑯 𐑛𐑦𐑓𐑲𐑯𐑛 𐑚𐑲 &quot;/system/http_proxy/host&quot; 𐑞𐑨𐑑 𐑿 𐑐𐑮𐑪𐑒𐑕𐑦 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP 𐑐𐑮𐑪𐑒𐑕𐑦 𐑣𐑴𐑕𐑑 𐑯𐑱𐑥">
+						<longdesc>𐑞 𐑥𐑩𐑖𐑰𐑯 𐑯𐑱𐑥 𐑑 𐑐𐑮𐑪𐑒𐑕𐑦 HTTP 𐑔𐑮𐑵.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="𐑿𐑟 HTTP 𐑐𐑮𐑪𐑒𐑕𐑦">
+						<longdesc>𐑦𐑯𐑱𐑚𐑩𐑤𐑟 𐑞 𐑐𐑮𐑪𐑒𐑕𐑦 𐑕𐑧𐑑𐑦𐑙𐑟 𐑢𐑧𐑯 𐑨𐑒𐑕𐑧𐑕𐑦𐑙 HTTP 𐑴𐑝𐑼 𐑞 ·𐑦𐑯𐑑𐑼𐑯𐑧𐑑.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

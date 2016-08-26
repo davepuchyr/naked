@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Standaard componentweergave-programma">
+								<longdesc>Te gebruiken programma voor weergave van bestanden die een component vereisen. De parameter %s zal vervangen worden door de URI van het bestand en de parameter %c zal vervangen worden de de IID van de component.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Opstartargumenten voor standaard terminal">
+								<longdesc>Te gebruiken exec-argument voor het standaard terminalprogramma.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Standaard terminalprogramma">
+								<longdesc>Het standaard terminalprogramma voor toepassingen die een terminal nodig hebben.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;h323&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;h323&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;h323&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;h323&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;callto&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;callto&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;callto&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indine de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;callto&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;aim&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;aim&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;aim&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;aim&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;mailto&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;mailto&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;mailto&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;mailto&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;https&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;https&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;https&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;https&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;http&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;http&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;http&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot; &quot;http&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;man&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;man&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;man&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;man&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;info&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;info&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;info&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;info&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;ghelp&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;ghelp&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;ghelp&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;ghelp&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Opdracht in terminalvenster starten">
+								<longdesc>Waar indien de opdracht om dit type URL af te handelen in een terminalvenster gestart dient te worden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Het programma dat &quot;trash&quot; URL&apos;s afhandelt">
+								<longdesc>De opdracht voor het afhandelen van &quot;trash&quot;-URL&apos;s, indien ingeschakeld</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Of de aangegeven opdracht &quot;trash&quot;-URL&apos;s dient af te handelen.">
+								<longdesc>Waar indien de opdracht aangegeven in de sleutel: &quot;command&quot;, &quot;trash&quot;-URL&apos;s dient af te handelen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Of een terminalvenster dat geopend wordt vanaf het bureaublad opent in de persoonlijke map">
 						<longdesc>Indien ingeschakeld opent een terminalvenster dat vanaf het bureaublad wordt geopend in de persoonlijke map. Indien uitgeschakeld wordt de bureaubladmap geopend in het terminalvenster. Deze instelling is niet van belang als de persoonlijke map dezelfde map is als het bureaublad.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-werkgroep">
+						<longdesc>De werkgroep of het domein van het Windows-netwerk waar de gebruiker deel van is. Om de nieuwe werkgroep volledig effectief te laten zijn moet u mogelijkerwijs een keer uitloggen en opnieuw aanmelden.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Extra domeinen waarin naar DNS-SD services wordt gezocht">
+						<longdesc>Een door komma&apos;s gescheiden lijst met DNS-SD domeinen die zichtbaar behoren te zijn in de locatie &quot;netwerk:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Hoe een lokale DNS-SD service wordt weergegeven">
+						<longdesc>Mogelijke waarden zijn &quot;merged&quot;, &quot;separate&quot; en &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL voor automatische proxy-configuratie">
+						<longdesc>URL die de waardes geeft voor proxyconfiguratie.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS-proxy poortnummer">
+						<longdesc>De poort op de machine die u als proxy gebruikt en gedefinieerd door &quot;/system/proxy/socks_host&quot;</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS-proxy hostnaam">
+						<longdesc>De machinenaam waar de socks-proxy op draait.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP-proxy poortnummer">
+						<longdesc>De poort op de machine die u als proxy gebruikt en gedefinieerd door &quot;/system/proxy/ftp_host&quot;</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP-proxy hostnaam">
+						<longdesc>De machinenaam waar de FTP-proxy op draait.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Beveiligde HTTP-proxy poortnummer">
+						<longdesc>De poort op de machine die u als proxy gebruikt en gedefinieerd door &quot;/system/proxy/secure_host&quot;</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Beveiligde HTTP-proxy hostnaam">
+						<longdesc>De machinenaam waar de beveiligde HTTP-proxy op draait.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxy configuratiemodus">
+						<longdesc>Kies de proxy configuratiemodus. Mogelijke waarden zijn &quot;none&quot; (geen), &quot;manual&quot; (handmatig) en &quot;auto&quot; (automatisch).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Non-proxy hosts">
+						<longdesc>Deze sleutel bevat een lijst van computers die direct benaderd dienen te worden in plaats van via de proxy. De waardes kunnen computernamen zijn, of domeinen (met jokertekens zoals: *.bla.com), IP-adressen (zowel IPv4 als IPv6) of netwerkadressen met netmasker zoals 192.168.0.0/24.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP-proxy wachtwoord">
+						<longdesc>Te gebruiken wachtwoord bij gebruik van de HTTP proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP-proxy gebruikersnaam">
+						<longdesc>Te gebruiken naam voor identificatie bij HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Aanmeldingscontrole gebruiken bij proxyserver-verbindingen">
+						<longdesc>Indien waar, wordt voor een verbinding met de proxyserver aanmeldingscontrole vereist. De combinatie van gebruikersnaam en wachtwoord komt voort uit &quot;/system/http_proxy/authentication_user&quot; en &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP-proxy poortnummer">
+						<longdesc>Het poortnummer op de machine die u als proxy gebruikt en gedefineerd door &quot;/system/http_proxy/host&quot; </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP-proxy hostnaam">
+						<longdesc>De machinenaam waar de HTTP-proxy op draait.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP-proxy gebruiken">
+						<longdesc>Proxy-instellingen gebruiken bij HTTP-verbindingen over het internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Ön qurğulu tərkib hissəsi nümayiş proqramı">
+								<longdesc>The application to use for viewing files that require a component to view them. The parameter %s will be replaced by the file&apos;s URIs, the parameter %c will be replaced by the component IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Ön qurğulu terminal üçün icra ediləcək əmr">
+								<longdesc>Ön qurğulu terminal gedişatı üçün icra ediləcək əmr.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Ön qurğulu terminal proqramı">
+								<longdesc>Terminala məcbur olan proqramlar üçün işlədiləcək ön qurğulu terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB iş qrupu">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Avtomatik vəkil quraşdırma URL-si">
+						<longdesc>Vəkil qurğu qiymətlərini verən URL</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS vəkil qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/socks_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS vəkil qovşaq adı">
+						<longdesc>Socks üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP vəkil qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/ftp_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP vəkil qovşaq adı">
+						<longdesc>FTP üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="E&apos;tibarlı HTTP vəkil qovşaq qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/secure_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="E&apos;tibarlı HTTP vəkil qovşaq adı">
+						<longdesc>E&apos;tibarlı HTTP üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Vəkil quraşdırma modu">
+						<longdesc>Vəkil quraşdırma modu. Dəstəklənən qiymətlər: &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Vəkil olmayan qovşaqlar">
+						<longdesc>This key contains a list of hosts which are connected to directly, rather than via the proxy (if it is active). The values can be hostnames, domains (using an initial wildcard like *.foo.com), IP host addresses (both IPv4 and IPv6) and network addresses with a netmask (something like 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP vəkil şifrəsi">
+						<longdesc>HTTP vəkilləndirməsində göndəriləcək şifrə.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP vəkil istifadəçi adı">
+						<longdesc>HTTP vəkilləndirməsində göndəriləcək istifadəçi adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Vəkil vericisi bağlantılarını tanıt">
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP vəkil qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/http_proxy/host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP vəkil qovşaq adı">
+						<longdesc>HTTP üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP vəkili işlət">
+						<longdesc>Enables the proxy settings when accessing HTTP over the Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

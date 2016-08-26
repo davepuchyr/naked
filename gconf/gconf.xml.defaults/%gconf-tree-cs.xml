@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Výchozí aplikace prohlížeče komponent">
+								<longdesc>Aplikace, kterou chcete používat k zobrazování souborů, které k zobrazení vyžadují komponentu. Parametr %s bude nahrazen URI souboru, parametr %c bude nahrazen IID komponenty.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argument exec pro výchozí terminál">
+								<longdesc>Argument exec, který používat pro výchozí aplikaci terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Výchozí aplikace terminálu">
+								<longdesc>Výchozí aplikace terminálu, kterou používat pro aplikace, které vyžadují terminál.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „h323“">
+								<longdesc>Příkaz používaný pro obsluhu URL „h323“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „h323“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „h323“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „callto“">
+								<longdesc>Příkaz používaný pro obsluhu URL „callto“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „callto“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „callto“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „aim“">
+								<longdesc>Příkaz používaný pro obsluhu URL „aim“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „aim“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „aim“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „mailto“">
+								<longdesc>Příkaz používaný pro obsluhu URL „mailto“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „mailto“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „mailto“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „https“">
+								<longdesc>Příkaz používaný pro obsluhu URL „https“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „https“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „https“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „http“">
+								<longdesc>Příkaz používaný pro obsluhu URL „http“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „http“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „http“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „man“">
+								<longdesc>Příkaz používaný pro obsluhu URL „man“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „man“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „man“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „info“">
+								<longdesc>Příkaz používaný pro obsluhu URL „info“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „info“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „info“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „ghelp“">
+								<longdesc>Příkaz používaný pro obsluhu URL „ghelp“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „ghelp“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „ghelp“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Spustit příkaz v terminálu">
+								<longdesc>„True“, pokud by měl být program používaný pro obsluhu tohoto typu URL spouštěn v terminálu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsluha pro URL „trash“">
+								<longdesc>Příkaz používaný pro obsluhu URL „trash“, je-li povolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Jestli má určený příkaz obsluhovat URL „trash“">
+								<longdesc>„True“, pokud má příkaz určený v klíči „command“ obsluhovat URL „trash“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Zda otevření terminálu na ploše otvírá terminál v domovském adresáři">
 						<longdesc>Pokud aktivní, tak otevření terminálu na ploše otevře terminál v domovském adresáři. V opačném případě jej otevře v adresáři plochy. Vězte, že tento klíč nemá žádný vliv, pokud adresář plochy je shodný s domovským adresářem.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Pracovní skupina SMB">
+						<longdesc>Pracovní skupina nebo doména Windows, jejímž členem je uživatel. Aby se úplně projevila nová pracovní skupina, uživatel se možná bude muset odhlásit a znovu přihlásit.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Další domény, ve kterých se mají hledat služby DNS-SD">
+						<longdesc>Čárkami oddělený seznam domén DNS-SD, které by měly být viditelné v umístění „network:///“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Jak zobrazit místní službu DNS-SD">
+						<longdesc>Možné hodnoty jsou „merged“, „separate“ a „disabled“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL automatického nastavení proxy">
+						<longdesc>URL, které poskytuje hodnoty nastavení proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port proxy SOCKS">
+						<longdesc>Port na počítači definovaném v „/system/proxy/socks_host“, který používat pro proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Název počítače proxy SOCKS">
+						<longdesc>Název počítače, který používat jako proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port proxy FTP">
+						<longdesc>Port na počítači definovaném v „/system/proxy/ftp_host“, který používat pro proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Název počítače proxy FTP">
+						<longdesc>Název počítače, který používat jako proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port proxy zabezpečeného HTTP">
+						<longdesc>Port na počítači definovaném v „/system/proxy/secure_host“, který používat pro proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Název počítače proxy zabezpečeného HTTP">
+						<longdesc>Název počítače, který používat jako proxy zabezpečeného HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Režim nastavení proxy">
+						<longdesc>Vyberte režim nastavení proxy. Podporované hodnoty jsou „none“, „manual“, „auto“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Počítače bez proxy">
+						<longdesc>Tento klíč obsahuje seznam počítačů, které jsou připojeny přímo, ne přes proxy (pokud je aktivní). Hodnoty mohou být názvy počítačů, domény (pomocí počátečního zástupného znaku, např. *.foo.com), adresy IP počítačů (IPv4 i IPv6) a adresy sítí s maskou sítě (přibližně jako 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Heslo proxy HTTP">
+						<longdesc>Heslo, které předat jako autentizaci při používání HTTP proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Jméno uživatele proxy HTTP">
+						<longdesc>Jméno uživatele, které předávat jako autentizaci při používání proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentizovat připojení k serveru proxy">
+						<longdesc>Je-li „true“, vyžadují připojení k serveru proxy autentizaci. Kombinace jméno uživatele/heslo je definována v „/system/http_proxy/authentication_user“ a „/system/http_proxy/authentication_password“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port proxy HTTP">
+						<longdesc>Port na počítači definovaném v „/system/http_proxy/host“, který používat pro proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Název počítače proxy HTTP">
+						<longdesc>Název počítače, který používat jako proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Používat proxy HTTP">
+						<longdesc>Povolí nastavení proxy při přístupu k HTTP přes Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

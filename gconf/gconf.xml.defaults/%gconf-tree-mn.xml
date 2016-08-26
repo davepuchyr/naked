@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Стандарт бүрэлдэхүүн харагч програм">
+								<longdesc>Харуулах бүрэлдэхүүн шаардлагатай файлууд харуулахад хэрэглэгдэх програм. %s параметр файлын хаягаар, %c параметр бүрэлдэхүүний-IID -р орлуулагдана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Стандарт терминалын хувьд аргументыг гүйцэтгэ">
+								<longdesc>Стандарт терминалын хувьд гүйцэтгэх аргумент.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Стандарт терминал програм">
+								<longdesc>Терминал шаарддаг хэрэглээний програмуудад хэрэглэгдэх стандарт терминал програм.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLs-н тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;callto&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;callto&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал »command« түлхүүр &quot;callto&quot; URLs-г авч үзэхийгзаана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLs тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;aim&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;aim&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, програмд &quot;aim&quot; URLs-н тодорхойлогчийг »command« -д өгнө.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLs-н тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;mailto&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;mailto&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал »command« түлхүүр &quot;mailto&quot; URLs-г авч үзэхийгзаана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLs тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;man&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;man&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал »command« түлхүүр &quot;man&quot; URLs-г авч үзэхийгзаана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLs тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;info&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;info&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал »command« түлхүүр &quot;info&quot; URLs-г авч үзэхийгзаана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLs тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;ghelp&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;ghelp&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал »command« түлхүүр &quot;ghelp&quot; URLs-г авч үзэхийгзаана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Програмыг терминалд ажиллуулах">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал энэ төрлийн URL-г терминалд ажиллуулахад хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLs тодорхойлогч">
+								<longdesc>Тушаал хэрэв нээлттэй бол &quot;trash&quot; URL авч үзэхэд хэрэглэгдэнэ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Сонгосон тушаал &quot;trash&quot; URLs-г авч үзэх эсэх">
+								<longdesc>Энэ түлхүүр үнэн бол, тушаал »command« түлхүүр &quot;trash&quot; URLs-г авч үзэхийгзаана.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ажлын хэсэг">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="display_local">
+					<local_schema short_desc="Яаж локал DNS-SD сервисийг харуулах вэ">
+						<longdesc>Боломжит утгууд &quot;merged&quot;, &quot;separate&quot; ба &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Итгэмжилэгч серверийн автомат тохиргоо хаяг.">
+						<longdesc>Итгэмжилэгчийн тохиргоог нийлүүлэх утгын хаяг</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS итгэмжилэгчийн порт">
+						<longdesc>Итгэмжилэгч порт &quot;/system/proxy/socks_host&quot; гэж тодорхойлогдсон хост</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS Итгэмжилэгчийн хостын нэр">
+						<longdesc>Итгэмжилэгч socks-н машины нэр</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP итгэмжилэгчийн порт">
+						<longdesc>Итгэмжилэгч порт  &quot;/system/proxy/ftp_host&quot; гэж тодорхойлогдсон хост</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTPитгэмжилэгч хост нэр">
+						<longdesc>Итгэмжилэгч FTP -н машины нэр</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Хамгаалалттай HTTP итгэмжилэгчийн порт">
+						<longdesc>Итгэмжилэгч порт &quot;/system/proxy/secure_host&quot; гэж тодорхойлогдсон хост</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Хамгаалалттай HTTP итгэмжилэгчийн хост нэр">
+						<longdesc>Итгэмжилэгч хамгаалалттай HTTP-н машины нэр</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Итгэмжилэгч тохируулах горим">
+						<longdesc>Хамгаалалттай итгэмжилэгчийн тохируулах горим. Боломжит утгууд &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Итгэмжилэгчгүй хост">
+						<longdesc>Энэ түлхүүр итгэмжилэгчээр биш (идэвхитэй үед) шууд холболт хийгдэх ёстой хостуудын жагсаалтыг агуулна. Утгууд нь Хостын нэр, Домайн (Wildcard, ж.нь *.foo.mn), Хостын IP-хаяг (түүнчилэн IPv4 ба IPv6) болон сүлжээний масктай сүлжээний хаягууд (192.168.0.0/24 хэлбэртэй) байна.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP итгэмжилэгчийн нууц үг">
+						<longdesc>HTTP итгэмжилэл хийх үеийн батламжийн нууц үг.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP итгэмжилэгчийн хэрэглэгчийн нэр">
+						<longdesc>HTTP итгэмжилэл хийж байхад бататгах хэрэглэгчийн нэр</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Итгэмжилэгч сервер холболтыг батал">
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP итгэмжилэгчийн порт">
+						<longdesc>Итгэмжилэгч порт &quot;/system/http_proxy/host&quot; гэж тодорхойлогдсон хост</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP итгэмжилэгч хостын нэр">
+						<longdesc>Итгэмжилэгч HTTP-н машины нэр</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP итгэмжилэгч хэрэглэх">
+						<longdesc>HTTP-р интернэт рүү хандахад итгэмжилэгчийн тохиргоог нээх</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="terminal">
+						<entry name="exec">
+							<local_schema short_desc="Defaŭlta terminal-aplikaĵo">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Ruli komandon en terminalo">
+								<longdesc>Estas vera, se la komando estas uzata por trakti tiun tipon de URL-o devu esti lanĉita en terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

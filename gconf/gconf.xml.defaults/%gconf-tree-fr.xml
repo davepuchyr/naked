@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Visionneur de composants par défaut">
+								<longdesc>L&apos;application à utiliser pour visualiser les fichiers qui nécessitent un composant pour les voir. Le paramètre %s sera remplacé par l&apos;URI du fichier, le paramètre %c sera remplacé par le composant IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Paramètre d&apos;exécution pour le terminal par défaut">
+								<longdesc>L&apos;argument d&apos;exécution à utiliser pour l&apos;application de terminal par défaut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminal par défaut">
+								<longdesc>L&apos;application terminal par défaut à utiliser pour les applications qui nécessite un terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « h323 »">
+								<longdesc>Si vrai, le programme qui gère les URLs « h323 ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « h323 »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « h323 ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « callto »">
+								<longdesc>Si vrai, le programme qui gère les URLs « callto ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « callto »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « callto ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « aim »">
+								<longdesc>Si vrai, le programme qui gère les URLs « aim ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « aim »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « aim ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « mailto »">
+								<longdesc>Si vrai, le programme qui gère les URLs « mailto ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « mailto »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « mailto ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « https »">
+								<longdesc>Si vrai, le programme qui gère les URLs « https ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « https »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « https ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « http »">
+								<longdesc>Si vrai, le programme qui gère les URLs « http ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « http »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « http ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « man »">
+								<longdesc>Si vrai, le programme qui gère les URLs « man ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « man »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « man ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « info »">
+								<longdesc>Si vrai, le programme qui gère les URLs « info ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « info »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « info ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « ghelp »">
+								<longdesc>Si vrai, le programme qui gère les URLs « ghelp ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « ghelp »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « ghelp ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Lancer le programme dans un terminal">
+								<longdesc>Vrai si le programme qui gère cette URL doit être lancée dans un terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Le gestionnaire d&apos;URLs « trash »">
+								<longdesc>Si vrai, le programme qui gère les URLs « trash ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indique si la commande indiquée doit gérer les URL « trash »">
+								<longdesc>Indique si le programme indiqué à la clé « command » gère les URLs « trash ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Indique si l&apos;ouverture d&apos;un terminal sur le bureau ouvre un terminal dans le dossier personnel">
 						<longdesc>Si vrai, l&apos;ouverture d&apos;un terminal sur le bureau ouvrira un terminal dans le dossier personnel. Dans le cas contraire, il sera ouvert dans le dossier bureau. Notez que cette option est inutile dans le cas où le dossier bureau est identique au dossier personnel.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Groupe de travail SMB">
+						<longdesc>Le groupe de travail ou le domaine Windows auquel appartient l&apos;utilisateur. Afin qu&apos;un nouveau groupe de travail soit pleinement opérationnel, l&apos;utilisateur doit se déconnecter et se reconnecter.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domaines supplémentaire dans lesquels chercher des services DNS-SD">
+						<longdesc>Liste des domaines DNS-SD séparés par une virgule qui doivent être visible dans l&apos;emplacement « network:/// ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="La manière d&apos;afficher le service DNS-SD local">
+						<longdesc>Les valeurs possibles sont « merged » (fusionné), « separate » (séparé) et « disabled » (désactivé).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL de configuration automatique du serveur mandataire">
+						<longdesc>L&apos;URL qui fournit les valeurs de configuration du serveur mandataire.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port du serveur mandataire SOCKS">
+						<longdesc>Le port de la machine définie dans « /system/proxy/socks_host » utilisée comme serveur mandataire.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nom d&apos;hôte du serveur mandataire SOCKS">
+						<longdesc>Le nom de machine qui sert de serveur mandataire socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port du serveur mandataire FTP">
+						<longdesc>Le port de la machine définie dans « /system/proxy/ftp_host » utilisée comme serveur mandataire.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nom d&apos;hôte du serveur mandataire FTP">
+						<longdesc>Le nom de la machine qui sert de serveur mandataire FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port du serveur mandataire HTTP sécurisé">
+						<longdesc>Le port de la machine définie dans « /system/proxy/secure_host » utilisée comme serveur mandataire.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nom d&apos;hôte du serveur mandataire HTTP sécurisé">
+						<longdesc>Le nom de la machine qui sert de serveur mandataire HTTP sécurisé.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mode de configuration du serveur mandataire">
+						<longdesc>Sélectionnez le mode de configuration du serveur mandataire. Les valeurs prises en charge sont « none » (aucun), « manual » (manuel), « auto » (automatique).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Hôtes ne nécessitant pas de serveur mandataire">
+						<longdesc>Cette clé contient une liste d&apos;hôtes qui peuvent être contactés directement,plutôt que par un serveur mandataire (s&apos;il est actif). Les valeurs peuvent être des noms d&apos;hôtes, des domaines (en utilisant un caractère joker comme *.toto.fr), des adresses IP d&apos;hôte (IPv4 et IPv6) et des adresses réseau avec un masque (comme 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Mot de passe du serveur mandataire HTTP">
+						<longdesc>Mot de passe à fournir comme authentification lors de l&apos;utilisation du serveur mandataire HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nom d&apos;utilisateur du serveur mandataire HTTP">
+						<longdesc>Nom d&apos;utilisateur à fournir comme authentification lors de l&apos;utilisation du serveur mandataire HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Authentifier les connexions au serveur mandataire">
+						<longdesc>Si vrai, alors les connexions au serveur mandataire nécessitent une authentification. Le couple nom d&apos;utilisateur/mot de passe est défini dans « /system/http_proxy/authentication_user » and « /system/http_proxy/authentication_password ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port du serveur mandataire HTTP">
+						<longdesc>Le port de la machine définie dans « /system/http_proxy/host » utilisée comme serveur mandataire.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nom d&apos;hôte du serveur mandataire HTTP">
+						<longdesc>Le nom de la machine qui sert de serveur mandataire HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Utiliser un serveur mandataire HTTP">
+						<longdesc>Active les paramètres du serveur mandataire lors de l&apos;accès HTTP sur Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

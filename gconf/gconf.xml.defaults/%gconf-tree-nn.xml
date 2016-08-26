@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Standard komponentvisarprogram">
+								<longdesc>Programmet som skal brukast til å visa filer som krev ein eigen komponent for å visast. Parameteren %s vert erstatta av URI-en til fila, og parameteren %c vert erstatta med komponenten sin IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec-argument til standardterminalemulatoren">
+								<longdesc>Exec-argumentet som skal brukast til standardterminalemulatoren.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Standard terminalemulator">
+								<longdesc>Standard terminalemulator som skal brukast til program som krev ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «h323»-adresser">
+								<longdesc>Kommandoen som tek hand om «h323»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «h323»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «h323»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «callto»-adresser">
+								<longdesc>Kommandoen som tek hand om «callto»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «callto»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «callto»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «aim»-adresser">
+								<longdesc>Kommandoen som tek hand om «aim»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «aim»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «aim»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «mailto»-adresser">
+								<longdesc>Kommandoen som tek hand om «mailto»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «mailto»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «mailto»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «https»-adresser">
+								<longdesc>Kommandoen som tek hand om «https»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «https»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «https»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «http»-adresser">
+								<longdesc>Kommandoen som tek hand om «http»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «http»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «http»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «man»-adresser">
+								<longdesc>Kommandoen som tek hand om «man»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «man»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «man»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «info»-adresser">
+								<longdesc>Kommandoen som tek hand om «info»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «info»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «info»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «ghelp»-adresser">
+								<longdesc>Kommandoen som tek hand om «ghelp»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «ghelp»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «ghelp»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Køyr kommandoen i ein terminal">
+								<longdesc>Sann dersom programmet som handsamar denne typen adresser skal køyrast i ein terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Handsamar av «trash»-adresser">
+								<longdesc>Kommandoen som tek hand om «trash»-adresser, dersom slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den oppgjevne kommandoen skal handsama «trash»-adresser">
+								<longdesc>Sett til sann for å la programmet i nøkkelen «command» handsama «trash»-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-arbeidsgruppe">
+						<longdesc>Windows-nettverk-arbeidsgruppa eller -domenet som brukaren er ein del av. For at ei ny arbeidsgruppe skal tre i kraft må brukaren kanskje logga av og på.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Ekstra domener det skal sjåast etter DNS-SD-tenester i">
+						<longdesc>Kommadelt liste over DNS-SD-domener som skal vera synlege i nettverksplasseringa.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Korleis lokal DNS-SD-teneste skal visast">
+						<longdesc>Moglege verdiar er «merged», «separate» og «disabled».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL til automatisk oppsett av mellomtenar">
+						<longdesc>URL til mellomtenar-innstillingar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port på SOCKS-mellomtenar">
+						<longdesc>Porten som skal brukast på mellomtenaren som er definert i «/system/socks_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Vertsnamn på SOCKS-mellomtenar">
+						<longdesc>Namnet på maskinen som er Socks-mellomtenar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port på FTP-mellomtenar">
+						<longdesc>Porten som skal brukast på mellomtenaren som er definert i «/system/proxy/ftp_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Vertsnamn på FTP-mellomtenar">
+						<longdesc>Namnet på maskinen som er FTP-mellomtenar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port på trygg HTTP-mellomtenar">
+						<longdesc>Porten som skal brukast på mellomtenaren som er definert i «/system/proxy/secure_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Vertsnamn på trygg HTTP-mellomtenar">
+						<longdesc>Namnet på maskinen som er trygg HTTP-mellomtenar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Måten mellomtenaren vert satt opp på">
+						<longdesc>Vel korleis bruken av mellomtenaren skal setjast opp. Moglege verdiar er «none», «manual» og «auto».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Vertar som ikkje brukar mellomtenar">
+						<longdesc>Denne nøkkelen inneheld ei liste med vertar som skal koplast til direkte, og ikkje gjennom ein mellomtenar, sjølv om ein er i bruk elles. Verdiane kan vera vertsnamn, domener (med jokerteikn i byrjinga, t.d. *.foo.com), IP-adresser (både IPv4 og IPv6) og nettverksadresser med nettmaske (t.d. 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Passord på HTTP-mellomtenar">
+						<longdesc>Passord som skal brukast til autentisering når ein HTTP-mellomtenar vert brukt</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Brukarnamn på HTTP-mellomtenar">
+						<longdesc>Brukarnamn som skal brukast til autentisering når ein HTTP-mellomtenar vert brukt</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentiser tilkoplingar til mellomtenaren">
+						<longdesc>Dersom denne er sann, skal tilkoplingar til mellomtenaren autentiserast. Brukarnamn og passord er definerte i nøklane «/system/http_proxy/authentication_user» og «/system/http_proxy/authentication_password».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port på HTTP-mellomtenar">
+						<longdesc>Porten som skal brukast på mellomtenaren som er definert i «/system/http_proxy/host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Vertsnamn på HTTP-mellomtenar">
+						<longdesc>Namnet på maskinen som er HTTP-mellomtenar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Bruk HTTP-mellomtenar">
+						<longdesc>Brukar mellomtenar-innstillingane når HTTP over internett vert brukt.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

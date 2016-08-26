@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt komponentfremviser">
+								<longdesc>Det program der skal bruges til at vise filer der kræver en komponent for at vise dem. Parameteren %s vil blive erstattet af filens adresser, parameteren %c vil blive erstattet med komponentens IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Kørselsparameter for forvalgt terminal">
+								<longdesc>Kørselsparameter der skal bruges til det forvalgte terminalprogram.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt terminalprogram">
+								<longdesc>Det forvalgte terminalprogram til programmer der kræver en terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;h323&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;h323&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;h323&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;h323&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;callto&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;callto&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;callto&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;callto&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;aim&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;aim&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;aim&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;aim&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;mailto&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;mailto&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;mailto&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;mailto&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;https&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;https&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;https&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;https&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;http&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;http&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;http&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;http&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;man&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;man&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;man&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;man&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;info&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;info&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om det specificerde program skal håndtere &quot;info&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;info&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;ghelp&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;ghelp&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;ghelp&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;ghelp&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kør kommandoen i en terminal">
+								<longdesc>Sand hvis kommandoen til at håndtere denne adresse skal køres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndtering af &quot;trash&quot;-adresser">
+								<longdesc>Kommandoen der bruges til at håndtere &quot;trash&quot;-adresser, hvis aktiveret.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om den specificerede kommando skal håndtere &quot;trash&quot;-adresser">
+								<longdesc>Sand hvis kommandoen angivet i &quot;command&quot;-nøglen håndterer &quot;trash&quot;-adresser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Hvorvidt åbning af en terminal på skrivebordet åbner en terminal i hjemmemappen">
 						<longdesc>Hvis angivet som sand, så vil åbning af en terminal på skrivebordet åbne en terminal i hjemmemappen. Ellers vil den blive åbnet i skrivebordsmappen. Bemærk at denne indstilling er irrelevant hvis skrivebordsmappen er identisk med hjemmemappen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-arbejdsgruppe">
+						<longdesc>Windows netværks-arbejdsgruppen eller domænet som brugeren er en del af. For at en ny arbejdsgruppe er komplet aktiveret skal brugeren muligvis logge ud og logge ind igen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Ekstra domæner til at kigge efter DNS-SD-tjenester i">
+						<longdesc>Komma-adskilt liste af DNS-SD-domæner som skal være synlige i &quot;network:///&quot;-stedet.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Hvordan en lokal DNS-SD-tjeneste skal vises">
+						<longdesc>Mulige værdier er &quot;merged&quot;, &quot;separate&quot; og &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automatisk mellemværtskonfigurationsadresse">
+						<longdesc>Adresse som tilbyder konfigurationsværdier for mellemvært.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS-mellemværtsport">
+						<longdesc>Porten på den maskine defineret af &quot;/system/proxy/socks_host&quot; som trafikken skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS-mellemværtsnavn">
+						<longdesc>Maskinnavn som SOCKS-trafik skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP-mellemværtsport">
+						<longdesc>Porten på den maskine defineret af &quot;/system/proxy/ftp_host&quot; som trafikken skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP-mellemværtsnavn">
+						<longdesc>Maskinnavn som FTP-trafik skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Sikker HTTP-mellemværtsport">
+						<longdesc>Porten på den maskine defineret af &quot;/system/proxy/secure_host&quot; som trafikken skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Sikker HTTP-mellemværtsnavn">
+						<longdesc>Maskinnavn som sikker HTTP-trafik skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mellemværtstilstand">
+						<longdesc>Vælg mellemværtkonfigurationen. Mulige værdier er &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Værter uden mellemvært">
+						<longdesc>Denne nøgle indeholder en liste af værter som der skal tilsluttes til direkte i stedet for gennem mellemværten (hvis den er aktiv). Værdierne kan være værtsnavne, domæner (med et indledende jokertegn som f.eks. *.foo.dk), IP-værtsadresser (både IPv4 og IPv6) og netværksadresser med et netmaske (som f.eks. 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP-mellemværtsadgangskode">
+						<longdesc>Adgangskode der skal gives som brugergodkendelse for HTTP-mellemvært.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP-mellemværtsbrugernavn">
+						<longdesc>Brugernavn der skal videregives til brugergodkendelse til HTTP-mellemvært.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Brugergodkendelse ved mellemværtstilslutninger">
+						<longdesc>Hvis sand, kræver tilslutningerne til mellemværten brugergodkendelse. Brugernavn-/adgangskodekombinationen er defineret i &quot;/system/http_proxy/authentication_user&quot; og &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP-mellemværtsport">
+						<longdesc>Porten på den maskine defineret af &quot;/system/http_proxy/host&quot; som trafikken skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP-mellemværtsnavn">
+						<longdesc>Maskinnavn som HTTP-trafik skal gå gennem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Benyt HTTP-mellemvært">
+						<longdesc>Aktivér mellemværtsindstillingerne ved HTTP over internettet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="默认组件查看器应用程序">
+								<longdesc>该应用程序用于查看需要组件才能查看的文件。参数 %s 将被替换为文件的 URI，参数 %c 将被替换为组件 IID。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="默认终端的执行参数">
+								<longdesc>为默认终端应用程序所使用的执行参数。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="默认终端应用程序">
+								<longdesc>为需要终端的应用程序所使用的默认终端应用程序。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“H323”URLs 的程序">
+								<longdesc>若启用的话，用于处理“H323”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“h323”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“h323”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“callto”URLs 的程序">
+								<longdesc>若启用的话，用于处理“callto”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“callto”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“callto”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“aim”URLs 的程序">
+								<longdesc>若启用的话，用于处理“aim”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“aim”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“aim”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“mailto”URLs 的程序">
+								<longdesc>若启用的话，用于处理“mailto”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“mailto”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“mailto”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“https”URLs 的程序">
+								<longdesc>若启用的话，用于处理“https”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“https”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“https”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“http”URLs 的程序">
+								<longdesc>若启用的话，用于处理“http”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“http”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“http”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“man”URLs 的程序">
+								<longdesc>若启用的话，用于处理“man”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“man”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“man”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“info”URLs 的程序">
+								<longdesc>若启用的话，用于处理“info”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“info”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“info”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“ghelp”URLs 的程序">
+								<longdesc>若启用的话，用于处理“ghelp”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“ghelp”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“ghelp”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="在终端运行命令">
+								<longdesc>True 代表要处理此 URL 的程序应该在终端中运行。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="处理“trash”URLs 的程序">
+								<longdesc>若启用的话，用于处理“trash”URLs 的命令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定的命令是否应处理“trash”URLs">
+								<longdesc>设为 true 可在“command”键中指定一个程序来处理“trash”URLs。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="在桌面上打开终端时是否设置为打开在主目录">
 						<longdesc>如果设为真，在桌面上打开终端将会设为打开在主目录。否则，它将会被打开在 桌面目录。注意此键跟桌面目录是否同于主目录不相关。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB 工作组">
+						<longdesc>用户所属的 Windows 网络工作组或域。为了让新工作组完全生效，用户可能需要注销并再次登录。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD 服务应查阅的额外域">
+						<longdesc>以逗号分隔的 DNS-SD 域列表，这些域将出现在“network:///”位置中。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="如何显示本地 DNS-SD 服务">
+						<longdesc>可供选择的值有“merged”、“separate”和“disabled”。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="自动代理配置 URL">
+						<longdesc>提供代理配置值的 URL。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS 代理端口">
+						<longdesc>您使用的代理服务器的端口号定义在“/system/proxy/socks_host”中。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS 代理主机名">
+						<longdesc>代理套接字的机器名。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP 代理端口">
+						<longdesc>您使用的代理服务器的端口号定义在“/system/proxy/ftp_host”中。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP 代理主机名">
+						<longdesc>代理 FTP 的机器名。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="安全 HTTP 代理端口">
+						<longdesc>您使用的代理服务器的端口号定义在“/system/proxy/secure_host”中。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="安全 HTTP 代理主机名">
+						<longdesc>代理安全 HTTP 的机器名。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="代理配置模式">
+						<longdesc>选择代理配置模式。支持的值为“无”、“手动”、“自动”。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="非代理服务器">
+						<longdesc>此键中定义的主机列表将不通过代理(如果有设定)而直接联接。其值可以是主机名、域名(支持通配符开头的形式如 *.foo.com)、IP 主机地址(既可 IPv4 亦可 IPv6)以及跟随网络掩码的网络地址(例如 192.168.0.0/24)。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP 代理密码">
+						<longdesc>用于 HTTP 代理认证的密码。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP 代理用户名">
+						<longdesc>用于 HTTP 代理认证的用户名。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="认证代理服务器连接">
+						<longdesc>若为真，则对代理服务器的连接需要身份验证。用户名/密码组合由“/system/http_proxy/authentication_user”和“/system/http_proxy/authentication_password”定义。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP 代理端口">
+						<longdesc>您使用的代理服务器的端口号定义在“/system/http_proxy/host”中。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP 代理主机名">
+						<longdesc>代理 HTTP 的机器名。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="使用 HTTP 代理">
+						<longdesc>访问 Internet 上的 HTTP 时启用代理服务器设置。</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

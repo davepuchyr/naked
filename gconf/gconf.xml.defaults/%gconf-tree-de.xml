@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Vorgabeanwendung für Ansichtskomponenten">
+								<longdesc>Die zum Anzeigen von Dateien, die eine Ansichtskomponente erforderlich machen, verwendete Anwendung. Der Parameter %s wird durch die Dateiadresse, der Parameter %d durch die Komponenten-IID ersetzt.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec-Argument für Vorgabe-Terminal">
+								<longdesc>Das an die Vorgabe-Terminal-Anwendung zu übergebende exec-Argument.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Vorgabe-Terminal-Anwendung">
+								<longdesc>Die Vorgabe-Terminal-Anwendung, die für Anwendungen verwendet wird, die ein Terminal erforderlich machen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »h323«-URLs">
+								<longdesc>Der zum Handhaben von »h323«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »h323«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »h323«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »callto«-URLs">
+								<longdesc>Der zum Handhaben von »callto«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »callto«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »callto«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »aim«-URLs">
+								<longdesc>Der zum Handhaben von »aim«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »aim«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »aim«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »mailto«-URLs">
+								<longdesc>Der zum Handhaben von »mailto«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »mailto«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »mailto«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »https«-URLs">
+								<longdesc>Der zum Handhaben von »https«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »https«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »https«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »http«-URLs">
+								<longdesc>Der zum Handhaben von »http«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »http«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »http«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »man«-URLs">
+								<longdesc>Der zum Handhaben von »man«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »man«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »man«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »info«-URLs">
+								<longdesc>Der zum Handhaben von »info«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »info«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »info«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »ghelp«-URLs">
+								<longdesc>Der zum Handhaben von »ghelp«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »ghelp«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »ghelp«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »trash«-URLs">
+								<longdesc>Der zum Handhaben von »trash«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »trash«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »trash«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Legt fest, ob das Öffnen eines Terminals auf der Arbeitsfläche ein Terminal im persönlichen Ordner öffnet">
 						<longdesc>Falls dieser Schlüssel wahr ist, führt das Öffnen eines Terminals auf der Arbeitsfläche dazu, dass ein Terminal im persönlichen Ordner geöffnet wird. Andernfalls wird es im Arbeitsflächen-Ordner öffnet. Hinweis: Dieser Schlüssel wird ignoriert, falls der Arbeitsflächenordner mit dem persönlichen Ordner übereinstimmt.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-Arbeitsgruppe">
+						<longdesc>Die Windows-Netzwerkarbeitsgruppe oder -domäne zu der der Benutzer gehört. Damit eine neue Arbeitsgruppe vollständig übernommen werden kann, muss sich der Benutzer ab- und wieder anmelden.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Zusätzlich nach DNS-SD-Diensten zu durchsuchende Domänen">
+						<longdesc>Durch Kommata unterteilte Liste der DNS-SD-Domänen, die am Netzwerk-Speicherort »network:///« angezeigt werden sollen.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Legt fest, wie der lokale DNS-SD-Dienst angezeigt werden soll">
+						<longdesc>Zulässige Werte: »merged«, »separate« sowie »disabled«.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL zur automatischen Proxy-Konfiguration">
+						<longdesc>URL, die Proxy-Konfigurationswerte liefert.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port am SOCKS-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/socks_host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Rechnername des Socks-Proxys">
+						<longdesc>Der Rechnername des Socks-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port am FTP-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/ftp_host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Rechnername des FTP-Proxys">
+						<longdesc>Der Rechnername des FTP-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port am sicheren HTTP-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/secure_host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Rechnername des sicheren HTTP-Proxys">
+						<longdesc>Der Rechnername des sicheren HTTP-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxy-Konfigurationsmodus">
+						<longdesc>Legt den Proxy-Konfigurationsmodus fest. Zulässige Werte: »none« (keiner), »manual« (manuell) sowie »auto« (automatisch).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Nicht-Proxy-Rechner">
+						<longdesc>Dieser Schlüssel enthält eine Liste der Rechner, mit denen eine Direktverbindung aufgebaut werden soll, also nicht via Proxy (falls aktiv). Als Werte sind Rechnernamen, Domänen (per Wildcard, z.B. *.foo.de), IP-Rechneradresse (sowohl IPv4 als auch IPv6) und Netzwerkadressen mit einer Netzmaske (der Form 192.168.0.0/24) zulässig.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Passwort am HTTP-Proxy">
+						<longdesc>Zur HTTP-Proxy-Legitimation zu übergebendes Passwort</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Benutzername am HTTP-Proxy">
+						<longdesc>Zur HTTP-Proxy-Legitimation zu übergebender Benutzername.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Verbindungen mit dem Proxy-Server legitimieren">
+						<longdesc>Legt fest, ob Verbindungen mit dem Proxy-Server legitimiert werden müssen. Hierbei werden die Werte von »/system/http_proxy/authentication_user« und »/system/http_proxy/authentication_password« als Benutzername bzw. Passwort verwendet.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port am HTTP-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Rechnername des HTTP-Proxys">
+						<longdesc>Der Rechnername des HTTP-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP-Proxy verwenden">
+						<longdesc>Sollen die Proxy-Einstellungen zum HTTP-Zugriff per Internet verwendet werden?</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

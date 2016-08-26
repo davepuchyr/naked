@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Applicazione di visualizzatore componente predefinita">
+								<longdesc>L&apos;applicazione da usare per visualizzare i file che richiedono un componente per essere visualizzati. Il parametro %s viene sostituito con l&apos;URI del file, il parametro %c viene sostituito con l&apos;IID del componente.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argomento exec per il terminale predefinito">
+								<longdesc>L&apos;argomento exec da usare per l&apos;applicazione di terminale predefinita.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Applicazione di terminale predefinita">
+								<longdesc>Applicazione di terminale predefinita da usare per applicazioni che richiedono un terminale.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;h323&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;h323&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;h323&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;callto&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;callto&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;callto&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;aim&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;aim&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;aim&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;mailto&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;mailto&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;mailto&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;https&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;https&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;https&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;http&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;http&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;http&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;man&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;man&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;man&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;info&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;info&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;info&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;ghelp&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;ghelp&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;ghelp&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;command&quot; gestisca gli URL &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Eseguire il comando in un terminale">
+								<longdesc>Impostare a VERO se il programma che gestisce questo tipo di URL deve essere eseguito in un terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Gestore di URL &quot;trash&quot;">
+								<longdesc>Il comando usato per gestire gli URL &quot;trash&quot;, se abilitati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Indica se il comando specificato deve gestire gli URL &quot;trash&quot;">
+								<longdesc>Impostare a VERO affinché il programma specificato nella chiave &quot;trash/command&quot; gestisca gli URL &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Indica se aprendo un terminale sulla scrivania si apre un terminale nella directory home">
 						<longdesc>Se impostata a vero, aprendo un terminale sulla scrivania si aprirà la directory home. In caso contrario, si aprirà la directory della scrivania. Nota che questa voce è irrilevante se la directory della scrivania è equivalente a quella della home.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Workgroup SMB">
+						<longdesc>Il workgroup o dominio della rete tipo Windows di cui l&apos;utente fa parte. È necessario terminare la sessione e riavviarla per poter operare pienamente dopo aver inserito un nuovo workgroup.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domini aggiuntivi da interrogare per servizi DNS-SD">
+						<longdesc>Elenco separato da virgole di domini DNS-SD che dovrebbero essere visibili nella posizione &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Visualizzazione del servizio DNS-SD locale">
+						<longdesc>Valori ammessi sono &quot;merged&quot;, &quot;separate&quot; e &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL di configurazione automatica del proxy">
+						<longdesc>URL che fornisce i valori di configurazione del proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Porta del proxy SOCKS">
+						<longdesc>La porta sulla macchina definita in &quot;/system/proxy/socks_host&quot; attraverso la quale effettuare il proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nome dell&apos;host proxy SOCKS">
+						<longdesc>Il nome della macchina attraverso la quale effettuare il proxy SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Porta proxy FTP">
+						<longdesc>La porta sulla macchina definita in &quot;/system/proxy/ftp_host&quot; attraverso la quale effettuare il proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nome dell&apos;host proxy FTP">
+						<longdesc>Il nome della macchina attraverso la quale effettuare il proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Porta del proxy HTTP sicuro">
+						<longdesc>La porta sulla macchina definita in &quot;/system/proxy/secure_host&quot; attraverso la quale effettuare il proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nome dell&apos;host proxy HTTP sicuro">
+						<longdesc>Il nome della macchina attraverso la quale effettuare il proxy HTTP sicuro.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Modalità di configurazione proxy">
+						<longdesc>Selezionare la modalità di configurazione del proxy. Valori ammessi sono &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Host non sottoposti a proxy">
+						<longdesc>Questa chiave contiene una lista di host a cui connettersi direttamente, invece che attraverso il proxy (qualora sia attivo). Valori ammessi sono nomi degli host, domini (usando un metacarattere iniziale come *.foo.com), indirizzi IP degli host (sia IPv4 che IPv6) ed indirizzi di rete con una maschera di rete (qualcosa come 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Password per proxy HTTP">
+						<longdesc>Password da fornire come autenticazione nell&apos;effettuare proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nome utente per proxy HTTP">
+						<longdesc>Nome utente da fornire come autenticazione nell&apos;effettuare proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autenticazione connessioni al server proxy">
+						<longdesc>Se impostata a vero, le connessioni al server proxy richiedono l&apos;autenticazione. La combinazione nome utente/password è definita nelle chiavi &quot;/system/http_proxy/authentication_user&quot; e &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Porta proxy HTTP">
+						<longdesc>La porta sulla macchina definita in &quot;/system/http_proxy/host&quot; attraverso la quale effettuare il proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nome dell&apos;host proxy HTTP">
+						<longdesc>Il nome della macchina attraverso la quale effettuare il proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Usare proxy HTTP">
+						<longdesc>Abilita le impostazioni del proxy per gli accessi HTTP su Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

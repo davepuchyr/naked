@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Прадвызначанае дастасаваньне прагляду кампанэнта">
+								<longdesc>Дастасаваньне для прагляду файлаў, якія патрабуюць кампанэнт, каб прагледзіць іх. Парамэтар %s будзе заменены на URI файлаў, парамэтар %c будзе заменены IID кампанэнту.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргумэнты выкананьня для прадвызначанага тэрміналу">
+								<longdesc>Аргумэнт выкананьня для прадвызначанага тэрмінальнага дастасаваньня.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Прадвызначанае дастасаваньне тэрміналу">
+								<longdesc>Прадвызначанае дастасаваньне тэрміналу, каб выкарыстоўваць у дастасаваньнях, якія патрабуюць тэрмінал.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;h323&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;h323&quot; (відэаканфэрэнцыя), калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;h323&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;callto&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;callto&quot; (аддаленых выклікаў) , калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;callto&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;aim&quot; (хуткіх паведамленьняў)">
+								<longdesc>Загад для апрацоўкі URL &quot;aim&quot; (хуткіх паведамленьняў), калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;aim&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;aim&quot; (хуткіх паведамленьняў).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;mailto&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;mailto&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;mailto&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;https&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;https&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;https&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;http&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;http&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;http&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;man&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;man&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;man&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;info&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;info&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;info&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;ghelp&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;ghelp&quot; (дапамога), калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;ghelp&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;trash&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;trash&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;trash&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Ці трэба пры адкрыцці тэрмінала са стала адкрываць хатні каталог">
 						<longdesc>Калі ўключана, тады адкрыццё тэрмінала са стала будзе адкрываць хатні каталог. Іначай будзе адкрыты каталог самога стала. Гэты ключ ні на што не ўплывае, калі каталог стала супадае з хатнім каталогам.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Працоўная група SMB">
+						<longdesc>Працоўная група сетак Windows ці маёнтак да якіх належыць карыстальнік. Будзе мець эфэкт у выпадку новай працоўнай групы калі карыстальнік пакіне й вернецца назад.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Дадатковыя маёнткі для пошуку паслуг DNS-SD">
+						<longdesc>Падзелены коскамі сьпіс маёнткаў dns-sd, якія мусяць быць бачны ў сеткавым асяродзьдзі.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Як адлюстроўваць мясцовую паслугу DNS-SD">
+						<longdesc>Магчымыя значэньні &quot;merged&quot;, &quot;separate&quot; і &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL для аўтаматычнае наладкі паўнамоцнага (proxy) паслужніку">
+						<longdesc>URL, які пастаўляе значэньні наладкі паўнамоцнага (proxy) паслужніку.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт паўнамоцнага па Socks">
+						<longdesc>Порт на машыне, якая вызначана ў /system/proxy/socks_host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Назва вузлу, паўнамоцнага па Socks">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай (proxy) па SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт паўнамоцнага па FTP">
+						<longdesc>Порт на машыне, якая вызначана ў /system/proxy/ftp_host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Назва вузла, паўнамоцнага па FTP">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай (proxy) па FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт паўнамоцнага па бясьпечнаму HTTP">
+						<longdesc>Порт на машыне, якая вызначана ў /system/proxy/secure_host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Назва вузла, паўнамоцнага па бясьпечнаму HTTP">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай (proxy) па HTTPS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Рэжым наладкі паўнамоцнага паслужніку">
+						<longdesc>Вылучыце рэжым наладкі паўнамоцнага паслужніку. Дапушчальнымі значэньнямі зьяўляюцца:  &quot;none&quot; (няма), &quot;manual&quot; (адмысловы), &quot;auto&quot; (аўтаматычны)</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Вузлы якім не патрэбны proxy паслужнік">
+						<longdesc>Гэты ключ зьмяшчае сьпіс вузлоў, якія далучаны наўпрост, а не праз паўнамоцны паслужнік (калі ён задзейнічаны). Гэтыя значэньні могуць быць назвамі вузлоў, маёнткаў (з выкарыстаньнем узораў; напрыклад, *.foo.com), IP адрасоў (вэрсыі 4 і 6) і сеткавых адрасоў з маскай сеткі (напрыклад, 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Пароль для паўнамоцнага па HTTP">
+						<longdesc>Пароль для ідэнтыфікацыі ў часе перадачы паўнамоцтваў на HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Уліковы запіс для ідэнтыфікацыі на HTTP proxy">
+						<longdesc>Уліковае імя, каб прайсьці ідэнтыфікацыю на паўнамоцным (proxy) паслужніку па http.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Ідэнтыфікаваць далучэньні да паўнамоцнага (proxy) паслужніку">
+						<longdesc>Калі ісьціна, тады далучэньні да паўнамоцнага (proxy) паслужніку будуць патрабаваць ідэнтыфікацыі. Зьвяз уліковы_запіс/пароль вызначаецца ключамі /system/http_proxy/authentication_user і /system/http_proxy/authentication_password.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт паўнамоцнага па HTTP">
+						<longdesc>Порт на машыне, якая вызначана ў /system/http_proxy/host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Назва вузла, паўнамоцнага па HTTP">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай па HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Выкарыстоўваць паўнамоцны (proxy) паслужнік HTTP">
+						<longdesc>Уключае ўсталёўкі паўнамоцнага (proxy) паслужніку, калі ідзе доступ да http праз інтэрнэт.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

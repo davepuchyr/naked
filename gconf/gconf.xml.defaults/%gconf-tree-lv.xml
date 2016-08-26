@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Noklusēta komponente pārlūka lietotnei">
+								<longdesc>Lietotne, ko izmanto, lai aplūkotu datnes, kas pieprasa komponenti, lai aplūkotu tās. Parametrs %s būs aizvietots ar datnes URI, parametrs %c būs aizvietots ar komponenta IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Izpildes arguments noklusētam terminālam">
+								<longdesc>Izpildes arguments noklusētu termināļa lietotni izmantošanai.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Noklusēta termināļa lietotne">
+								<longdesc>Noklusēta termināļa lietotne, lai izmantotu lietotnes, kam nepieciešams terminālis.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;h323&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;h323&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;h323&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;callto&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;callto&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;callto&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;aim&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar  &quot;aim&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;aim&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;mailto&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar  &quot;mailto&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;mailto&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;https&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;https&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;https&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;http&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;http&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;http&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc=" &quot;man&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;man&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar  &quot;man&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;man&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;info&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;info&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;info&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;ghelp&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;ghelp&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;ghelp&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;miskastes&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;miskastes&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;miskastes&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;miskastes&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Vai termināļa atvēršana uz darbvirsmas atver termināli mājas mapē">
 						<longdesc>Ja ir iestatīts “patiess”, tad, atverot termināli uz darbvirsmas, tiks atvērts terminālis mājas mapē. Citādi, tas tiks atvērts darbvirsmas mapē. Ņemiet vērā, ka šī atslēga ir nesvarīga, ja darbvirsmas mape ir identiska mājas mapei.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB darba grupa">
+						<longdesc>Windows tīklošanas darba grupa vai domēns, kura sastāvā ir lietotājs. Lai jaunā darba grupa strādātu pilnīgi, lietotājam vajadzētu iziet no sistēmas un ienākt atpakaļ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Papildus domēni,  DNS-SD servisu meklēšanai">
+						<longdesc>Komata atdalīts DNS-SD domēnu saraksts, ko vajadzētu redzēt šeit: &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kā attēlot vietējo DNS-SD servisu">
+						<longdesc>Iespējamās vērtības ir &quot;merged&quot;, &quot;separate&quot; un &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automātiska starpnieka konfigurācija URL">
+						<longdesc>URL kas apgādā ar starpniekkonfigurācijas vērtībām.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/proxy/socks_host&quot; , lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/proxy/ftp_host&quot; , lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Drošs HTTP starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/proxy/secure_host&quot;  ,lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Drošs HTTP starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri drošu HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Starpnieka konfigurācijas režīms">
+						<longdesc>Izvēlieties starpnieka konfigurācijas režīmu. Atbalstītās vērtības ir &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Ne-starpnieka saimniekdatori">
+						<longdesc>Šī atslēga satur resursdatoru sarakstu, kas ir savienoti tieši, labāk nekā caur starpnieku (ja tas ir aktīvs). Vērtības var būt saimniekdatoru vārdi, domēni (izmantojot aizstājējzīmes, kā *.foo.com), resursdatoru IP adreses (kā IPv4 un IPv6) un tīklu adreses ar tīkla masku (piemēram, 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP starpnieka parole">
+						<longdesc>Parole identificējoties, veicot HTTP starpniekošanu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP starpnieka lietotāja vārds">
+						<longdesc>Lietotāja vārds, lai izietu identifikāciju,veicot HTTP starpniekošanu (proxying).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Identificējiet starpnieka servera savienojumus">
+						<longdesc>Ja patiess, tad savienojumiem ar starpniekserveri, nepieciešama identifikācija. Lietotāja vārds/parole kombinācija ir definēta ar &quot;/system/http_proxy/authentication_user&quot; un &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/http_proxy/host&quot; , lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Izmantot HTTP starpnieku">
+						<longdesc>Ieslēdz starpnieka uzstādījumus, kad piekļūst HTTP cauri tīmeklim.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

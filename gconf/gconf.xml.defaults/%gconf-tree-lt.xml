@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Numatytoji komponentų peržiūros programa">
+								<longdesc>Programa naudojama peržiūrėti failus, kurie reikalauja specialaus peržiūros komponento. Parametras %s bus pakeistas failo adresu, parametras %c bus pakeistas komponento IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Numatytojo terminalo paleidimo argumentas">
+								<longdesc>Argumentas naudojamas paleidžiant numatytąją terminalo programą.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Numatytoji terminalo programa">
+								<longdesc>Numatytoji terminalo programa, naudojama su programomis, kurioms reikia terminalo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „h323“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „h323“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „h323“ adresus">
+								<longdesc>Nustatykite į teigiamą reikšmę jei norite, kad programa, nurodyta „command“ rakte, apdorotų „h323“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „callto“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „callto“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „callto“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „callto“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „aim“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „aim“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „aim“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „aim“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „mailto“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „mailto“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „mailto“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „mailto“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „https“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „https“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „https“ adresus">
+								<longdesc>Nustatykite į teigiamą reikšmę jei norite, kad programa, nurodyta „command“ rakte, apdorotų „https“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „http“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „http“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „http“ adresus">
+								<longdesc>Nustatykite į teigiamą reikšmę jei norite, kad programa, nurodyta „command“ rakte, apdorotų „http“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „man“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „man“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „man“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „man“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „info“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „info“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „info“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „info“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „ghelp“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „ghelp“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „ghelp“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „ghelp“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „trash“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „trash“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „trash“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „trash“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Ar atveriant terminalą darbastalyje atverti terminalą namų aplanke">
 						<longdesc>Jei pasirinkta, terminalo atvėrimas darbastalyje atvers terminalą namų aplanke. Kitaip terminalas bus atvertas darbastalio aplanke. Šis raktas nereikšmingas, jei darbastalio aplankas identiškas namų aplankui.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB darbo grupė">
+						<longdesc>Windows tinklų darbo grupė arba sritis, kuriai priklauso naudotojas. Tam, kad visiškai įsigaliotų atlikti pakeitimai, naudotojui gali reikti atsijungti ir prisijungti iš naujo.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Papildomos sritys, kuriose ieškoti DNS-SD paslaugų">
+						<longdesc>Kableliu atskirtų DNS-SD sričių, kurios turėtų būti matomos „network:///“ vietoje, sąrašas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kaip rodyti vietinę DNS-SD paslaugą">
+						<longdesc>Galimos reikšmės yra „merged“, „separate“ ir „disabled“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automatinių tarpinio serverio nustatymų adresas">
+						<longdesc>Adresas, kuriame saugomi tarpinio serverio nustatymai</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS tarpinio serverio prievadas">
+						<longdesc>Tarpinio socks serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio socks serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP tarpinio serverio prievadas">
+						<longdesc>Tarpinio ftp serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio FTP serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Saugaus HTTP tarpinio serverio prievadas">
+						<longdesc>Tarpinio saugaus http serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Saugaus HTTP tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio saugaus HTTP serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Tarpinio serverio nustatymų režimas">
+						<longdesc>Pasirinkite tarpinio serverio nustatymų režimą. Galimos reikšmės yra „none“, „manual“, „auto“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Adresai pasiekiami nenaudojant tarpinio serverio">
+						<longdesc>Šis raktas saugo adresus, prie kurių yra jungiamasi tiesiogiai, o ne per tarpinį serverį (jei toks naudojamas). Reikšmėse galima saugoti kompiuterių vardus, sritis (su priekyje esančių apibendrinančiu simboliu, pvz., kaip *.pavyzdys.lt), kompiuterių IP adresus (tiek IPv4, tiek IPv6) bei tinklų adresus su tinklo kaukėmis (kažkas panašaus į 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP tarpinio serverio slaptažodis">
+						<longdesc>Slaptažodis, naudojamas jungiantis per HTTP tarpinį serverį.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP tarpinio serverio naudotojas">
+						<longdesc>Naudotojo vardas naudojamas jungiantis per HTTP tarpinį serverį.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Tarpiniamer serveryje naudoti autorizavimą">
+						<longdesc>Jei teigiama, jungtims į tarpinę stotį yra būtina autorizacija. Naudotojo vardas ir slaptažodis yra saugomi „/system/http_proxy/authentication_user“ ir „/system/http_proxy/authentication_password“ raktuose.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP tarpinio serverio prievadas">
+						<longdesc>Tarpinio http serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio HTTP serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Naudoti HTTP tarpinį serverį">
+						<longdesc>Įjungia tarpinio serverio naudojimą naršant Internete per HTTP.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

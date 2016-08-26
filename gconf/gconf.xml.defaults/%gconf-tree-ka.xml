@@ -1,11 +1,308 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="კომპონენტების ჩვენების ნაგულისხმები პროგრამა">
+								<longdesc>პროგრამა ამ ფაილის საჩვენებლად საჭიროებს დამატებით კომპონენტს. პარამეტრი %s შეიცვლება ფაილის URI-თ, პარამეტრი %c შეიცვლება კომპონენტის IID-ით.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec ნაგულისხმები არგუმენტი ტერმინალისთვის">
+								<longdesc>exec არგუმენტი, რომელიც ტერმინალის ნაგულისხმები პროგრამისთვის გამოიყენება.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ტერმინალის ნაგულისხმები პროგრამა">
+								<longdesc>ტერმინალის ნაგულისხმები პროგრამა, რომელიც ტერმინალის საჭიროებისთვის გამოიყენება.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;h323&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;h323&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;h323&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;h323&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;callto&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;callto&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;callto&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;callto&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;aim&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;aim&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;aim&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;aim&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;mailto&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;mailto&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;mailto&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;mailto&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;https&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;https&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;https&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;https&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;http&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;http&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;http&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;http&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;man&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;man&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;man&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;man&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;info&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;info&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;info&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;info&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;ghelp&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;ghelp&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;ghelp&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;ghelp&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ბრძანების ტერმინალში შესრულება">
+								<longdesc>ჭეშმარიტია თუ ბრძანება ამ ტიპის URL-ების დასამუშავებლად ტერმინალში უნდა შესრულდეს.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="დამმუშავებელი &quot;trash&quot; URL-ებისთვის">
+								<longdesc>დამუშავების ბრძანება &quot;trash&quot; URL-ებისთვის, თუ ჩართულია.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="დაამუშავებს თუ არა მითითებული ბრძანება &quot;trash&quot; ტიპის URL-ებს">
+								<longdesc>ჭეშმარიტია თუ მითითებული ბრძანება &quot;command&quot; კოდში ამუშავებს &quot;trash&quot; URL-ებს.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="&quot;სამუშაო მაგიდაზე&quot; გაშვებული ტერმინალი &quot;სახლის დასტას&quot; აჩვენებს">
 						<longdesc>თუ მონიშნულია, &quot;სამუშაო მაგიდაზე&quot; გაშვებისას ტერმინალში გაიხსნება &quot;სახლის დასტა&quot;, სხვაგვარად გაიხსნება სამუშაო მაგიდის დასტა. ამ გასაღებს არ აქვს მნიშვნელობა თუ &quot;სამუშაო მაგიდის&quot; დასტა შეესაბამება &quot;სახლის დასტას&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB სამუშაო ჯგუფი">
+						<longdesc>Windows ქსელის სამუშაო ჯგუფი ან დომენი რომელშიც მომხმარებელია გაერთიანებული. სამუშაო ჯგუფის შეცვლის ძალაში შესასვლელად აუცილებელია სისტემიდან გამოსვლა და ხელახალი შესვლა.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="დამატებითი დომენები DNS-SD მომსახურების მოსაძებნად">
+						<longdesc>მძიმით გამოყოფილი DNS-SD დომენები, რომლებიც უნდა ჩანდეს &quot;network:///&quot; მისამართზე.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="როგორ იქნება ნაჩვენები ლოკალური DNS-SD მომსახურება">
+						<longdesc>შესაძლო მნიშვნელობებია &quot;merged&quot; (&quot;შერწყმული&quot;), &quot;separate&quot; (&quot;დაყოფილი&quot;) და &quot;disabled&quot; (&quot;ამორთული&quot;).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="პროქსის თვითკონფიგურაციის URL">
+						<longdesc>URL რომელშიც მოცემულია პროქსის კონფიგურაციის მნიშვნელობები.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS პროქსის პორტი">
+						<longdesc>&quot;/system/proxy/socks_host&quot; კოდით განსაზღვრული მანქანური პორტი პროქსისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS პროქსის ჰოსტის სახელი">
+						<longdesc>მანქანური სახელი პროქსი არხისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP პროქსის პორტი">
+						<longdesc>&quot;/system/proxy/ftp_host&quot; კოდით განსაზღვრული მანქანური პორტი პროქსისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP პროქსის ჰოსტის სახელი">
+						<longdesc>პროქსი სერვერის მანქანური სახელი FTP-სთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="უსაფრთხო HTTP პროქსის პორტი">
+						<longdesc>&quot;/system/proxy/secure_host&quot; კოდით განსაზღვრული მანქანური პორტი პროქსისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="უსაფრთხო HTTP პროქსის ჰოსტის სახელი">
+						<longdesc>პროქსი სერვერის მანქანური სახელი უსაფრთხო HTTP-სთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="პროქსის კონფიგურაციის რეჟიმი">
+						<longdesc>პროქსის კონფიგურაციის რეჟიმის მითითება. შესაძლო მნიშვნელობებია &quot;none&quot; (&quot;არა&quot;), &quot;manual&quot; (&quot;ხელით&quot;), &quot;auto&quot; (&quot;ავტომატური&quot;).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="არა პროქსი ჰოსტები">
+						<longdesc>ეს კოდი შეიცავს ჰოსტების სიას, რომელიც პირდაპირაა დაკავშირებული და არა პროქსის საშუალებით (თუ აქტიურია). მნიშვნელობები შესაძლოა იყოს ჰოსტის სახელები, დომენები (სპეცსიმბოლოების გამოყენებით, მაგ., *.foo.com), ჰოსტის IP მისამართები (ორივე, IPv4 და IPv6) და ქსელური მისამართები ქსელის თარგით (მაგალითად 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP პროქსის პაროლი">
+						<longdesc>აუთენტიფიკაციის პაროლი HTTP პროქსი სერვერისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP პროქსის მომხმარებლის სახელი">
+						<longdesc>მომხმარებლის სახელი HTTP პროქსი სერვერისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="პროქსი სერვერის კავშირების აუთენტიფიკაცია">
+						<longdesc>თუ ჭეშმარიტია, პროქსი სერვერთან კავშირი აუთენტიფიკაციას საჭიროებს. username/password combo მითითებულია &quot;/system/http_proxy/authentication_user&quot; და &quot;/system/http_proxy/authentication_password&quot; საშუალებით.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP პროქსის პორტი">
+						<longdesc>&quot;/system/http_proxy/host&quot; კოდით განსაზღვრული მანქანური პორტი პროქსისთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP პროქსის ჰოსტის სახელი">
+						<longdesc>პროქსი სერვერის მანქანური სახელი HTTP-სთვის.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP პროქსის გამოყენება">
+						<longdesc>პროქსის პარამეტრების ჩართვა ინტერნეტით HTTP წვდომისას.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

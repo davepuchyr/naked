@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Isixhobo esimiselweyo esibonakalisayo senkqubo yekhompyutha">
+								<longdesc>Inkqubo yekhompyutha omawuyisebenzise ukujonga iifayili ezifuna isixhobo ukuzijonga. Ixabiso lento ejikajikayo %s kuyakubakhona endaweni yalo iifayili ze-URIs, ixabiso lento ejikayo %c kuyakubakhona endaweni yaloisixhobo se-IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="i-Exec argument ye-Terminal emiselweyo">
+								<longdesc>Isiphumezi- miyalelo se-exec argument sokusetyenziswa kwinkqubo yekhompyutha ye-terminal emiselweyo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Inkqubo yekhompyutha ene-terminal emiselweyo">
+								<longdesc>Inkqubo yekhompyutha ene-terminal emiselweyo ukuba isetyenziswe kwiinkqubo zekhompyutha ezifuna i-terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;h323&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u- &quot;h323&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;h323&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;h323&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;callto&quot; URLs">
+								<longdesc>Umyalelo osetyenziswayo ukukhombisa u- &quot;callto&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;callto&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;callto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;aim&quot; URLs">
+								<longdesc>Umyalelo osetyenziswayo ukukhombisa &quot;aim&quot; URLs, ukuba wenziwe ukuba asebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;aim&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise i-&quot;aim&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;mailto&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u-&quot;mailto&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufunekla ukhombise i-&quot;mailto&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;mailto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;https&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u &quot;https&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;https&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;https&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;http&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u-&quot;http&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;http&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;http&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Iisikhombisi se-&quot;man&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u- &quot;man&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;man&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;man&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;info&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u- &quot;info&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;info&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;info&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;ghelp&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u- &quot;ghelp&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;ghelp&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;ghelp&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Qhuba umyalelo kwi-terminal">
+								<longdesc>Yinyani ukuba umyalelo osetyenzisiweyo ukukhombisa olu hlobo lwe- URL kufuneka uqhutywe kwi-terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Isikhombisi se-&quot;trash&quot; URLs">
+								<longdesc>Umyalelo osetyenziselwa ukukhombisa u-&quot;trash&quot; URLs, ukuba wenziwe ukuba usebenze.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Nokuba ngaba umyalelo obaluliweyo kufuneka ukhombise i-&quot;trash&quot; URLs">
+								<longdesc>Yinyani ukuba umyalelo obaluliweyo kwiqhosha &quot;command&quot; kufuneka ukhombise u-&quot;trash&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Iqela lomsebenzi we-SMB">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="display_local">
+					<local_schema short_desc="Uyibonisa njani inkonzo efikeleleka ngqo ye-DNS-SD">
+						<longdesc>Amaxabiso anokubakhona ngala &quot;merged&quot;, &quot;separate&quot; kunye &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Ukumiselwa kwenkqubo yekhompyutha ezenzekelayo ye-URL kwikhompyutha esebenza njengemqobo">
+						<longdesc>i-URL enika amaxabiso okumiselwa kwenkqubo yekhompyutha esebenza njengomqobo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Isiqhagamsheli sekhompyutha esebenza njengomqobo se-SOCKS">
+						<longdesc>Isiqhagamsheli esisematshinini esichazwa yi- &quot;/systrem/proxy/socks_host&quot; kwikhompyutha osebenza kuyo esebenza njengomqobo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Igama lomququzeleli wekhompyutha esebenza njengomqobo ye-SOCKS">
+						<longdesc>Igama lomatshini kwikhompyutha esebenza njengomqobo ongasebenza kuyo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Isiqhagamsheli sekhompyutha esebenza njengomqobo se-FTP">
+						<longdesc>Isiqhagamsheli ematshinini esichazwa yi -&quot;/system/proxy/ftp_host&quot; osebenza kuyo njengekhompyutha esebenza njengomqobo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Igama lomququzeleli wekhompyutha esebenza njengomqobo ye-FTP">
+						<longdesc>Igama lomatshini lokusebenza njengekhompyutha engumqobo kwi-FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Isiqhagamsheli sekhompyutha esebenza njengomqobo se-HTTP ekhuselekileyo">
+						<longdesc>Isiqhagamsheli esisematshinini esichazwa yi- &quot;/system/proxy/secure_host&quot; kwikhompyutha osebenza kuyo esebenza njengomqobo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Igama lomququzeleli wekhompyutha esebenza njengomqobo ekhuselekileyo ye-HTTP">
+						<longdesc>Igama lomatshini lokusebenza njengekhompyutha engumqobo kwi-HTTP ekhuselekileyo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Ukumiselwa kwenkqubo yekhompyutha esebenza njengomqobo">
+						<longdesc>Khetha inkqubo emiselweyo yekhompyutha esebenza njengomqobo. Amaxabiso axhaswayo ngala &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Abaququzeleli bekhompyutha engasebenzi njengomqobo">
+						<longdesc>Eli qhosha liqulethe uluhlu lwabaququzeleli abaqhagamshelwe kuvimba weefayili, kunokuba badlule kwikhompyutha esebenza njengomqobo (ukuba iyasebenza). Amaxabiso anokuba ngamagama abaququzeleli, imimandla (usebenzisa i-wildcard njenge *.foo.com), idilesi ze-IP zabaququzeleli (zombini i-IPv4 ne-IPv6) kunye needilesi zothungelwano ene-netmask (into efana ne-192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="i-password yekhompyutha esebenza njengomqobo ye-HTTP">
+						<longdesc>i-Password yokudlula njengoqinisekiso xa usebenzisa ikhompyutha esebenza njengomqobo kwi-HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Igama lomsebenzisi wekhompyutha esebenza njengomqobo ye-HTTP">
+						<longdesc>Igama lomsebenzisi ukudlula njengoqinisekiso xa usebenzisa ikhompyutha esebenza njengomqobo ye-HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Qinisekisa unxulumano lweseva elawula kwi-intanethi">
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Isiqhagamsheli sekhompyutha esebenza njengomqobo se-HTTP">
+						<longdesc>Isiqhagamsheli ematshinini esichazwa nge- &quot;/system/http_proxy/host&quot; oqhagamshela kuso.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Igama lomququzeleli wekhompyutha esebenza njengomqobo ye-HTTP">
+						<longdesc>Igama lomatshini lokusebenza njengekhompyutha engumqobo kwi-HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Sebenzisa isiqhagamsheli se-HTTP">
+						<longdesc>Yenza ukuba imimiselo yekhompyutha esebenza njengomqobo xa usebenza nge-HTTP kwi-intanethi.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

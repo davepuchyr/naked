@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Oletusarvoinen komponenttien katselusovellus">
+								<longdesc>Katseluun komponentin vaativien tiedostojen katselusovellus. Parametri %s korvautuu tiedoston URI:lla, parametri %c komponentin IID:llä.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Päätesovelluksen suoritusvalitsin">
+								<longdesc>Päätesovelluksen valitsin, joka määrittää mitä suoritetaan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Oletusarvoinen päätesovellus">
+								<longdesc>Oletusarvoinen päätesovellus päätteen vaativille sovelluksille.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”h323”-URL:ien käsittelykomento">
+								<longdesc>”h323”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”h323”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”h323”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”callto”-URL:ien käsittelykomento">
+								<longdesc>”callto”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”callto”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”callto”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”aim”-URL:ien käsittelykomento">
+								<longdesc>”aim”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”aim”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”aim”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”mailto”-URL:ien käsittelykomento">
+								<longdesc>”mailto”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”mailto”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”mailto”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”https”-URL:ien käsittelykomento">
+								<longdesc>”https”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”https”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”https”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”http”-URL:ien käsittelykomento">
+								<longdesc>”http”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”http”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”http”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”man”-URL:ien käsittelykomento">
+								<longdesc>”man”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”man”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”man”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”info”-URL:ien käsittelykomento">
+								<longdesc>”info”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”info”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”info”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”ghelp”-URL:ien käsittelykomento">
+								<longdesc>”ghelp”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”ghelp”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”ghelp”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Suorita sovellus päätteessä">
+								<longdesc>Tosi, jos tämäntyyppisiä URL:eja käsittelevä ohjelma tulisi käynnistää päätteessä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="”trash”-URL:ien käsittelykomento">
+								<longdesc>”trash”-tyyppiset URL:t käsittelevä komento, jos käytössä.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Käsitteleekö annettu komento ”trash”-URL:eja">
+								<longdesc>Tosi, jos avaimessa ”command” annettu komento käsittelee ”trash”-tyyppisiä URL:eja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Käynnistetään työpöydältä avattu pääte kotikansioon">
 						<longdesc>Jos tosi, päätteen avaaminen työpöydältä avaa päätteen kotikansiossa. Muussa tapauksessa pääte avataan työpöytäkansiosta. Huomaa, että tämä avain on merkityksetön, jos kotikansio ja työpöytä ovat sama kansio.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-työryhmä">
+						<longdesc>Windows-verkkojen työryhmä tai aluenimi, johon käyttäjä kuuluu. Jotta uusi työryhmänimi toimii kaikkialla, voi olla tarpeen kirjautua uudestaan sisään järjestelmään muutoksen jälkeen.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Lisäverkkoalueet, joilta etsiä DNS-SD-palveluja">
+						<longdesc>Pilkuilla eroteltu luettelo DNS-SD-verkkoalueista, jotka näkyvät sijainnissa ”network:///”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Miten paikallinen DNS-SD-palvelu näkyy">
+						<longdesc>Mahdollisia arvoja ovat ”merged” (yhdessä), ”separate” (erillinen) ja ”disabled” (ei käytössä).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automaattisten välipalvelinasetusten URL">
+						<longdesc>URL, joka tarjoaa välipalvelinasetukset.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS-välipalvelimen portti">
+						<longdesc>Välipalvelinportti koneella, joka on määritelty avaimessa ”/system/proxy/socks_host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS-välipalvelimen nimi">
+						<longdesc>SOCKS-välipalvelimena toimivan koneen nimi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP-välipalvelimen portti">
+						<longdesc>Välipalvelinportti koneella, joka on määritelty avaimessa ”/system/proxy/ftp_host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP-välipalvelimen nimi">
+						<longdesc>FTP-välipalvelimena toimivan koneen nimi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="SHTTP-välipalvelimen portti">
+						<longdesc>Välipalvelinportti koneella, joka on määritelty avaimessa ”/system/proxy/secure_host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="SHTTP-välipalvelimen nimi">
+						<longdesc>SHTTP-välipalvelimena toimivan koneen nimi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Välipalvelimen asetustapa">
+						<longdesc>Valitse välipalvelimen asetustapa. Mahdolliset arvot ovat ”none” (ei mikään), ”manual” (asetukset käsin), ”auto” (automaattinen).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Välipalvelinta käyttämättömät isäntäkoneet">
+						<longdesc>Tämä avain sisältää luettelon isäntäkoneista, joihin yhteys muodostetaan suoraan, ei välipalvelimen kautta (vaikka se olisi toiminnassa). Arvot voivat olla konenimiä, verkkoalueita (joissa alussa jokerimerkki, kuten *.testi.fi), IP-osoitteita (IPv4 tai IPv6) ja verkko-osoitteita verkkopeitteellä (kuten 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP-välipalvelimen salasana">
+						<longdesc>HTTP-välipalvelimelle välittyvä todentava salasana.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP-välipalvelimen käyttäjätunnus">
+						<longdesc>HTTP-välipalvelimelle välittyvä todentava käyttäjätunnus</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Todenna välipalvelinyhteydet">
+						<longdesc>Jos tosi, yhteydet välipalvelimeen vaativat todennuksen. Käyttäjätunnus-salasana-yhdistelmän määrittelevät avaimet ”/system/http_proxy/authentication_user” ja ”/system/http_proxy/authentication_password”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP-välipalvelimen portti">
+						<longdesc>Välipalvelinportti koneella, joka on määritelty avaimessa ”/system/http_proxy/host”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP-välipalvelimen nimi">
+						<longdesc>HTTP-välipalvelimena toimivan koneen nimi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Käytä HTTP-välipalvelinta">
+						<longdesc>Ota välipalvelinasetukset käyttöön, kun HTTP:tä käytetään Internetissä.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

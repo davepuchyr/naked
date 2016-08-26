@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଯନ୍ତ୍ରାଶଂ ଦର୍ଶକ ପ୍ରୟୋଗ">
+								<longdesc>ଯେଉଁ ଫାଇଲଗୁଡିକ ଦେଖିବା ପାଇଁ ଗୋଟିଏ ଯନ୍ତ୍ରାଂଶ ଆବଶ୍ଯକ, ସେମାନଙ୍କ ପାଇଁ କେଉଁ ପ୍ରୟୋଗ ବ୍ଯବହାର କରାଯିବ। ପ୍ରାଚଳ %s ଫାଇଲର ୟୁ.ଆର୍.ଆଇ. ଦ୍ବାରା ବଦଳ ହେବ, ପ୍ରାଚଳ %c ଯନ୍ତ୍ରାସଂର ଆଇ.ଆଇ.ଡି. ଦ୍ବାରା ବଦଳ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଟର୍ମିନାଲ୍ ପାଇଁ  ନିଷ୍ପାଦନ ସ୍ବତନ୍ତ୍ରଚର">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଟର୍ମିନାଲ୍ ପ୍ରୟୋଗ ପାଇଁ ନିଷ୍ପାଦନ ସ୍ବତନ୍ତ୍ରଚର।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଟର୍ମିନାଲ୍ ପ୍ରୟୋଗ">
+								<longdesc>ଯେଉଁ ପ୍ରୟୋଗଗୁଡିକ ପାଇଁ ଟର୍ମିନାଲ୍ ଆବଶ୍ଯକ ସେମାନଙ୍କ ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଟର୍ମିନାଲ୍ ପ୍ରୟୋଗ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଏଚ323&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;h323&quot;  ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;h323&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ୍323&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଲକ୍ଷ୍ଯ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଲକ୍ଷ୍ଯ&quot; URLs ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଲକ୍ଷ୍ଯ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଲକ୍ଷ୍ଯ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ପ୍ରପକ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ପ୍ରପକ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ପ୍ରାପକ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଏଚ.ଟି.ଟି.ପି.&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;http&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="ଡେସ୍କଟପରେ ଗୋଟିଏ ଟର୍ମିନାଲ ଖୋଲିବା ଦ୍ୱାରା ମୂଳ ସ୍ଥାନ ପଞ୍ଜିକାରେ ଟର୍ମିନାଲ ଖୋଲିଥାଏ କି ନାହିଁ">
 						<longdesc>ଯଦି true ସେଟ କରାଯାଇଥାଏ, ତେବେ ଡେସ୍କଟପରେ ଗୋଟିଏ ଟର୍ମିନାଲ ଖୋଲିବା ଦ୍ୱାରା ମୂଳ ସ୍ଥାନ ପଞ୍ଜିକାରେ ଟର୍ମିନାଲ ଖୋଲିଥାଏ। ଅନ୍ୟଥା, ଏହାକୁ ଡେସ୍କଟପ ଡିରେକ୍ଟୋରୀରେ ଖୋଲାଯାଇଥାଏ। ମନେରଖନ୍ତୁ ଯେ ଏହି କିଟି ଅସଙ୍ଗତ ଯଦି ଡେସ୍କଟପ ଡିରେକ୍ଟୋରୀ ମୂଳସ୍ଥାନ ପଞ୍ଜିକା ସହିତ ସମାନ ହୋଇଥାଏ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="ଏସ୍.ଏମ୍.ବି. କାର୍ଯ୍ଯଦଳ">
+						<longdesc>ବ୍ଯବହରକାରୀର ୱିଣ୍ଡୋଜ କାର୍ଯ୍ଯସମୂହ ବା ପରିସର. ନୂଆ କାର୍ଯ୍ଯସମୂହ ସମ୍ପୂର୍ଣ୍ଣ ପ୍ରଭାବ ଦେଖିବା ପାଇଁ ବ୍ଯବହରକାରୀକୁ ଲଗ ଆଉଟ କରି ପୁଣି ଲଗଇନ କରିବାକୁ ପଡ଼ିପାରେ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="ଡି.ଏନ୍.ଏସ୍-ଏସ୍.ଡି ସେବା ଖୋଜି ପାଇବା ପାଇଁ ଅଧିକ ପରିସର">
+						<longdesc>କମା ଦ୍ବାରା ବିଭାଜିତ ଡି.ଏନ୍.ଏସ୍-ଏସ୍.ଡି ପରିସରର ଯାହାକି &quot;network:///&quot; ଅବସ୍ଥାନରେ ଦ୍ରୁଶ୍ଯମାନ ହେବା ଉଚିତ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ସ୍ଥାନୀୟ ଡି.ଏନ୍.ଏସ୍.-ଏସ୍.ଡି. ସେବାକୁ କିପରି ପ୍ରଦର୍ଶିତ କରାଯିବ">
+						<longdesc>ସମ୍ଭବ ମୂଲ୍ଯଗୁଡି଼କ ହେଲା &quot;merged&quot;, &quot;separate&quot; ଓ &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ସ୍ବଂୟ ଛାୟା ବିନ୍ଯାସ ୟୁ.ଆର.ଏଲ.">
+						<longdesc>ଛାୟା ବିନ୍ଯାସ ମୂଲ୍ଯଗୁଡ଼ିକ ପାଇଁ ୟୁ.ଆର.ଏଲ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="ଏସ୍.ଓ.ସି.କେ.ଏସ୍. ଛାୟା ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/proxy/socks_host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="ଏସ୍.ଓ.ସି.କେ.ଏସ୍.  ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ଏସ୍.ଓ.ସି.କେ.ଏସ୍. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="ଏଫ୍.ଟି.ପି. ଛାୟା ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/ftp_proxy/host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="ଏଫ୍.ଟି.ପି. ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ଏଫ୍.ଟି.ପି. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="ସୁରକ୍ଷିତ ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଆଧାର ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/proxy/secure_host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ସୁରକ୍ଷିତ ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ସୁରକ୍ଷିତ ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ଛାୟା ବିନ୍ଯାସ ଅବସ୍ଥା">
+						<longdesc>ଛାୟା ବିନ୍ଯାସ ଅବସ୍ଥା ବାଛନ୍ତୁ. ସମ୍ଭବତଃ ମୂଲ୍ଯଗୁଡି଼କ ହେଲା &quot;none&quot;, &quot;manual&quot; ଓ &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ଅଣଛାୟା ଆଧାର">
+						<longdesc>ଛାୟା ବଦଳରେ ସିଧାସଳଖ ଭାବରେ ସଂଯୁକ୍ତ ଆଧାରଗୁଡ଼ିକର ତାଲିକା ଏହି ଚାବିରେ ରଖାଯାଇଛି. ସମ୍ଭବତଃ ମୂଲ୍ଯଗୁଡି଼କ ହେଲା ଆଧାର ନାମ, ପରିସର (*.foo.com ଭଳି ପ୍ରାରମ୍ଭିକ ୱାଇଲ୍ଡ କାର୍ଡ ବ୍ଯବହାର କରି), ଆଇ.ପି. ଆଧାର ଠିକିଣା (ଆଇ.ପି.ଭି.୪ ଓ ଆଇ.ପି.ଭି.୬) ଓ ଜାଲକ ମୁଖା ସହିତ ଜାଲକ ଠିକଣା (୧୯୨.୧୬୮.୦.୦/୨୪ ଭଳି କିଛି).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ପ୍ରବେଶ ସଂକେତ">
+						<longdesc>ଏଚ୍.ଟି.ଟି.ପି. ଛାୟାକରଣ ବେଳେ ବୈଧିକରଣ ପାଇଁ ପ୍ରବେଶ ସଂକେତ </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଚାଳକନାମ">
+						<longdesc>ଏଚ୍.ଟି.ଟି.ପି. ଛାୟାକରଣ ବେଳେ ବୈଧିକରଣ ପାଇଁ ଚାଳକ ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ଛାୟା ସେବକ ସଂଯୋଗଗୁଡି଼କ ବୈଧ କରନ୍ତୁ">
+						<longdesc>ସତ ହେଲେ, ଛାୟା ସେବକ ସହିତ ସଂଯୋଗ ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ଯକ. ଚାଳକ ନାମ / ପ୍ରବେଶ ସଂକେତ &quot;/system/http_proxy/authentication_user&quot; ଓ &quot;/system/http_proxy/authentication_password&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/http_proxy/host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ବ୍ଯବହାର କରନ୍ତୁ">
+						<longdesc>ଇଣ୍ଟରନେଟରେ ଏଚ୍.ଟି.ଟି.ପି. ଚଳାଇଲା ବେଳେ ଛାୟା ବିନ୍ଯାସକୁ ସମର୍ଥ କରେ.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplikasi utama untuk menampilkan komponen">
+								<longdesc>Aplikasi untuk menampilkan berkas yang memerlukan komponen untuk melihatnya. Parameter %s akan diganti oleh URI berkas, parameter %c diganti oleh IID komponen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumen eksekusi untuk terminal utama">
+								<longdesc>Argumen eksekusi untuk aplikasi terminal utama.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplikasi terminal baku">
+								<longdesc>Aplikasi terminal utama untuk aplikasi yang memerlukan terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;h323&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;h323&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;h323&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;callto&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;callto&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;callto&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;aim&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;aim&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;aim&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;mailto&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;mailto&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;mailto&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;https&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;https&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;https&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;http&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;http&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;http&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;man&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;main&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;man&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;info&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;info&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;info&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;ghelp&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;ghelp&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;ghelp&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;trash&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;trash&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;trash&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Apakah membuka terminal pada desktop berarti akan membuka terminal dalam direktori asal">
 						<longdesc>Jika disetel ke benar, maka membuka terminal pada desktop berarti akan membuka terminal dalam direktori asal. Jika tidak, maka terminal akan dibuka dalam direktori desktop. Perhatikan bahwa kunci ini tidak relevan jika direktori desktop sama dengan direktori asal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Kelompok kerja (workgroup) SMB">
+						<longdesc>Kelompok jaringan atau domain Windows di mana pengguna menjadi bagian di dalamnya. Untuk menjamin kelompok kerja yang baru dapat dioperasikan dengan benar, pengguna mungkin harus log keluar dan masuk kembali.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domain ekstra untuk mencari layanan DNS-SD">
+						<longdesc>Daftar domain DNS-SD (dipisahkan koma) yang akan ditampilkan pada lokasi &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Cara menampilkan layanan DNS-SD lokal">
+						<longdesc>Nilai yang mungkin adalah &quot;merged&quot;, &quot;separated&quot;, dan &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URl konfigurasi otomatis proksi">
+						<longdesc>URL yang menyediakan nilai konfigurasi proksi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port proksi SOCKS">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/proxy/socks_host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nama host proksi SOCKS">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port proksi FTP">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/proxy/ftp_host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nama host proksi FTP">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port proksi HTTP teracak">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/proxy/secure_host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nama host proksi HTTP teracak">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap HTTP teracak.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mode konfigurasi proksi">
+						<longdesc>Memilih mode konfigurasi proksi. Nilai yang didukung antaranya &quot;none&quot;, &quot;manual&quot;, dan &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Host nonproksi">
+						<longdesc>Kunci ini mengandung daftar host yang terhubung secara langsung, ketimbang melalui proksi (jika aktif). Nilainya bisa nama host, domain (memakai wilkar seperti *.foo.com), alamat IP host (baik IPv4 maupun IPv6), serta alamat jaringan dengan netmask (seperti 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Sandi proksi HTTP">
+						<longdesc>Sandi untuk menerapkan proksi terhadap HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nama pengguna proksi HTTP">
+						<longdesc>Nama pengguna untuk menerapkan proksi terhadap HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Otentikasi koneksi server proksi">
+						<longdesc>Jika bernilai benar (true), maka hubungan menuju server proksi harus diotentikasi. Pasangan nama pengguna/sandi ditentukan oleh &quot;/system/http_proxy/authentication_user&quot; dan &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port proksi HTTP">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/http_proxy/host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nama host proksi HTTP">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Menggunakan proksi HTTP">
+						<longdesc>Mengaktifkan pengaturan proksi saat mengakses HTTP melalui Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

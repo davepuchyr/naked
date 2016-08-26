@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Alapértelmezett komponensnéző alkalmazás">
+								<longdesc>Az azon fájlok megtekintésére használt alkalmazás, amelyek megtekintéséhez egy összetevő szükséges. A %s paraméter a fájl URI címére, a %c az összetevő IID-jére lesz cserélve.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Az alapértelmezett terminál exec paramétere">
+								<longdesc>Az alapértelmezett terminálalkalmazásnál használandó exec paraméter.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Alapértelmezett terminál alkalmazás">
+								<longdesc>A terminált igénylő alkalmazásokhoz használandó alapértelmezett terminál.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„h323” URL címek kezelője">
+								<longdesc>A „h323” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „h323” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „h323” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„callto” URL címek kezelője">
+								<longdesc>A „callto” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „callto” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „callto” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„aim” URL címek kezelője">
+								<longdesc>Az „aim” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e az „aim” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli az „aim” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„mailto” URL címek kezelője">
+								<longdesc>A „mailto” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „mailto” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „mailto” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„https” URL címek kezelője">
+								<longdesc>A „https” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „https” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „https” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„http” URL címek kezelője">
+								<longdesc>A „http” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „http” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „http” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„man” URL címek kezelője">
+								<longdesc>A „man” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „man” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „man” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„info” URL címek kezelője">
+								<longdesc>Az „info” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e az „info” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli az „info” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„ghelp” URL címek kezelője">
+								<longdesc>A „ghelp” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „ghelp” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „ghelp” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Parancs futtatása terminálban">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancsnak terminálban kell futnia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="„trash” URL címek kezelője">
+								<longdesc>A „trash” URL címek kezelésére használt parancs, ha engedélyezve van.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="A megadott parancs kezelje-e a „trash” URL címeket">
+								<longdesc>Ha igazra van állítva, a „command” kulcsban beállított parancs kezeli a „trash” URL címeket.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="A terminál megnyitása az asztalon a saját mappában nyitja-e a terminált">
 						<longdesc>Ha ez igaz, akkor egy terminál megnyitása az asztalon a saját könyvtárában nyit meg egy terminált. Ellenkező esetben az asztal mappájában nyílik meg. A kulcsnak nincs jelentősége, ha az asztal könyvtára a saját könyvtár.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-munkacsoport">
+						<longdesc>A Windows hálózati munkacsoport vagy tartomány, amelynek a felhasználó része. Egy új munkacsoport teljes életbe lépéséhez a felhasználónak lehet, hogy ki-, majd újra be kell jelentkeznie.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Extra tartományok a DNS-SD szolgáltatások kereséséhez">
+						<longdesc>A „network:///” helyen látható DNS-SD tartományok vesszővel elválasztott listája.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Hogyan jelenítse meg a helyi DNS-SD szolgáltatást">
+						<longdesc>Lehetséges értékek: „merged”, „separate” és „disabled”.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automatikus proxybeállítás URL címe">
+						<longdesc>A proxy beállításokat tartalmazó URL.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proxy port">
+						<longdesc>A „/system/proxy/socks_host” kulcsban proxyként megadott gép portja.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proxy gépnév">
+						<longdesc>A socks proxy gépneve.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP proxy port">
+						<longdesc>A „/system/proxy/ftp_host” kulcsban proxyként megadott gép portja.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP proxy gépnév">
+						<longdesc>Az FTP proxy gépneve.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Biztonságos HTTP proxy port">
+						<longdesc>A „/system/proxy/secure_host” kulcsban proxyként megadott gép portja.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Biztonságos HTTP proxy gépnév">
+						<longdesc>A biztonságos HTTP proxy gépneve.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxybeállítás módja">
+						<longdesc>Válassza ki a proxybeállítás módját. Támogatott értékek: „none”, „manual”, „auto”.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Proxy nélkül elérhető kiszolgálók">
+						<longdesc>Ez a kulcs azon kiszolgálók listáját tartalmazza, amelyekhez közvetlenül kapcsolódik, proxy használata nélkül (ha az aktív). Az értékek lehetnek kiszolgálónevek, tartományok (kezdő helyettesítő karakterek használhatóak, pl. *.akarmi.hu), IP kiszolgálócímek (IPv4 és IPv6 egyaránt) és hálózati címek hálózati maszkkal (pl. 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP proxy jelszó">
+						<longdesc>HTTP proxy használatakor hitelesítéshez használandó jelszó.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP proxy felhasználónév">
+						<longdesc>HTTP proxy használatakor hitelesítéshez használandó felhasználónév.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Kapcsolatok hitelesítése a proxy kiszolgálókhoz">
+						<longdesc>Ha be van kapcsolva, akkor a proxy kiszolgálóhoz történő kapcsolódásokhoz hitelesítés szükséges. A felhasználónév/jelszó párost a „/system/http_proxy/authentication_user” és a „/system/http_proxy/authentication_password” adja meg.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP proxy port">
+						<longdesc>A „/system/http_proxy/host” kulcsban proxyként megadott gép portja.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP proxy gépnév">
+						<longdesc>A HTTP proxy gépneve.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP proxy használata">
+						<longdesc>Proxybeállítások bekapcsolása interneten keresztüli HTTP eléréskor.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

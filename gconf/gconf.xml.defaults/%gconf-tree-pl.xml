@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Domyślna aplikacja przeglądarki komponentów">
+								<longdesc>Aplikacja używana do przeglądania plików wymagająca komponentu do ich obejrzenia. Parametr %s zostanie zastąpiony przez URI pliku, parametr %c zostanie zastąpiony poprzez IID komponentu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argument uruchamiania dla domyślnego terminala">
+								<longdesc>Argument uruchomienia używany dla domyślnej aplikacji terminala.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Domyślna aplikacja terminala">
+								<longdesc>Domyślna aplikacja terminala używana dla aplikacji wymagającej terminala.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;h323&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;h323&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;callto&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;callto&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;aim&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;aim&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;mailto&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;mailto&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;https&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;https&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;http&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;http&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;man&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;man&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;info&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;info&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;ghelp&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;ghelp&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Uruchomienie polecenia w terminalu">
+								<longdesc>Określa, czy program obsługujący ten typ adresu URL powinien być uruchomiony w terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Obsługa adresu URL typu &quot;trash&quot;">
+								<longdesc>Jeżeli włączone, polecenie używane do obsługi adresów URL typu &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Określa, czy podane polecenie ma obsługiwać adresy URL typu &quot;trash&quot;">
+								<longdesc>Określa, czy program podany w kluczu &quot;command&quot; ma obsługiwać adresy URL typu &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Określa, czy otwieranie terminalu na pulpicie otwiera terminal w katalogu domowym">
 						<longdesc>Gdy ustawione na &quot;true&quot;, otwieranie terminalu na pulpicie spowoduje otwarcie terminalu w katalogu domowym. W przeciwnym razie zostanie otwarty katalog pulpitu. Uwaga - ten klucz jest bezużyteczny, gdy katalog pulpitu jest identyczny jak katalog domowy.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grupa robocza SMB">
+						<longdesc>Grupa robocza Windows lub domena do której należy użytkownik. Aby nowa grupa odniosła pełny skutek, użytkownik może potrzebować wylogować się i zalogować ponownie.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Dodatkowe domeny do wyszukiwania usług DNS-SD">
+						<longdesc>Lista oddzielonych przecinkami domen DNS-SD, które powinny być widoczne w położeniu &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Sposób wyświetlania lokalnych usług DNS-SD">
+						<longdesc>Dopuszczalne wartości to &quot;merged&quot; (połączone), &quot;separate&quot; (oddzielne) oraz &quot;disabled&quot; (wyłączone).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Adres URL automatycznej konfiguracji pośrednika">
+						<longdesc>URL udostępniający wartości konfiguracyjne pośrednika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port pośrednika gniazd">
+						<longdesc>Port komputera określonego przez &quot;/system/proxy/socks_host&quot;, będącego pośrednikiem dla ruchu sieciowego.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nazwa komputera pośrednika gniazd">
+						<longdesc>Nazwa maszyny stanowiącej pośrednika dla mechanizmu gniazd.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port pośrednika FTP">
+						<longdesc>Port komputera określonego przez &quot;/system/proxy/ftp_host&quot;, będący pośrednikiem dla ruchu sieciowego.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nazwa komputera pośrednika FTP">
+						<longdesc>Nazwa maszyny pośredniczącej protokół FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port pośrednika bezpiecznego połączenia HTTP">
+						<longdesc>Port komputera określonego przez &quot;/system/proxy/secure_host&quot;, będący pośrednikiem dla ruchu sieciowego.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nazwa komputera pośrednika HTTP">
+						<longdesc>Nazwa maszyny pośredniczącej protokół SHTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Tryb konfiguracji pośrednika">
+						<longdesc>Wybierz tryb konfiguracji pośrednika. Obsługiwanymi wartościami są &quot;none&quot; (brak konfiguracji), &quot;manual&quot; (ręczna), &quot;auto&quot; (automatyczna).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Komputery bez pośrednika">
+						<longdesc>Ten klucz zawiera listę komputerów, które są połączone bezpośrednio, nie zaś przez pośrednika (jeśli jest aktywny). Wartościami mogą być nazwy komputerów, domeny (z użyciem sekwencji specjalnych takich jak *.foo.com), adresy IP (zarówno IPv4 jak i IPv6) oraz adresy sieciowe z maską sieci (np. 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Hasło pośrednika HTTP">
+						<longdesc>Hasło podawane przy uwierzytelnieniu podczas wykonywania operacji pośredniczących HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nazwa użytkownika pośrednika HTTP">
+						<longdesc>Nazwa użytkownika przekazywana do uwierzytelnienia podczas operacji pośredniczenia http.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Uwierzytelnianie połączeń do serwera pośredniczącego">
+						<longdesc>Jeżeli ustawione, połączenia do serwera pośredniczącego wymagają uwierzytelniania. Lista rozwijana użytkownik/hasło jest zdefiniowana przez &quot;/system/http_proxy/authentication_user&quot; oraz &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port pośrednika HTTP">
+						<longdesc>Port komputera określonego przez &quot;/system/http_proxy/host&quot;, będący pośrednikiem dla ruchu sieciowego.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nazwa komputera pośrednika HTTP">
+						<longdesc>Nazwa maszyny pośredniczącej protokół HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Użycie pośrednika HTTP">
+						<longdesc>Włącza ustawienia pośrednika podczas próby dostępu HTTP za pośrednictwem Internetu.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

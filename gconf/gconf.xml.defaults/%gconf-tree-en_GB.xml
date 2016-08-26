@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Default component viewer application">
+								<longdesc>The application to use for viewing files that require a component to view them. The parameter %s will be replaced by the file&apos;s URIs, the parameter %c will be replaced by the component IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec argument for default terminal">
+								<longdesc>The exec argument to use for the default terminal application.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Default terminal application">
+								<longdesc>The default terminal application to use for applications that require a terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;h323&quot; URLs">
+								<longdesc>The command used to handle &quot;h323&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;h323&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;h323&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;callto&quot; URLs">
+								<longdesc>The command used to handle &quot;callto&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;callto&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;callto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;aim&quot; URLs">
+								<longdesc>The command used to handle &quot;aim&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;aim&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;aim&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;mailto&quot; URLs">
+								<longdesc>The command used to handle &quot;mailto&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;mailto&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;mailto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;https&quot; URLs">
+								<longdesc>The command used to handle &quot;https&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;https&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;https&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;http&quot; URLs">
+								<longdesc>The command used to handle &quot;http&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;http&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;http&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;man&quot; URLs">
+								<longdesc>The command used to handle &quot;man&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;man&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;man&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;info&quot; URLs">
+								<longdesc>The command used to handle &quot;info&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;info&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;info&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;ghelp&quot; URLs">
+								<longdesc>The command used to handle &quot;ghelp&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;ghelp&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;ghelp&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;trash&quot; URLs">
+								<longdesc>The command used to handle &quot;trash&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;trash&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;trash&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Whether opening a terminal on the desktop opens a terminal in the home directory">
 						<longdesc>If set to true, then opening a terminal on the desktop will open a terminal in the home directory. Otherwise, it will be opened in the desktop directory. Note that this key is irrelevant if the desktop directory is identical to the home directory.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB workgroup">
+						<longdesc>The Windows networking workgroup or domain that the user is part of. In order for a new workgroup to fully take effect the user may need to log out and log back in.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Extra domains to look for DNS-SD services in">
+						<longdesc>Comma separated list of DNS-SD domains that should be visible in the &quot;network:///&quot; location.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="How to display local DNS-SD service">
+						<longdesc>Possible values are &quot;merged&quot;, &quot;separate&quot; and &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automatic proxy configuration URL">
+						<longdesc>URL that provides proxy configuration values.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/socks_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proxy host name">
+						<longdesc>The machine name to proxy socks through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/ftp_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP proxy host name">
+						<longdesc>The machine name to proxy FTP through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Secure HTTP proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/secure_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Secure HTTP proxy host name">
+						<longdesc>The machine name to proxy secure HTTP through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxy configuration mode">
+						<longdesc>Select the proxy configuration mode. Supported values are &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Non-proxy hosts">
+						<longdesc>This key contains a list of hosts which are connected to directly, rather than via the proxy (if it is active). The values can be hostnames, domains (using an initial wildcard like *.foo.com), IP host addresses (both IPv4 and IPv6) and network addresses with a netmask (something like 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP proxy password">
+						<longdesc>Password to pass as authentication when doing HTTP proxying.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP proxy username">
+						<longdesc>User name to pass as authentication when doing HTTP proxying.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Authenticate proxy server connections">
+						<longdesc>If true, then connections to the proxy server require authentication. The username/password combo is defined by &quot;/system/http_proxy/authentication_user&quot; and &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/http_proxy/host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP proxy host name">
+						<longdesc>The machine name to proxy HTTP through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Use HTTP proxy">
+						<longdesc>Enables the proxy settings when accessing HTTP over the Internet.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

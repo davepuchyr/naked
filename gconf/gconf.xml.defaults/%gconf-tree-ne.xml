@@ -1,11 +1,308 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="पूर्वनिर्धारित अवयव दर्शक अनुप्रयोग">
+								<longdesc>फाइल हेर्नका लागि प्रयोग गरिने अनुप्रयोगले ती फाइल हेर्नलाई केही तत्वको आवश्यकता महसुस गर्दछ । %s परामिति URIs फाइलमा प्रतिस्थापन गरिन्छन्, %c परामिति IID अवयवद्वारा प्रस्तिस्थापन गरिन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="पूर्वनिर्धारित टर्मिनलका लागि Exec तर्क">
+								<longdesc>पूर्वनिर्धारित टर्मिनल अनुप्रयोगका लागि प्रयोग गरिने exec तर्क ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="पूर्वनिर्धारित टर्मिनल अनुप्रयोग">
+								<longdesc>टर्मिनल आवश्यक पर्ने अनुप्रयोगका लागि प्रयोग गरिने पूर्वनिर्धारित टर्मिनल अनुप्रयोग ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;h323&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;h323&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;h323&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;callto&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;callto&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;callto&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;aim&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट आदेशले &quot;aim&quot; URLs ह्यान्डल गर्नुपर्छ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;aim&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;mailto&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;mailto&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;mailto&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;https&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;https&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;https&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;http&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;http&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;http&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;man&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;man&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;man&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;info&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;info&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;info&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;ghelp&quot; URLs ह्यान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;ghelp&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;ghelp&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="टर्मिनलमा आदेश चलाउनुहोस् ।">
+								<longdesc>यदि आदेशलाई यस प्रकारको यूआरएल ह्यान्डल गर्न टर्मिनलमा चलाउनु पर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLs का लागि ह्यान्डलर">
+								<longdesc>यदि सक्षम पारिएमा, &quot;trash&quot; URLs हान्डल गर्न प्रयोग गरिने आदेश ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="निर्दिष्ट गरिएको आदेशले &quot;trash&quot; URLs ह्यान्डल गर्नुपर्दछ या पर्दैन">
+								<longdesc>यदि &quot;command&quot; कुञ्जीमा निदिष्ट गरिएको आदेशले &quot;trash&quot; URLs ह्यान्डल गर्नुपर्दछ भने ठीक हुन्छ ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="डेस्कटपमा टर्मिनल खोल्नाले गृह डाइरेक्टरीमा टर्मिनल खुल्छ या खुल्दैन">
 						<longdesc>यदि सही सेट भएको छ भने, डेस्कटपमा टर्मिनल खोल्नाले गृह डाइरेक्टरीमा टर्मिनल खुल्नेछ । अन्यथा, यो डेस्कटप डाइरेक्टरीमा खुल्नेछ । याद गर्नुहोस् कि यदि डेस्कटप डाइरेक्टरी गृह डाइरेक्टरीमा पहिचानयोग्य छ भने यो कुञ्जी सान्दर्भिक हुन्छ ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="एसएमबी (SMB) कार्यसमूह">
+						<longdesc>विण्डोज नेटवर्किङ कार्यसमूह वा डोमेन जुन प्रयोगकर्ता एउटा अंश हो । नयाँ कार्यसमूहका लागि पूरै प्रभाव पार्न प्रयोगकर्ताले लग आउट गरेर फेरि लगइन गर्नुपर्दछ ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="यस भित्र DNS-SD सेवा खोज्नका लागि अतिरिक्त डोमेन">
+						<longdesc>अल्पविरामले DNS-SD डोमेनको सूची विभाजन गर्दछ जुन &quot;network:///&quot; स्थानमा देखिने हुनुपर्दछ ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="स्थानीय DNS-SD सेवा कसरी प्रदर्शन गर्नुहुन्छ">
+						<longdesc>सम्भावित मान &quot;गाभिएका&quot;, &quot;विभाजन&quot; र &quot;अक्षम&quot; हुन् ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="स्वचालित प्रोक्सी कन्फिगरेसन यूआरएल">
+						<longdesc>प्रोक्सी कन्फिगरेसन मान प्रदान गर्ने यूआरएल ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS प्रोक्सी पोर्ट">
+						<longdesc>तपाईँले प्रोक्सि गर्नुभएको &quot;/system/proxy/socks_host&quot; द्वारा परिभाषित मेसिनको पोर्ट ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS प्रोक्सी होस्टनाम">
+						<longdesc>सक्सबाट प्रोक्सी गर्ने मेसिनको नाम ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="एफटीपी (FTP) प्रोक्सी पोर्ट">
+						<longdesc>तपाईँले प्रोक्सि गर्नुभएको &quot;/system/proxy/ftp_host&quot; द्वारा परिभाषित मेसिनको पोर्ट ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="एफटीपी (FTP) प्रोक्सी होस्टनाम">
+						<longdesc>एफटीपी (FTP)बाट प्रोक्सी गर्ने मेसिन नाम</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="एचटीटीपी (HTTP) प्रोक्सी पोर्ट सुरक्षित राख्नुहोस्">
+						<longdesc>तपाईँले प्रोक्सि गर्नुभएको &quot;/system/proxy/socks_host&quot; द्वारा परिभाषित मेसिनको पोर्ट ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="एचटीटीपी (HTTP) प्रोक्सी होस्टनाम सुरक्षित राख्नुहोस्">
+						<longdesc>एचटीटीपी (HTTP)बाट प्रोक्सी सुरक्षित गर्ने मेसिन नाम ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="प्रोक्सी कन्फिगरेसन मोड">
+						<longdesc>प्रोक्सी कन्फिगरेसन मोड चयन गर्नुहोस् । समर्थित मान &quot;कुनै पनि होइन&quot;, &quot;म्यानुअल&quot;, &quot;स्वचालित&quot; हुन् ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="प्रोक्सी-नभएका होस्ट">
+						<longdesc>यस कुञ्जीले प्रोक्सी मार्फत नभइ प्रत्यक्ष जडित होस्टको सूची समावेश गर्दछ (यदि यो सक्रिय भएमा) । यसका मानहरू, होस्टनाम, डोमेन ( *.foo.com जस्ता प्रारम्भिक वाइल्डकार्ड प्रयोग गर्ने), आई पी होस्ट ठेगाना (दुवै IPv4 र IPv6) तथा नेटमास्क भएका सञ्जाल ठेगानाहरू (१९२.१६८.०.०/२४ जस्ता केही वस्तु) हुन् ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="एचटीटीपी (HTTP) प्रोक्सी पासवर्ड">
+						<longdesc>एचटीटीपी (HTTP) प्रोक्सी गर्दा प्रमाणिकरणको रूपमा पास गरिने पासवर्ड ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="एचटीटीपी (HTTP) प्रोक्सी प्रयोगकर्ता नाम">
+						<longdesc>एचटीटीपी प्रोक्सी गर्दा, प्रमाणीकरणका रूपमा पास गरिने प्रयोगकर्ता नाम ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="प्रमाणीकरण प्रोक्सी सर्भर जडान">
+						<longdesc>यदि ठीक भएमा, त्यसपछि प्रोक्सी सर्भरसँग जडान गर्न प्रमाणिकरण चाहिन्छ ।&quot;/system/http_proxy/authentication_user&quot; र &quot;/system/http_proxy/authentication_password&quot; द्वारा प्रयोगकर्तानाम/पासवर्ड कम्बो परिभाषित गरिन्छ ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="एचटीटीपी (HTTP) प्रोक्सी पोर्ट">
+						<longdesc>तपाईँले प्रोक्सी गर्ने &quot;/system/http_proxy/host&quot; द्वारा परिभाषित मेसिनको पोर्ट ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="एचटीटीपी (HTTP) प्रोक्सी होस्टनाम">
+						<longdesc>एचटीटीपी (HTTP)बाट प्रोक्सी गर्ने मेसिन नाम ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="एचटीटीपी प्रोक्सी प्रयोग गर्नुहोस्">
+						<longdesc>इन्टरनेटमा एचटीटीपीले पहुँच प्राप्त गर्दा प्रोक्सी सेटिङ सक्षम पार्दछ ।</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

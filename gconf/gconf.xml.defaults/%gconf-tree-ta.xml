@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="இயல்பான ான பொருள் காட பயன்பாடுகள்ின்">
+								<longdesc>கோப்புகளை பார்க்க தேவைப்படும் பயன்பாடுகளுக்கு பொருள்கள் தேவை. அளவுரு %s அதன் URI யால் மாற்றப்படும், அளவுரு %c அதன் பொருள் அடையாளத்தால் மாற்றப்படும்</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="இயல்பான முனையத்திற்கான Exec அளவுரு">
+								<longdesc>exec அளவுரு பயன்படுத்த வேண்டிய இயல்பான முனைய பயன்பாடு</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="இயல்பான முனைய பயன்பாடுகள்">
+								<longdesc>முனையத்திறகு தேவைப்படும் இயல்பான முனைய பயன்பாடு </longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;h323&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;h323&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;h323&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot;கையாள்வதற்கான URL">
+								<longdesc>&quot;callto&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;callto&quot;  URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;aim&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;aim&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;aim&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;aim&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;mailto&quot;ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;mailto&quot;URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;mailto&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;https&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;https&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;ghelp&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;http&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;http&quot; URL ஐ கையாளுமா">
+								<longdesc>&quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;http&quot; URL ஐ கையாளுமெனில்,உண்மை.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;man&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;man&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;man&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;info&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;info&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;info&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;ghelp&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;ghelp&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;ghelp&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;trash&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;trash&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;trash&quot;  URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc=" திரையில் இருந்து முனையத்தை திறந்தால் முனையம் இல்ல அடைவில் இருந்து திறக்குமா">
 						<longdesc>நிபந்தனை சரி என்றால், திரையில் இருந்து முனையத்தை திறந்தால் முனையம், இல்ல அடைவில் இருந்து திறக்கும்,  தவறு என்றால் முனையம் திரையில் உள்ள அடைவில் இருந்து திறக்கும்குறிப்பு செய்க, சாவி தொடர்பு சரியில்லை என்றால், இல்ல அடைவும் திரை அடைவும் ஒன்றே </longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB பணிகுழு">
+						<longdesc>பயனர் விண்டோஸ் பிணைய பணி குழு அல்லது களத்தின் பகுதியாக உள்ளார். புதிய பணிக்குழு முழுவதும் பணி செய்ய பயனர் வெளியேற வேண்டும் அல்லது மீண்டும் உள் அனுமதி பெற வேண்டும்.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD சேவைகளுக்கு கூடுதல் களங்கள்">
+						<longdesc>DNS-SD களங்களின் கால்புள்ளியால் பிரிக்கப்பட்ட பட்டியல் &quot;network:///&quot; இடத்தில் தெரிய வேண்டும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="உள் DNS-SD சேவையை காட்டுவது எப்படி">
+						<longdesc>இயன்ற மதிப்புகள் &quot;merged&quot;, &quot;separate&quot; மற்றும் &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="தானாக ப்ராக்ஸி சேவகனை அமைக்கும் URL">
+						<longdesc>ப்ராக்ஸி அமைப்பின் மதிப்பை தரும் URL</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/proxy/socks_host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>socks வழியாக ப்ராக்ஸிக்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/proxy/ftp_host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>FTP ப்ராக்ஸி க்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="பாதுகாப்பான HTTP ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/proxy/secure_host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="பாதுகாப்பான HTTP ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>பாதுகாப்பான HTTP ப்ராக்ஸி க்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ப்ராக்ஸி அமைப்பு பாங்கு">
+						<longdesc>ப்ராக்ஸி அமைப்பு வழியை தேர்வு செய்யவும். &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot; மதிப்புகளுக்கு ஆதரவு உண்டு</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ப்ராக்ஸி இல்லாத புரவலன்">
+						<longdesc>இந்த பட்டியல் ப்ராக்ஸியை(செயலிலிருந்தும்) நேரடியாக பயன்படுத்தாத கணினியின் பட்டியலை காட்டுகிறது. இதில் புரவலன் பெயர், டொமைன்(குழுக்குறிகளை பயன்படுத்தும் உம் *.foo.com) புரவலன் IP முகவரி (both IPv4 மற்றும்IPv6) மற்றும் வலைப்பின்னல் முகவரியுடன் வலைமூடியும் இருக்கும் (உதாரணம் 192.168.0.0/24)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP ப்ராக்ஸி கடவுச்சொல்">
+						<longdesc>HTTP ப்ராக்ஸி பயன்படுத்தும்போது பயன்படுத்த வேண்டிய கடவுச்சொல்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP ப்ராக்ஸி பயனீட்டாளர் பெயர்">
+						<longdesc>HTTP ப்ராக்ஸியை பயன்படுத்தும் போது அனுமதி பெற பயன்படுத்த வேண்டிய பயனீட்டாளர் பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ப்ராக்ஸி வேகன் இணைப்பின் அனுமதியை சரிபார்">
+						<longdesc>உண்மையெனில் பதிலாள் சேவையகத்தை இணைக்க அங்கீகாரம் தேவை.  &quot;/system/http_proxy/authentication_user&quot; and &quot;/system/http_proxy/authentication_password&quot;ஆல்பயனர்பெயர்/கடவுச்சொல் சேர்க்கை பெட்டியில் குறிப்பிடப்பட்டிருக்கும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/http_proxy/host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>HTTP ப்ராக்ஸி க்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP ப்ராக்ஸியை பயன்படுத்து">
+						<longdesc>HTTP அணுகும் போது ப்ராக்ஸி அமைப்பை செயல்படுத்து</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

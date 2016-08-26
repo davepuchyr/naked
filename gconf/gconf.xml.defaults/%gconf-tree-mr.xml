@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="मुलभूत भाग दर्शक कार्यक्रम">
+								<longdesc>घटकाची आवश्यकता लागत असणाऱ्या फाइलला पहाण्याकरीताचे अनुप्रयोग. घटक %s फाइलच्या URI बदलविले जाईल, बाब %c घटकाच्या IID शी बदलविले जाईल.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="मुलभूत कार्यक्रमांसाठी Exec बाब">
+								<longdesc>मुलभूत टर्मिनल कार्यक्रमासाठी लागणारी exec बाब.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="मुलभूत टर्मिनल कार्यक्रम">
+								<longdesc>ज्या कार्यक्रमासाठी टर्मिनलची गरज आहे अशा कार्यासाठी मुलभूत टर्मिनल.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;h323&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;h323&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;h323&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;callto&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;callto&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;callto&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;aim&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;aim&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;aim&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;mailto&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;mailto&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;mailto&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;https&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;https&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;https&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;http&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;http&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;http&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;man&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;man&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;man&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;info&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;info&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;info&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;ghelp&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने  &quot;ghelp&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;ghelp&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="आदेश टर्मिनल मध्ये चालवा">
+								<longdesc>या प्रकारचे URL हाताळण्या करीता टर्मिनल वर आदेश आढळत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URL करीता हॅन्डलर">
+								<longdesc>&quot;trash&quot; URL हातालण्यासाठी असणारी आज्ञावली, जर कार्यरत असेल तर.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="सूचित आदेशने &quot;trash&quot; URL हाताळावे की नाही">
+								<longdesc>&quot;command&quot; मध्ये वर्णित आज्ञावली &quot;trash&quot; URL ला सूचित करीत असल्यास खरे आहे.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="डेस्कटॉपवर टर्मिनल उघडल्यास मुख्य डिरेक्ट्री अंतर्गत टर्मिनल उघडले जाते का">
 						<longdesc>true निश्चित केल्यास, व डेस्कटॉपवर टर्मिनल उघडल्यावर मुख्य डिरेक्ट्री अंतर्गत टर्मिनल उघडेल. नाहीतर, डेस्कटॉप डिरेक्ट्री अंतर्गत उघडले जाईल. लक्षात ठेवा डेस्कटॉप डिरेक्ट्री मुख्य डिरेक्ट्री नुरूप असल्यास ही कि अनुपयोगी ठरते.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB कार्यगट">
+						<longdesc>वापरकर्ता ज्या कार्यस्थानाचा किंवा विंडोज नेटवर्कीग करणाऱ्या गटाचा भाग असेल ते स्थान एखाद्या नव्या कार्यगटाचा पूर्ण उपयोग करायचा असेल तर वापर करत्याने प्रथम प्रवेशातून बाहेर जावे आणि पुन्हा प्रवेश करावा.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD सेवांकरीता पहाचे ते अगाऊ क्षेत्र">
+						<longdesc>&quot;network:///&quot; स्थानावर दिसण्यायोग्य अल्पविरामद्वारा वेगळी केलेली DNS-SD क्षेत्र.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="स्थानीक DNS-SD सेवा कसे दर्शवायचे">
+						<longdesc>संभाव्य मूल्ये &quot;विलीन&quot;, &quot;विभाजीत&quot; आणि &quot;अकार्यान्वीत&quot; अशी आहेत.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="स्वयंसिद्ध पर्यायी संयोजना URL अधिकृतपणे तपासून पहा">
+						<longdesc>पर्यायी संयोजना मुल्य दर्शविणारा URL.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS पर्यायी स्थान">
+						<longdesc>संगणकावरील स्थान जे यंत्रणा  &quot;/system/proxy/socks_host&quot;  द्वारे पर्यायासाठी तुम्ही वापरू शकता.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS पर्यायी यजमान नाव">
+						<longdesc>पर्यायी सॉक्स साठी यात्रिक नाव.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP पर्यायी पोर्ट">
+						<longdesc>संगणकावरील स्थान जे यंत्रणा &quot;/system/proxy/ftp_host&quot;  द्वारे पर्यायासाठी तुम्ही वापरू शकता.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP पर्यायी यजमान नाव">
+						<longdesc>पर्यायी FTP साठी यांत्रिक नाव.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="HTTP पर्यायी स्थान सुरक्षित आहे">
+						<longdesc>संगणकावरील स्थान जे यंत्रणा &quot;/system/proxy/secure_host&quot; द्वारे पर्यायासाठी तुम्ही वापरू शकता.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="HTTP पर्यायी यजमान नाव सुरक्षित करा">
+						<longdesc>सुरक्षित पर्यायी HTTP साठी प्रणाली नाव.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="पर्यायी संयोजनाची रीत">
+						<longdesc>पर्यायी संयोजनाची रीत निवडा. &quot;एकही नाही&quot;, &quot;स्वयंसिद्ध&quot;, &quot;हस्ते&quot; ही स्वीकृत मूल्ये आहेत.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="पर्याय विहीत स्वागतकर्ते">
+						<longdesc>या किल्लीत प्रत्यक्षरित्या जुळलेली यजमानची यादी, प्रॉक्सीच्या (सक्रीय असल्यास) ऐवजी समाविष्टीत आहे. मुल्य यजमाननाव, क्षेत्र (प्रारंभीक वाईल्डकार्ड जसे की *.foo.com), IP यजमान पत्ता (दोन्ही IPv4 व IPv6) व संजाळ पत्ता सह नेटमास्क (काहितरी यासारखे 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP पर्यायी गुप्तशब्द">
+						<longdesc>निश्चितीकरणासाठी  गुप्तशब्द टाकून HTTP पर्यायीकरण होत असल्याचे पहा.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP पर्यायी वापरकर्त्याचे नाव">
+						<longdesc>HTTP साठी प्रॉक्सी निवडतेवेळी वापरकर्त्याचे नाव टाकून अधिकृतपणे निश्चित करा.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="पर्यायी सर्वर जोडणी अधिकृतपणे तपासून पहा">
+						<longdesc>जर ठिक असेल तर, पर्यायी सर्वर जोडणीला होकार द्यावा लागेल. वापरकर्ता/गुप्तशब्दाचे  निश्चितीकरण &quot;/system/http_proxy/authentication_user&quot; आणि &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP पर्यायी पोर्ट">
+						<longdesc>संगणकावरील स्थान जे यंत्रणा &quot;/system/http_proxy/host&quot; द्वारे पर्यायासाठी तुम्ही वापरू शकता.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP पर्यायी यजमान नाव">
+						<longdesc>पर्यायी HTTP साठी यांत्रिक नाव.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP प्रॉक्सी वापरा">
+						<longdesc>महाजाल वरील HTTP प्रवेश दाखल करतेवेळी प्रॉक्सी संयोजना कार्यान्वीत करतो.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

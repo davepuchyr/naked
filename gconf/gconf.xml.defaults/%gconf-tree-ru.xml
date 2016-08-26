@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Приложение просмотра компонентов по умолчанию">
+								<longdesc>Приложение, используемое для просмотра файлов, требующих компонента для просмотра. Параметр %s будет заменён адресом (URI) файла, параметр %c - идентификатором (IID) компонента.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргумент exec для терминала по умолчанию">
+								<longdesc>Аргумент exec, использующийся приложением терминала по умолчанию.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Приложение терминала по умолчанию">
+								<longdesc>Приложение терминала, используемое по умолчанию приложениями, нуждающимися в терминале.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа h232">
+								<longdesc>Команда, используемая для обработки URL типа h323, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа h323">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа h323.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;callto&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;callto&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;callto&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;aim&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;aim&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;aim&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;mailto&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;mailto&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;mailto&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;https&quot;">
+								<longdesc>Команда, используемая для обработки ссылок URL типа &quot;https&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;https&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;http&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;http&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;http&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;man&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;man&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;man&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;info&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;info&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;info&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;ghelp&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;ghelp&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;ghelp&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Запускать программу в терминале">
+								<longdesc>Если этот ключ установлен, то программа,определённая для обработки ссылки (URL), будет запускаться в терминале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Обработчик URL типа &quot;trash&quot;">
+								<longdesc>Команда, используемая для обработки URL типа &quot;trash&quot;, если ключ установлен</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Будет ли указанная команда обрабатывать ссылки (URL) типа &quot;trash&quot;">
+								<longdesc>Если этот ключ установлен, то программа, определённая в ключе &quot;command&quot;, будет обрабатывать ссылки (URL) типа &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="Открывать ли терминал в домашнем каталоге при выборе меню &quot;Открыть в Терминале&quot; на Рабочем столе">
 						<longdesc>Если выбран этот ключ,то открытие терминала на Рабочем столе откроет терминал в домашнем каталоге. Иначе, он будет открыт к каталоге Рабочего стола. Обратите внимание на то, что если домашний каталог является каталогом Рабочего стола, то этот ключ является бессмысленным.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Рабочая группа SMB">
+						<longdesc>Рабочая группа или домен Windows, к которым относится пользователь. Чтобы изменение рабочей группы вступило в силу, возможно потребуется повторная регистрация в системе.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Дополнительные домены, в которых осуществлять поиск сервисов типа DNS-SD">
+						<longdesc>Разделённый запятыми список доменов типа DNS-SD, которые должны быть видимы по адресу &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Как отображать локальный сервис типа DNS-SD">
+						<longdesc>Возможные значения &quot;merged&quot; (&quot;совместные&quot;), &quot;separate&quot; (&quot;раздельные&quot;) и &quot;disabled&quot; (&quot;отключено&quot;).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL автоматической настройки прокси">
+						<longdesc>Ссылка (URL), предоставляющая значения для автоматической конфигурации прокси-серверов.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт прокси-сервера для протокола SOCKS">
+						<longdesc>Порт на машине, определённой ключом &quot;/system/proxy/socks_host&quot; для сервиса прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Имя прокси-сервера для протокола SOCKS">
+						<longdesc>Имя машины прокси-сервера для протокола SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт прокси-сервера для протокола FTP">
+						<longdesc>Порт на машине, определённой ключом &quot;/system/proxy/ftp_host&quot; для сервиса прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Имя прокси-сервера для протокола FTP">
+						<longdesc>Имя машины прокси-сервера для протокола FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт прокси-сервера для защищённого протокола HTTP">
+						<longdesc>Порт на машине, определённой ключом &quot;/system/proxy/secure_host&quot; для сервиса прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Имя прокси-сервера для защищённого протокола HTTP">
+						<longdesc>Имя машины прокси-сервера для защищённого протокола HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Режим конфигурации прокси-серверов">
+						<longdesc>Режим конфигурации сервиса прокси. Возможные значения &quot;none&quot; (&quot;отсутствует&quot;), &quot;manual&quot; (&quot;ручной&quot;), &quot;auto&quot; (&quot;автоматический&quot;).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Узлы, доступные без прокси">
+						<longdesc>Этот ключ содержит список узлов, соединение с которыми осуществляется напрямую, минуя прокси-сервер (если последний используется). Значения могут быть именами узлов, доменами (с использованием расширителей типа *.foo.com), адресами узлов протокола IP (в вариантах IPv4 и IPv6) и сетевыми адресами с использованием маски (наподобие 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Пароль прокси-сервера для протокола HTTP">
+						<longdesc>Пароль для авторизации на прокси-сервере протокола HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Имя пользователя прокси-сервера для протокола HTTP">
+						<longdesc>Имя пользователя для использования при авторизации на прокси-сервере для протокола HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Соединения с прокси-сервером требуют авторизации">
+						<longdesc>Если этот ключ установлен, то соединения с прокси-сервером требуют авторизации. Пара значений имя_пользователя/пароль определяется ключами &quot;/system/http_proxy/authentication_user&quot; и &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт прокси-сервера для протокола HTTP">
+						<longdesc>Порт на машине, определённой ключом &quot;/system/http_proxy/host&quot; для сервиса прокси.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Имя прокси-сервера для протокола HTTP">
+						<longdesc>Имя машины прокси-сервера для протокола HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Использовать прокси-сервер для протокола HTTP">
+						<longdesc>Включает установки прокси-сервера для протокола HTTP через Интернет.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

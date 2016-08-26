@@ -1,6 +1,203 @@
 <?xml version="1.0"?>
 <gconf>
 	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="applications">
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="تطبيق عرض المكونات الإفتراضي">
+								<longdesc>التطبيق المستعمل لعرض الملفات التي تستحق مكونا لعرضها. سيعوض المتغير %s بـ URI الملف، كما سيعوض المتغير %c بـ IID المكون.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="معامل التنفيذ للطرفية الافتراضية">
+								<longdesc>معامل التنفيذ الذي سيستعمل للطرفية الافتراضية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="تطبيق الطرفية الافتراضي">
+								<longdesc>الطرفية الافتراضية التي ستستعمل للتطبيقات التي تتطلب طرفية.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;h323&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;h323&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;h323&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;callto&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;callto&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;callto&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;aim&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;aim&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;aim&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;mailto&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;mailto&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;mailto&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;https&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;https&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;https&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;http&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;http&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;http&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;man&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;man&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;man&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;info&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;info&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;info&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;ghelp&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;ghelp&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;ghelp&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="شغّل الأمر في طرفية">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المستخدم لمعالجة هذا النوع من العناوين العمل في شاشة طرفية.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="معالج عناوين &quot;trash&quot;">
+								<longdesc>الأمر المستخدم لمعالجة عناوين &quot;trash&quot;، في حال تمكينها.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="فيما إذا كان على الأمر المحدّد معالجة عناوين &quot;trash&quot;">
+								<longdesc>إضبط لـtrue إذا كان على الأمر المحدّد في المفتاح &quot;command&quot; معالجة عناوين &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
 		<dir name="apps">
 			<dir name="nautilus-open-terminal">
 				<entry name="display_mc_item">
@@ -11,6 +208,106 @@
 				<entry name="desktop_opens_home_dir">
 					<local_schema short_desc="سواء تم فتح الطرفية على سطح المكتب إفتح الطرفية في الدليل الرئيسي">
 						<longdesc>إذا عيّن إلى true، ثم تم فتح الطرفية على سطح المكتب سيفتح الطرفية في الدليل الرئيسي. خلاف ذلك، سيتم فتحها في دليل سطح المكتب. لاحظ أن هذا المفتاح لا يهم إذا كان دليل سطح المكتب مماثل إلى الدليل الرئيسي.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="مجموعة عمل SMB">
+						<longdesc>مجموعة العمل أو نطاق شبكة ويندوز التى يتبعها هذا المستخدم. لكي تؤثّر مجموعة العمل الجديدة تأثيرا كاملا قد تحتاج للخروج ثم الولوج مرّة أخرى.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="نطاقات زيادة للبحث في داخلها عن خدمات  DNS-SD">
+						<longdesc>قائمة -مفصولة بفاصلة- بنطاقات DNS-SD التي ستكون مرئيّة في موقع &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="كيفية عرض خدمة DNS-SD المحلية">
+						<longdesc>القيم الممكنة هي &quot;merged&quot;، &quot;separate&quot;، و &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="عنوان الإعداد الآلي للوسيط">
+						<longdesc>العنوان المزود لقيم إعدادات الوسيط.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="منفذ وسيط SOCKS">
+						<longdesc>منفذ الجهاز المحدد في &quot;/system/proxy/socks_host&quot; المستعمل كوكيل.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="اسم مضيف وسيط SOCKS">
+						<longdesc>اسم الجهاز الذي سيقع بركسية socks·عبره.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="منفذ وسيط الـ FTP">
+						<longdesc>منفذ الجهاز المحدد في &quot;/system/proxy/ftp_host&quot; المستعمل كوكيل.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="اسم مضيف وسيط الـ FTP">
+						<longdesc>اسم الجهاز الذي سيقع وسيطة الـ FTP عبره.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="منفذ وسيط HTTP آمن">
+						<longdesc>منفذ الجهاز المحدد في &quot;/system/proxy/secure_host&quot; المستعمل كوكيل.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="اسم مضيف وسيط HTTP آمن">
+						<longdesc>اسم الجهاز الذي سيقع عبره وسيطة آمنة للـ HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="نمط إعداد الوسيط">
+						<longdesc>اختر نسق إعداد الوسيط. القيم المدعومة هي  &quot;none&quot;، &quot;manual&quot;و &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="مضيفين ليسو مضيفي وسيط">
+						<longdesc>يحوي هذا المفتاح قائمة من المضيفين المتصلين مباشرة، عوضا عن المتصلين عبر وسيط ما (هذا إذا كان نشطا). يمكن أن تكون القيم أسماء مضيفين أونطاق (باستخدام رمز تعميم أولي مثل *.foo.com)، عناوين مضيفي الـ IP(IPv4 و IPv6) أو عناوين شبكة (مثل 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="كلمة سر وسيط الـ HTTP">
+						<longdesc>كلمة السر التي  ستمرر للتوثق عند القيام بوسيطة الـ http.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="اسم مستخدم وسيط الـ HTTP">
+						<longdesc>اسم المستخدم الذي سيمرر عند القيام بوسيطة الـ HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="توثق من الاتصالات لخادوم الوسيط">
+						<longdesc>إذا كانت صحيح، سيحتاج الاتصال بخادوم الوسيط إلى توثيق. اجتماع اسم المستخدم/كلمة السر معرّف بواسطة &quot;/system/http_proxy/authentication_user&quot; و &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="منفذ وسيط الـ HTTP">
+						<longdesc>منفذ الجهاز المحدد في &quot;/system/http_proxy/host&quot; المستعمل كوكيل.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="اسم مضيف وسيط الـ HTTP">
+						<longdesc>اسم الجهاز الذي سيقع وسيطة الـ HTTP عبره.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="استخدم وسيط HTTP">
+						<longdesc>تفعيل إعدادات الوسيط عند النفاذ لـ http عبر الانترنت.</longdesc>
 					</local_schema>
 				</entry>
 			</dir>

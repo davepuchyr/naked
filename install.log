@@ -1549,16 +1549,11 @@
 1467932009 hplip-libs 3.13.7 6.el7_2.1 x86_64
 1467932023 selinux-policy 3.13.1 60.el7_2.7 noarch
 1467932039 tzdata-java 2016f 1.el7 noarch
-1467932045 Percona-Server-shared-compat-57 5.7.13 6.1.el7 x86_64
-1467932046 Percona-Server-shared-57 5.7.13 6.1.el7 x86_64
-1467932049 Percona-Server-client-57 5.7.13 6.1.el7 x86_64
 1467932052 libxml2 2.9.1 6.el7_2.3 x86_64
 1467932054 libxml2-python 2.9.1 6.el7_2.3 x86_64
 1467932058 setroubleshoot-plugins 3.0.59 2.el7_2 noarch
 1467932059 setroubleshoot-server 3.2.24 4.el7_2 x86_64
 1467932060 setroubleshoot 3.2.24 4.el7_2 x86_64
-1467932067 Percona-Server-server-57 5.7.13 6.1.el7 x86_64
-1467932071 Percona-Server-devel-57 5.7.13 6.1.el7 x86_64
 1467932074 selinux-policy-targeted 3.13.1 60.el7_2.7 noarch
 1467932090 libsane-hpaio 3.13.7 6.el7_2.1 x86_64
 1467932091 hpijs 3.13.7 6.el7_2.1 x86_64
@@ -1654,3 +1649,8 @@
 1471732548 glibc 2.17 106.el7_2.8 i686
 1471732549 libuuid 2.23.2 26.el7_2.3 i686
 1471732550 dbus-libs 1.6.12 14.el7_2 i686
+1472242025 Percona-Server-shared-compat-57 5.7.14 7.1.el7 x86_64
+1472242027 Percona-Server-shared-57 5.7.14 7.1.el7 x86_64
+1472242029 Percona-Server-client-57 5.7.14 7.1.el7 x86_64
+1472242035 Percona-Server-server-57 5.7.14 7.1.el7 x86_64
+1472242038 Percona-Server-devel-57 5.7.14 7.1.el7 x86_64
